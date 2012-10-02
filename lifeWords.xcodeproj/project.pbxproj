@@ -39,6 +39,8 @@
 		4FCA2878161939FE003263C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4FCA287A161939FE003263C8 /* lifeWordsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsViewController.h; sourceTree = "<group>"; };
 		4FCA287B161939FE003263C8 /* lifeWordsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsViewController.m; sourceTree = "<group>"; };
+		4FCA2882161A8C15003263C8 /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
+		4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				4FCA2877161939FE003263C8 /* MainStoryboard_iPad.storyboard */,
 				4FCA287A161939FE003263C8 /* lifeWordsViewController.h */,
 				4FCA287B161939FE003263C8 /* lifeWordsViewController.m */,
+				4FCA2884161A8C1A003263C8 /* Login View */,
 				4FCA2863161939FD003263C8 /* Supporting Files */,
 			);
 			path = lifeWords;
@@ -108,6 +111,15 @@
 				4FCA2872161939FE003263C8 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FCA2884161A8C1A003263C8 /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA2882161A8C15003263C8 /* lifeWordsLoginViewController.h */,
+				4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */,
+			);
+			name = "Login View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
