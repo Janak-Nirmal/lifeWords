@@ -19,6 +19,8 @@
 		4FCA2876161939FE003263C8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2874161939FE003263C8 /* MainStoryboard_iPhone.storyboard */; };
 		4FCA2879161939FE003263C8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2877161939FE003263C8 /* MainStoryboard_iPad.storyboard */; };
 		4FCA287C161939FE003263C8 /* lifeWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA287B161939FE003263C8 /* lifeWordsViewController.m */; };
+		4FCA2889161BDE73003263C8 /* login_Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */; };
+		4FCA288B161BDEAF003263C8 /* logo_lifeWords.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		4FCA287B161939FE003263C8 /* lifeWordsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsViewController.m; sourceTree = "<group>"; };
 		4FCA2882161A8C15003263C8 /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
 		4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
+		4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_Wallpaper.jpg; sourceTree = "<group>"; };
+		4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_lifeWords.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				4FCA287A161939FE003263C8 /* lifeWordsViewController.h */,
 				4FCA287B161939FE003263C8 /* lifeWordsViewController.m */,
 				4FCA2884161A8C1A003263C8 /* Login View */,
+				4FCA2885161BDE73003263C8 /* Graphics */,
 				4FCA2863161939FD003263C8 /* Supporting Files */,
 			);
 			path = lifeWords;
@@ -120,6 +125,31 @@
 				4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */,
 			);
 			name = "Login View";
+			sourceTree = "<group>";
+		};
+		4FCA2885161BDE73003263C8 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */,
+				4FCA2886161BDE73003263C8 /* Login */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		4FCA2886161BDE73003263C8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA2887161BDE73003263C8 /* LoginWallpaper */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4FCA2887161BDE73003263C8 /* LoginWallpaper */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */,
+			);
+			path = LoginWallpaper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +210,8 @@
 				4FCA2873161939FE003263C8 /* Default-568h@2x.png in Resources */,
 				4FCA2876161939FE003263C8 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4FCA2879161939FE003263C8 /* MainStoryboard_iPad.storyboard in Resources */,
+				4FCA2889161BDE73003263C8 /* login_Wallpaper.jpg in Resources */,
+				4FCA288B161BDEAF003263C8 /* logo_lifeWords.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
