@@ -21,6 +21,15 @@
 		4FCA287C161939FE003263C8 /* lifeWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA287B161939FE003263C8 /* lifeWordsViewController.m */; };
 		4FCA2889161BDE73003263C8 /* login_Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */; };
 		4FCA288B161BDEAF003263C8 /* logo_lifeWords.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */; };
+		4FCA28A3161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA2890161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m */; };
+		4FCA28A4161BE09E003263C8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA2892161BE09E003263C8 /* NSData+Base64.m */; };
+		4FCA28A5161BE09E003263C8 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA2894161BE09E003263C8 /* NSDate+RFC1123.m */; };
+		4FCA28A6161BE09E003263C8 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA2896161BE09E003263C8 /* NSDictionary+RequestEncoding.m */; };
+		4FCA28A7161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA2898161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.m */; };
+		4FCA28A8161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA289A161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.m */; };
+		4FCA28A9161BE09E003263C8 /* JUSSNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA289C161BE09E003263C8 /* JUSSNetworkEngine.m */; };
+		4FCA28AA161BE09E003263C8 /* JUSSNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA289F161BE09E003263C8 /* JUSSNetworkOperation.m */; };
+		4FCA28AB161BE09E003263C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28A2161BE09E003263C8 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +54,25 @@
 		4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
 		4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_Wallpaper.jpg; sourceTree = "<group>"; };
 		4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_lifeWords.png; sourceTree = "<group>"; };
+		4FCA288F161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		4FCA2890161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		4FCA2891161BE09E003263C8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		4FCA2892161BE09E003263C8 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		4FCA2893161BE09E003263C8 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		4FCA2894161BE09E003263C8 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		4FCA2895161BE09E003263C8 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		4FCA2896161BE09E003263C8 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		4FCA2897161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JUSSNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		4FCA2898161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JUSSNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		4FCA2899161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+JUSSNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		4FCA289A161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+JUSSNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		4FCA289B161BE09E003263C8 /* JUSSNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUSSNetworkEngine.h; sourceTree = "<group>"; };
+		4FCA289C161BE09E003263C8 /* JUSSNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUSSNetworkEngine.m; sourceTree = "<group>"; };
+		4FCA289D161BE09E003263C8 /* JUSSNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUSSNetworkKit.h; sourceTree = "<group>"; };
+		4FCA289E161BE09E003263C8 /* JUSSNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUSSNetworkOperation.h; sourceTree = "<group>"; };
+		4FCA289F161BE09E003263C8 /* JUSSNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUSSNetworkOperation.m; sourceTree = "<group>"; };
+		4FCA28A1161BE09E003263C8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4FCA28A2161BE09E003263C8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +127,7 @@
 				4FCA287B161939FE003263C8 /* lifeWordsViewController.m */,
 				4FCA2884161A8C1A003263C8 /* Login View */,
 				4FCA2885161BDE73003263C8 /* Graphics */,
+				4FCA288C161BE09E003263C8 /* Framework */,
 				4FCA2863161939FD003263C8 /* Supporting Files */,
 			);
 			path = lifeWords;
@@ -150,6 +179,56 @@
 				4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */,
 			);
 			path = LoginWallpaper;
+			sourceTree = "<group>";
+		};
+		4FCA288C161BE09E003263C8 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA288D161BE09E003263C8 /* JUSSNetworkKit */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		4FCA288D161BE09E003263C8 /* JUSSNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA288E161BE09E003263C8 /* Categories */,
+				4FCA289B161BE09E003263C8 /* JUSSNetworkEngine.h */,
+				4FCA289C161BE09E003263C8 /* JUSSNetworkEngine.m */,
+				4FCA289D161BE09E003263C8 /* JUSSNetworkKit.h */,
+				4FCA289E161BE09E003263C8 /* JUSSNetworkOperation.h */,
+				4FCA289F161BE09E003263C8 /* JUSSNetworkOperation.m */,
+				4FCA28A0161BE09E003263C8 /* Reachability */,
+			);
+			path = JUSSNetworkKit;
+			sourceTree = "<group>";
+		};
+		4FCA288E161BE09E003263C8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA288F161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.h */,
+				4FCA2890161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m */,
+				4FCA2891161BE09E003263C8 /* NSData+Base64.h */,
+				4FCA2892161BE09E003263C8 /* NSData+Base64.m */,
+				4FCA2893161BE09E003263C8 /* NSDate+RFC1123.h */,
+				4FCA2894161BE09E003263C8 /* NSDate+RFC1123.m */,
+				4FCA2895161BE09E003263C8 /* NSDictionary+RequestEncoding.h */,
+				4FCA2896161BE09E003263C8 /* NSDictionary+RequestEncoding.m */,
+				4FCA2897161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.h */,
+				4FCA2898161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.m */,
+				4FCA2899161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.h */,
+				4FCA289A161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4FCA28A0161BE09E003263C8 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA28A1161BE09E003263C8 /* Reachability.h */,
+				4FCA28A2161BE09E003263C8 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +304,15 @@
 				4FCA2869161939FD003263C8 /* main.m in Sources */,
 				4FCA286D161939FE003263C8 /* lifeWordsAppDelegate.m in Sources */,
 				4FCA287C161939FE003263C8 /* lifeWordsViewController.m in Sources */,
+				4FCA28A3161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				4FCA28A4161BE09E003263C8 /* NSData+Base64.m in Sources */,
+				4FCA28A5161BE09E003263C8 /* NSDate+RFC1123.m in Sources */,
+				4FCA28A6161BE09E003263C8 /* NSDictionary+RequestEncoding.m in Sources */,
+				4FCA28A7161BE09E003263C8 /* NSString+JUSSNetworkKitAdditions.m in Sources */,
+				4FCA28A8161BE09E003263C8 /* UIAlertView+JUSSNetworkKitAdditions.m in Sources */,
+				4FCA28A9161BE09E003263C8 /* JUSSNetworkEngine.m in Sources */,
+				4FCA28AA161BE09E003263C8 /* JUSSNetworkOperation.m in Sources */,
+				4FCA28AB161BE09E003263C8 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
