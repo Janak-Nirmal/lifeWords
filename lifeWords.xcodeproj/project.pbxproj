@@ -32,6 +32,8 @@
 		4FCA28AB161BE09E003263C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28A2161BE09E003263C8 /* Reachability.m */; };
 		4FCA28AF16227961003263C8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28AE16227961003263C8 /* MBProgressHUD.m */; };
 		4FCA28B416227A0F003263C8 /* OLGhostAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28B316227A0F003263C8 /* OLGhostAlertView.m */; };
+		4FCA28CB1625202D003263C8 /* lifeWordsNetworkDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28C81625202D003263C8 /* lifeWordsNetworkDownload.m */; };
+		4FCA28CC1625202D003263C8 /* lifeWordsNetworkOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28CA1625202D003263C8 /* lifeWordsNetworkOperations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,10 @@
 		4FCA28AE16227961003263C8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		4FCA28B216227A0F003263C8 /* OLGhostAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLGhostAlertView.h; sourceTree = "<group>"; };
 		4FCA28B316227A0F003263C8 /* OLGhostAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLGhostAlertView.m; sourceTree = "<group>"; };
+		4FCA28C71625202D003263C8 /* lifeWordsNetworkDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsNetworkDownload.h; sourceTree = "<group>"; };
+		4FCA28C81625202D003263C8 /* lifeWordsNetworkDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNetworkDownload.m; sourceTree = "<group>"; };
+		4FCA28C91625202D003263C8 /* lifeWordsNetworkOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsNetworkOperations.h; sourceTree = "<group>"; };
+		4FCA28CA1625202D003263C8 /* lifeWordsNetworkOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNetworkOperations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 		4FCA2862161939FD003263C8 /* lifeWords */ = {
 			isa = PBXGroup;
 			children = (
+				4FCA28C61625202D003263C8 /* Network */,
 				4FCA286B161939FE003263C8 /* lifeWordsAppDelegate.h */,
 				4FCA286C161939FE003263C8 /* lifeWordsAppDelegate.m */,
 				4FCA2874161939FE003263C8 /* MainStoryboard_iPhone.storyboard */,
@@ -267,6 +274,18 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		4FCA28C61625202D003263C8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA28C71625202D003263C8 /* lifeWordsNetworkDownload.h */,
+				4FCA28C81625202D003263C8 /* lifeWordsNetworkDownload.m */,
+				4FCA28C91625202D003263C8 /* lifeWordsNetworkOperations.h */,
+				4FCA28CA1625202D003263C8 /* lifeWordsNetworkOperations.m */,
+			);
+			name = Network;
+			path = Classes/Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,6 +370,8 @@
 				4FCA28AB161BE09E003263C8 /* Reachability.m in Sources */,
 				4FCA28AF16227961003263C8 /* MBProgressHUD.m in Sources */,
 				4FCA28B416227A0F003263C8 /* OLGhostAlertView.m in Sources */,
+				4FCA28CB1625202D003263C8 /* lifeWordsNetworkDownload.m in Sources */,
+				4FCA28CC1625202D003263C8 /* lifeWordsNetworkOperations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +498,7 @@
 				4FCA2881161939FE003263C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
