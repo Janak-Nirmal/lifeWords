@@ -537,6 +537,27 @@
                 <relationship kind="outlet" name="userPassword" candidateClass="UITextField"/>
             </relationships>
         </class>
+        <class className="lifeWordsSignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/lifeWordsSignUpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissKeyboard"/>
+                <relationship kind="action" name="dismissView:"/>
+                <relationship kind="action" name="emailTapped:"/>
+                <relationship kind="action" name="nicknameTapped:"/>
+                <relationship kind="action" name="passwordTapped:"/>
+                <relationship kind="action" name="showActionSheet:"/>
+                <relationship kind="action" name="signUpButtonClicked:"/>
+                <relationship kind="action" name="verifyPasswordTapped:"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nickname" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="photo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="photoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="signUpBox" candidateClass="UIView"/>
+                <relationship kind="outlet" name="signUpButton" candidateClass="UIGlossyButton"/>
+                <relationship kind="outlet" name="verifyPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
