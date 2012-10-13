@@ -34,6 +34,10 @@
 		4FCA28B416227A0F003263C8 /* OLGhostAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28B316227A0F003263C8 /* OLGhostAlertView.m */; };
 		4FCA28CB1625202D003263C8 /* lifeWordsNetworkDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28C81625202D003263C8 /* lifeWordsNetworkDownload.m */; };
 		4FCA28CC1625202D003263C8 /* lifeWordsNetworkOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28CA1625202D003263C8 /* lifeWordsNetworkOperations.m */; };
+		4FCA28D51627C470003263C8 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D11627C470003263C8 /* 37x-Checkmark.png */; };
+		4FCA28D61627C470003263C8 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */; };
+		4FCA28D71627C470003263C8 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D31627C470003263C8 /* line.png */; };
+		4FCA28D81627C470003263C8 /* no_avatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D41627C470003263C8 /* no_avatar.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +61,7 @@
 		4FCA2882161A8C15003263C8 /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
 		4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
 		4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_Wallpaper.jpg; sourceTree = "<group>"; };
-		4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_lifeWords.png; sourceTree = "<group>"; };
+		4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_lifeWords.png; path = Graphics/logo_lifeWords.png; sourceTree = "<group>"; };
 		4FCA288F161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
 		4FCA2890161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
 		4FCA2891161BE09E003263C8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -87,6 +91,10 @@
 		4FCA28CA1625202D003263C8 /* lifeWordsNetworkOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNetworkOperations.m; sourceTree = "<group>"; };
 		4FCA28CD162520E1003263C8 /* lifeWordsSignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsSignUpViewController.h; sourceTree = "<group>"; };
 		4FCA28CE162520E1003263C8 /* lifeWordsSignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsSignUpViewController.m; sourceTree = "<group>"; };
+		4FCA28D11627C470003263C8 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
+		4FCA28D31627C470003263C8 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		4FCA28D41627C470003263C8 /* no_avatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_avatar.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,7 @@
 				4FCA2884161A8C1A003263C8 /* Login View */,
 				4FCA28CF162520E4003263C8 /* Sign Up View */,
 				4FCA2885161BDE73003263C8 /* Graphics */,
+				4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */,
 				4FCA28B016227A0F003263C8 /* Custom Objects */,
 				4FCA288C161BE09E003263C8 /* Custom Framework */,
 				4FCA2863161939FD003263C8 /* Supporting Files */,
@@ -176,7 +185,7 @@
 		4FCA2885161BDE73003263C8 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */,
+				4FCA28D01627C470003263C8 /* Extra Stuffs */,
 				4FCA2886161BDE73003263C8 /* Login */,
 			);
 			path = Graphics;
@@ -298,6 +307,17 @@
 			name = "Sign Up View";
 			sourceTree = "<group>";
 		};
+		4FCA28D01627C470003263C8 /* Extra Stuffs */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA28D11627C470003263C8 /* 37x-Checkmark.png */,
+				4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */,
+				4FCA28D31627C470003263C8 /* line.png */,
+				4FCA28D41627C470003263C8 /* no_avatar.jpeg */,
+			);
+			path = "Extra Stuffs";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,6 +378,10 @@
 				4FCA2879161939FE003263C8 /* MainStoryboard_iPad.storyboard in Resources */,
 				4FCA2889161BDE73003263C8 /* login_Wallpaper.jpg in Resources */,
 				4FCA288B161BDEAF003263C8 /* logo_lifeWords.png in Resources */,
+				4FCA28D51627C470003263C8 /* 37x-Checkmark.png in Resources */,
+				4FCA28D61627C470003263C8 /* 37x-Checkmark@2x.png in Resources */,
+				4FCA28D71627C470003263C8 /* line.png in Resources */,
+				4FCA28D81627C470003263C8 /* no_avatar.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
