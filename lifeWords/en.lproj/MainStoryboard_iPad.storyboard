@@ -535,6 +535,17 @@
                 <relationship kind="outlet" name="userPassword" candidateClass="UITextField"/>
             </relationships>
         </class>
+        <class className="lifeWordsMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/lifeWordsMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showActionSheet:"/>
+                <relationship kind="outlet" name="cards" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="makeCardButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIView"/>
+            </relationships>
+        </class>
         <class className="lifeWordsSignUpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/lifeWordsSignUpViewController.h"/>
             <relationships>

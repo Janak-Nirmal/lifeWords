@@ -38,6 +38,7 @@
 		4FCA28D61627C470003263C8 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */; };
 		4FCA28D71627C470003263C8 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D31627C470003263C8 /* line.png */; };
 		4FCA28D81627C470003263C8 /* no_avatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28D41627C470003263C8 /* no_avatar.jpeg */; };
+		4FCA28DB162916B6003263C8 /* separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28DA162916B6003263C8 /* separator.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,9 @@
 		4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
 		4FCA28D31627C470003263C8 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		4FCA28D41627C470003263C8 /* no_avatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_avatar.jpeg; sourceTree = "<group>"; };
+		4FCA28DA162916B6003263C8 /* separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separator.png; sourceTree = "<group>"; };
+		4FCA28DC16291732003263C8 /* lifeWordsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsMainViewController.h; sourceTree = "<group>"; };
+		4FCA28DD16291732003263C8 /* lifeWordsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				4FCA287B161939FE003263C8 /* lifeWordsViewController.m */,
 				4FCA2884161A8C1A003263C8 /* Login View */,
 				4FCA28CF162520E4003263C8 /* Sign Up View */,
+				4FCA28DE1629173D003263C8 /* Main View */,
 				4FCA2885161BDE73003263C8 /* Graphics */,
 				4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */,
 				4FCA28B016227A0F003263C8 /* Custom Objects */,
@@ -185,8 +190,9 @@
 		4FCA2885161BDE73003263C8 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				4FCA28D01627C470003263C8 /* Extra Stuffs */,
 				4FCA2886161BDE73003263C8 /* Login */,
+				4FCA28D9162916B6003263C8 /* Sign Up */,
+				4FCA28D01627C470003263C8 /* Extra Stuffs */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -318,6 +324,23 @@
 			path = "Extra Stuffs";
 			sourceTree = "<group>";
 		};
+		4FCA28D9162916B6003263C8 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA28DA162916B6003263C8 /* separator.png */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		4FCA28DE1629173D003263C8 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA28DC16291732003263C8 /* lifeWordsMainViewController.h */,
+				4FCA28DD16291732003263C8 /* lifeWordsMainViewController.m */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,6 +405,7 @@
 				4FCA28D61627C470003263C8 /* 37x-Checkmark@2x.png in Resources */,
 				4FCA28D71627C470003263C8 /* line.png in Resources */,
 				4FCA28D81627C470003263C8 /* no_avatar.jpeg in Resources */,
+				4FCA28DB162916B6003263C8 /* separator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
