@@ -45,6 +45,10 @@
 		4FCA28E6162D0C83003263C8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA28E5162D0C83003263C8 /* Icon@2x.png */; };
 		4FCA28FD1636496E003263C8 /* UIGlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28F61636496E003263C8 /* UIGlossyButton.m */; };
 		4FCA28FE1636496E003263C8 /* UIView+LayerEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28F81636496E003263C8 /* UIView+LayerEffects.m */; };
+		4FCA290916437953003263C8 /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA290116437953003263C8 /* CurledViewBase.m */; };
+		4FCA290A16437953003263C8 /* UIButton+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA290316437953003263C8 /* UIButton+Curled.m */; };
+		4FCA290B16437953003263C8 /* UIImageView+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA290516437953003263C8 /* UIImageView+Curled.m */; };
+		4FCA290C16437953003263C8 /* JSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA290816437953003263C8 /* JSBadgeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +119,14 @@
 		4FCA28F61636496E003263C8 /* UIGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGlossyButton.m; sourceTree = "<group>"; };
 		4FCA28F71636496E003263C8 /* UIView+LayerEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerEffects.h"; sourceTree = "<group>"; };
 		4FCA28F81636496E003263C8 /* UIView+LayerEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerEffects.m"; sourceTree = "<group>"; };
+		4FCA290016437953003263C8 /* CurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurledViewBase.h; sourceTree = "<group>"; };
+		4FCA290116437953003263C8 /* CurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurledViewBase.m; sourceTree = "<group>"; };
+		4FCA290216437953003263C8 /* UIButton+Curled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Curled.h"; sourceTree = "<group>"; };
+		4FCA290316437953003263C8 /* UIButton+Curled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Curled.m"; sourceTree = "<group>"; };
+		4FCA290416437953003263C8 /* UIImageView+Curled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Curled.h"; sourceTree = "<group>"; };
+		4FCA290516437953003263C8 /* UIImageView+Curled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Curled.m"; sourceTree = "<group>"; };
+		4FCA290716437953003263C8 /* JSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBadgeView.h; sourceTree = "<group>"; };
+		4FCA290816437953003263C8 /* JSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBadgeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +310,8 @@
 		4FCA28B016227A0F003263C8 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4FCA28FF16437953003263C8 /* curledView */,
+				4FCA290616437953003263C8 /* JSBadgeView */,
 				4FCA28F41636496E003263C8 /* UIGlossyButton */,
 				4FCA28B116227A0F003263C8 /* AlertView */,
 			);
@@ -381,6 +395,28 @@
 				4FCA28F81636496E003263C8 /* UIView+LayerEffects.m */,
 			);
 			path = UIGlossyButton;
+			sourceTree = "<group>";
+		};
+		4FCA28FF16437953003263C8 /* curledView */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA290016437953003263C8 /* CurledViewBase.h */,
+				4FCA290116437953003263C8 /* CurledViewBase.m */,
+				4FCA290216437953003263C8 /* UIButton+Curled.h */,
+				4FCA290316437953003263C8 /* UIButton+Curled.m */,
+				4FCA290416437953003263C8 /* UIImageView+Curled.h */,
+				4FCA290516437953003263C8 /* UIImageView+Curled.m */,
+			);
+			path = curledView;
+			sourceTree = "<group>";
+		};
+		4FCA290616437953003263C8 /* JSBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA290716437953003263C8 /* JSBadgeView.h */,
+				4FCA290816437953003263C8 /* JSBadgeView.m */,
+			);
+			path = JSBadgeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +516,10 @@
 				4FCA28CC1625202D003263C8 /* lifeWordsNetworkOperations.m in Sources */,
 				4FCA28FD1636496E003263C8 /* UIGlossyButton.m in Sources */,
 				4FCA28FE1636496E003263C8 /* UIView+LayerEffects.m in Sources */,
+				4FCA290916437953003263C8 /* CurledViewBase.m in Sources */,
+				4FCA290A16437953003263C8 /* UIButton+Curled.m in Sources */,
+				4FCA290B16437953003263C8 /* UIImageView+Curled.m in Sources */,
+				4FCA290C16437953003263C8 /* JSBadgeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
