@@ -37,13 +37,23 @@
     [self effectPanel];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    //Create a new barbutton with an action
+    UIBarButtonItem *barbutton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                                                  style:UIBarButtonItemStyleBordered target:self action:@selector(backBarPressed)];
+    
+    // and put the button in the nav bar
+    self.navigationItem.leftBarButtonItem = barbutton;
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
     
-    //Show navigation bar
+    // Show navigation bar
     [self.navigationController navigationBar].hidden = NO;
+    
+    // Set back button title
+    
     
 }
 
@@ -93,7 +103,7 @@
         
         [tv setText:name];
         [tv setFont:[UIFont fontWithName:@"Helvetica" size:9.0]];
-        [tv setTextAlignment:UITextAlignmentCenter];
+        [tv setTextAlignment:NSTextAlignmentCenter];
         [tv setBackgroundColor:[UIColor clearColor]];
         [tv setTextColor:[UIColor blackColor]];
         
@@ -314,6 +324,16 @@
     // Remove HUD from screen when the HUD was hidded
     [HUD removeFromSuperview];
 	HUD = nil;
+}
+
+- (void) backBarPressed
+{
+    [UIView animateWithDuration:0.75
+                     animations:^{
+                         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+                         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+                     }];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 

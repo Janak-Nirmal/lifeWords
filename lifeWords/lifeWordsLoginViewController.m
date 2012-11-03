@@ -167,13 +167,13 @@
                                    
                 
                 NSString *profilePhotoPath = [currentUsersPath stringByAppendingPathComponent:@"user_profile_photo.jpg"];
+                NSString *profileBackupPhotoPath = [currentUsersPath stringByAppendingPathComponent:@"user_profile_photo_backup.jpg"];
                 
                 
                 self.downloadOperation = [ApplicationDelegate.downloadOperation downloadFile:profilePhotoURL toFile:profilePhotoPath];
                 
                 [self.downloadOperation onCompletion:^(JUSSNetworkOperation *completedOperation) {
                   
-                    [self.activityIndicator stopAnimating];
                     
                     [self.loginButton setEnabled:YES];
                     
@@ -181,6 +181,24 @@
                     self.fetchUserInfo = [ApplicationDelegate.networkOperations fetchUserInfo:useremail];
                     [self.fetchUserInfo onCompletion:^(JUSSNetworkOperation *completedOperation) {
                         userInfo = [completedOperation responseJSON];
+                        
+                        // Create backup for profile photo
+                        NSFileManager *fileManager = [NSFileManager defaultManager];
+                        NSError *error;
+                        [fileManager copyItemAtPath:profilePhotoPath toPath:profileBackupPhotoPath error:&error];
+                        
+                        // Set user session
+                        NSUserDefaults* coreDatabase = [NSUserDefaults standardUserDefaults];
+                        [coreDatabase setObject:useremail forKey:@"User_Email"];
+                        [coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
+                        [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:@"User_Status"];
+                        [coreDatabase setObject:currentUsersPath forKey:@"User_Path"];
+                        [coreDatabase setObject:profilePhotoURL forKey:@"profilePhotoURL"];
+                        [coreDatabase setObject:profilePhotoPath forKey:@"profilePhotoPath"];
+                        [coreDatabase setObject:profileBackupPhotoPath forKey:@"profileBackupPhotoPath"];
+                        [coreDatabase synchronize];
+                        
+                        [self performSegueWithIdentifier:@"toMainView" sender:self];
                         
                     } onError:^(NSError *error) {
                         [self.activityIndicator stopAnimating];
@@ -191,18 +209,6 @@
                         [ghastly show];
                     }];
 
-                    
-                    // Set user session
-                    NSUserDefaults* coreDatabase = [NSUserDefaults standardUserDefaults];
-                    [coreDatabase setObject:useremail forKey:@"User_Email"];
-                    [coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
-                    [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:@"User_Status"];
-                    [coreDatabase setObject:currentUsersPath forKey:@"User_Path"];
-                    [coreDatabase setObject:profilePhotoURL forKey:@"profilePhotoURL"];
-                    [coreDatabase setObject:profilePhotoPath forKey:@"profilePhotoPath"];
-                    [coreDatabase synchronize];
-                    
-                    [self performSegueWithIdentifier:@"toMainView" sender:self];
                     
                 } onError:^(NSError *error) {
                     [self.activityIndicator stopAnimating];

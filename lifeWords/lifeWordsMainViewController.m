@@ -13,6 +13,7 @@
 @interface lifeWordsMainViewController () {
     NSDictionary *userInfo;
     UIImage *chosenPhoto;
+    ODRefreshControl *refreshControl;
 }
 @end
 
@@ -33,12 +34,16 @@
 {
     [super viewDidLoad];
     
-	// Do any additional setup after loading the view.
+	// Fetch data from NSUserDefaults
     self.coreDatabase = [NSUserDefaults standardUserDefaults];
+    
+    // Customize toolbar
     [self.toolBar.layer setBorderWidth:2.0f];
     [self.toolBar.layer setBorderColor:[[UIColor blackColor] CGColor]];
-    
-    
+
+    // Add UI refresh control
+    refreshControl = [[ODRefreshControl alloc] initInScrollView:self.scrollView];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     
 }
 
@@ -48,59 +53,9 @@
     // Hide Navigation Bar
     [self.navigationController navigationBar].hidden = YES;
     
-    // Set User Nicname or Email
-    if ([self.coreDatabase objectForKey:@"User_Nickname"]) {
-        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Nickname"]];
-    }
-    else {
-        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Email"]];
-    }
+    // Refresh Contents
+    [self refresh];
     
-    // Fetch the lastest user info
-    self.fetchUserInfo = [ApplicationDelegate.networkOperations fetchUserInfo:[self.coreDatabase objectForKey:@"User_Email"]];
-    [self.fetchUserInfo onCompletion:^(JUSSNetworkOperation *completedOperation) {
-        userInfo = [completedOperation responseJSON];
-        if ([userInfo objectForKey:@"User_Nickname"]) {
-            [self.nameLabel setText:[userInfo objectForKey:@"User_Nickname"]];
-            [self.coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
-        }
-        else {
-            [self.nameLabel setText:[userInfo objectForKey:@"User_Email"]];
-        }
-        
-    } onError:^(NSError *error) {
-        OLGhostAlertView *ghastly = [[OLGhostAlertView alloc] initWithTitle:@"Connection Error" message: @"Please check your internet connection" timeout:1 dismissible:YES];
-        [ghastly show];
-    }];
-    
-    // Set User Nicname or Email
-    NSLog(@"%@", [self.coreDatabase objectForKey:@"User_Nickname"]);
-    if ([self.coreDatabase objectForKey:@"User_Nickname"]) {
-        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Nickname"]];
-    }
-    else {
-        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Email"]];
-    }
-    
-    // Download the newest profile photo
-    NSString *profilePhotoURL = [self.coreDatabase objectForKey:@"profilePhotoURL"];
-    NSString *profilePhotoPath = [self.coreDatabase objectForKey:@"profilePhotoPath"];
-    [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profilePhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
-    
-    self.downloadOperation = [ApplicationDelegate.networkOperations downloadFile:profilePhotoURL toFile:profilePhotoPath];
-    [self.downloadOperation onCompletion:^(JUSSNetworkOperation *completedOperation) {
-        // Set profile photo
-        [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profilePhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
-    } onError:^(NSError *error) {
-        OLGhostAlertView *ghastly = [[OLGhostAlertView alloc] initWithTitle:@"Connection Error" message: @"Please check your internet connection" timeout:1 dismissible:YES];
-        [ghastly show];
-    }];
-    
-    // Dislay the notifications
-    JSBadgeView *friendsBadge = [[JSBadgeView alloc] initWithParentView:self.cards
- alignment:JSBadgeViewAlignmentTopRight];
-    friendsBadge.badgeText = @"4";
-    friendsBadge.badgePositionAdjustment = CGPointMake(-2.0f, 5.0f);
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
@@ -146,13 +101,16 @@
         [self presentModalViewController:picker animated:YES];
     }
     else {
-        [self presentModalViewController:picker animated:YES];
-        //self.popover = [[UIPopoverController alloc] initWithContentViewController:picker];
-        
-        //self.popover.delegate = self;
-        //[self.popover presentPopoverFromRect:self.makeCardButton.frame inView:self.view
-         //           permittedArrowDirections:UIPopoverArrowDirectionAny
-          //                          animated:YES];
+        if (picker.sourceType == UIImagePickerControllerSourceTypeCamera ) {
+            [self presentModalViewController:picker animated:YES];
+        }
+        else {
+            self.popover = [[UIPopoverController alloc] initWithContentViewController:picker];
+            self.popover.delegate = self;
+            [self.popover presentPopoverFromRect:self.makeCardButton.frame inView:self.view
+                    permittedArrowDirections:UIPopoverArrowDirectionAny
+                                    animated:YES];
+        }
     }
 }
 
@@ -189,24 +147,116 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         [picker dismissModalViewControllerAnimated:YES];
     } else {
-        [self.popover dismissPopoverAnimated:NO];
-        self.popover = nil;
+        if (picker.sourceType == UIImagePickerControllerSourceTypeCamera ) {
+            [picker dismissModalViewControllerAnimated:YES];
+        }
+        else {
+            [self.popover dismissPopoverAnimated:NO];
+        }
     }
     
     UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     
     chosenPhoto = image;
-    [self performSegueWithIdentifier:@"toPhotoFiltering" sender:self];
+    
+    // Push View Controller
+    lifeWordsPhotoFilteringViewController *nextView = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"photoFilteringView"];
+    nextView.photo = chosenPhoto;
+    [UIView animateWithDuration:0.75
+                     animations:^{
+                         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+                         [self.navigationController pushViewController:nextView animated:NO];
+                         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+                     }];
 }
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"toPhotoFiltering"]) {
-        // Get reference to the destination view controller
-        lifeWordsPhotoFilteringViewController *vc = [segue destinationViewController];
-        
-        // Pass any objects to the view controller here, like...
-        [vc setPhoto:chosenPhoto];
+
+- (void) refresh
+{
+    // Set the photo
+    NSString *profilePhotoURL = [self.coreDatabase objectForKey:@"profilePhotoURL"];
+    NSString *profilePhotoPath = [self.coreDatabase objectForKey:@"profilePhotoPath"];
+    NSString *profileBackupPhotoPath = [self.coreDatabase objectForKey:@"profileBackupPhotoPath"];
+    
+    [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profileBackupPhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
+    
+    // Set User Nickname or Email
+    if ([self.coreDatabase objectForKey:@"User_Nickname"]) {
+        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Nickname"]];
     }
+    else {
+        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Email"]];
+    }
+    
+    // Fetch the lastest user info
+    self.fetchUserInfo = [ApplicationDelegate.networkOperations fetchUserInfo:[self.coreDatabase objectForKey:@"User_Email"]];
+    [self.fetchUserInfo onCompletion:^(JUSSNetworkOperation *completedOperation) {
+        userInfo = [completedOperation responseJSON];
+        if ([userInfo objectForKey:@"User_Nickname"]) {
+            [self.nameLabel setText:[userInfo objectForKey:@"User_Nickname"]];
+            [self.coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
+        }
+        else {
+            [self.nameLabel setText:[userInfo objectForKey:@"User_Email"]];
+        }
+        
+    } onError:^(NSError *error) {
+        OLGhostAlertView *ghastly = [[OLGhostAlertView alloc] initWithTitle:@"Connection Error" message: @"Please check your internet connection" timeout:1 dismissible:YES];
+        [ghastly show];
+    }];
+    
+    // Set User Nicname or Email
+    if ([self.coreDatabase objectForKey:@"User_Nickname"]) {
+        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Nickname"]];
+    }
+    else {
+        [self.nameLabel setText:[self.coreDatabase objectForKey:@"User_Email"]];
+    }
+    
+    
+    
+    // Download the newest profile photo
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    [fileManager removeItemAtPath:profilePhotoPath error:&error];
+    
+    self.downloadOperation = [ApplicationDelegate.networkOperations downloadFile:profilePhotoURL toFile:profilePhotoPath];
+    [self.downloadOperation onCompletion:^(JUSSNetworkOperation *completedOperation) {
+        
+        if ([fileManager fileExistsAtPath:profilePhotoPath]) {
+        // Set profile photo
+        [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profilePhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
+            NSError *error;
+            [fileManager removeItemAtPath:profileBackupPhotoPath error:&error];
+            [fileManager copyItemAtPath:profilePhotoPath toPath:profileBackupPhotoPath error:&error];
+        }
+        else {
+            [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profileBackupPhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
+        }
+        [refreshControl endRefreshing];
+    } onError:^(NSError *error) {
+        [refreshControl endRefreshing];
+        OLGhostAlertView *ghastly = [[OLGhostAlertView alloc] initWithTitle:@"Connection Error" message: @"Please check your internet connection" timeout:1 dismissible:YES];
+        [ghastly show];
+    }];
+    
+    
+    // Dislay the notifications
+    JSBadgeView *friendsBadge = [[JSBadgeView alloc] initWithParentView:self.cards
+                                                              alignment:JSBadgeViewAlignmentTopRight];
+    friendsBadge.badgeText = @"4";
+    friendsBadge.badgePositionAdjustment = CGPointMake(-2.0f, 5.0f);
+    
+    
+}
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    scrollView.scrollEnabled = NO;
+}
+
+- (void) scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    scrollView.scrollEnabled = YES;
 }
 
 @end

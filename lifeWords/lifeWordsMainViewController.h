@@ -12,9 +12,9 @@
 #import "JSBadgeView.h"
 #import "OLGhostAlertView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ODRefreshControl.h"
 
-
-@interface lifeWordsMainViewController : UIViewController <UIImagePickerControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@interface lifeWordsMainViewController : UIViewController <UIImagePickerControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UIScrollViewDelegate>
 
 #pragma mark - Photo
 @property (nonatomic, retain) UIPopoverController *popover;
@@ -30,4 +30,5 @@
 @property (strong, nonatomic) NSUserDefaults *coreDatabase;
 @property (strong, nonatomic) JUSSNetworkOperation *downloadOperation;
 @property (strong, nonatomic) JUSSNetworkOperation *fetchUserInfo;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @end

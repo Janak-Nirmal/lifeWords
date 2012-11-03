@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89C9CD1644480500CD2483 /* ODRefreshControl.m */; };
+		4F8C0D101643BD5500B9CE0A /* lifeWordsLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */; };
+		4F8C0D131643BD7600B9CE0A /* lifeWordsSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */; };
+		4F8C0D141643BD9D00B9CE0A /* lifeWordsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28DD16291732003263C8 /* lifeWordsMainViewController.m */; };
+		4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28E81636484D003263C8 /* lifeWordsPhotoFilteringViewController.m */; };
 		4FCA285D161939FD003263C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285C161939FD003263C8 /* UIKit.framework */; };
 		4FCA285F161939FD003263C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285E161939FD003263C8 /* Foundation.framework */; };
 		4FCA2861161939FD003263C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA2860161939FD003263C8 /* CoreGraphics.framework */; };
@@ -18,7 +23,6 @@
 		4FCA2873161939FE003263C8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2872161939FE003263C8 /* Default-568h@2x.png */; };
 		4FCA2876161939FE003263C8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2874161939FE003263C8 /* MainStoryboard_iPhone.storyboard */; };
 		4FCA2879161939FE003263C8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2877161939FE003263C8 /* MainStoryboard_iPad.storyboard */; };
-		4FCA287C161939FE003263C8 /* lifeWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA287B161939FE003263C8 /* lifeWordsViewController.m */; };
 		4FCA2889161BDE73003263C8 /* login_Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */; };
 		4FCA288B161BDEAF003263C8 /* logo_lifeWords.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */; };
 		4FCA28A3161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA2890161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m */; };
@@ -215,9 +219,20 @@
 		4FCA2AAB16437B4B003263C8 /* Winter@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5D16437B4B003263C8 /* Winter@2x.jpg */; };
 		4FCA2AAC16437B4B003263C8 /* YellowNoir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5E16437B4B003263C8 /* YellowNoir.jpg */; };
 		4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */; };
+		4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E61643904F00747805 /* CoreImage.framework */; };
+		4FDFD7EA1643905400747805 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E91643905400747805 /* QuartzCore.framework */; };
+		4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EB1643905F00747805 /* CFNetwork.framework */; };
+		4FDFD7EE1643907B00747805 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7ED1643907B00747805 /* Security.framework */; };
+		4FDFD7F01643908000747805 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EF1643908000747805 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F89C9CC1644480500CD2483 /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
+		4F89C9CD1644480500CD2483 /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
+		4F8C0D0E1643BD5500B9CE0A /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
+		4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
+		4F8C0D111643BD7600B9CE0A /* lifeWordsSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsSignUpViewController.h; sourceTree = "<group>"; };
+		4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsSignUpViewController.m; sourceTree = "<group>"; };
 		4FCA2858161939FD003263C8 /* lifeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCA285C161939FD003263C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FCA285E161939FD003263C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -233,10 +248,6 @@
 		4FCA2872161939FE003263C8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4FCA2875161939FE003263C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4FCA2878161939FE003263C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		4FCA287A161939FE003263C8 /* lifeWordsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsViewController.h; sourceTree = "<group>"; };
-		4FCA287B161939FE003263C8 /* lifeWordsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsViewController.m; sourceTree = "<group>"; };
-		4FCA2882161A8C15003263C8 /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
-		4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
 		4FCA2888161BDE73003263C8 /* login_Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_Wallpaper.jpg; sourceTree = "<group>"; };
 		4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_lifeWords.png; sourceTree = "<group>"; };
 		4FCA288F161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
@@ -266,8 +277,6 @@
 		4FCA28C81625202D003263C8 /* lifeWordsNetworkDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNetworkDownload.m; sourceTree = "<group>"; };
 		4FCA28C91625202D003263C8 /* lifeWordsNetworkOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsNetworkOperations.h; sourceTree = "<group>"; };
 		4FCA28CA1625202D003263C8 /* lifeWordsNetworkOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNetworkOperations.m; sourceTree = "<group>"; };
-		4FCA28CD162520E1003263C8 /* lifeWordsSignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lifeWordsSignUpViewController.h; sourceTree = "<group>"; };
-		4FCA28CE162520E1003263C8 /* lifeWordsSignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeWordsSignUpViewController.m; sourceTree = "<group>"; };
 		4FCA28D11627C470003263C8 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
 		4FCA28D31627C470003263C8 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
@@ -539,6 +548,11 @@
 		4FCA2A5D16437B4B003263C8 /* Winter@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Winter@2x.jpg"; sourceTree = "<group>"; };
 		4FCA2A5E16437B4B003263C8 /* YellowNoir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YellowNoir.jpg; sourceTree = "<group>"; };
 		4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "YellowNoir@2x.jpg"; sourceTree = "<group>"; };
+		4FDFD7E61643904F00747805 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		4FDFD7E91643905400747805 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4FDFD7EB1643905F00747805 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4FDFD7ED1643907B00747805 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4FDFD7EF1643908000747805 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,15 +560,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDFD7F01643908000747805 /* SystemConfiguration.framework in Frameworks */,
+				4FDFD7EE1643907B00747805 /* Security.framework in Frameworks */,
+				4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */,
+				4FCA2861161939FD003263C8 /* CoreGraphics.framework in Frameworks */,
+				4FDFD7EA1643905400747805 /* QuartzCore.framework in Frameworks */,
+				4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */,
 				4FCA285D161939FD003263C8 /* UIKit.framework in Frameworks */,
 				4FCA285F161939FD003263C8 /* Foundation.framework in Frameworks */,
-				4FCA2861161939FD003263C8 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F89C9CB1644480500CD2483 /* ODRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				4F89C9CC1644480500CD2483 /* ODRefreshControl.h */,
+				4F89C9CD1644480500CD2483 /* ODRefreshControl.m */,
+			);
+			path = ODRefreshControl;
+			sourceTree = "<group>";
+		};
 		4FCA284D161939FD003263C8 = {
 			isa = PBXGroup;
 			children = (
@@ -579,6 +607,11 @@
 		4FCA285B161939FD003263C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FDFD7EF1643908000747805 /* SystemConfiguration.framework */,
+				4FDFD7ED1643907B00747805 /* Security.framework */,
+				4FDFD7EB1643905F00747805 /* CFNetwork.framework */,
+				4FDFD7E91643905400747805 /* QuartzCore.framework */,
+				4FDFD7E61643904F00747805 /* CoreImage.framework */,
 				4FCA285C161939FD003263C8 /* UIKit.framework */,
 				4FCA285E161939FD003263C8 /* Foundation.framework */,
 				4FCA2860161939FD003263C8 /* CoreGraphics.framework */,
@@ -594,8 +627,6 @@
 				4FCA286C161939FE003263C8 /* lifeWordsAppDelegate.m */,
 				4FCA2874161939FE003263C8 /* MainStoryboard_iPhone.storyboard */,
 				4FCA2877161939FE003263C8 /* MainStoryboard_iPad.storyboard */,
-				4FCA287A161939FE003263C8 /* lifeWordsViewController.h */,
-				4FCA287B161939FE003263C8 /* lifeWordsViewController.m */,
 				4FCA2884161A8C1A003263C8 /* Login View */,
 				4FCA28CF162520E4003263C8 /* Sign Up View */,
 				4FCA28DE1629173D003263C8 /* Main View */,
@@ -625,8 +656,8 @@
 		4FCA2884161A8C1A003263C8 /* Login View */ = {
 			isa = PBXGroup;
 			children = (
-				4FCA2882161A8C15003263C8 /* lifeWordsLoginViewController.h */,
-				4FCA2883161A8C15003263C8 /* lifeWordsLoginViewController.m */,
+				4F8C0D0E1643BD5500B9CE0A /* lifeWordsLoginViewController.h */,
+				4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */,
 			);
 			name = "Login View";
 			sourceTree = "<group>";
@@ -724,6 +755,7 @@
 		4FCA28B016227A0F003263C8 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4F89C9CB1644480500CD2483 /* ODRefreshControl */,
 				4FCA28FF16437953003263C8 /* curledView */,
 				4FCA290616437953003263C8 /* JSBadgeView */,
 				4FCA28F41636496E003263C8 /* UIGlossyButton */,
@@ -757,8 +789,8 @@
 		4FCA28CF162520E4003263C8 /* Sign Up View */ = {
 			isa = PBXGroup;
 			children = (
-				4FCA28CD162520E1003263C8 /* lifeWordsSignUpViewController.h */,
-				4FCA28CE162520E1003263C8 /* lifeWordsSignUpViewController.m */,
+				4F8C0D111643BD7600B9CE0A /* lifeWordsSignUpViewController.h */,
+				4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */,
 			);
 			name = "Sign Up View";
 			sourceTree = "<group>";
@@ -1285,7 +1317,6 @@
 			files = (
 				4FCA2869161939FD003263C8 /* main.m in Sources */,
 				4FCA286D161939FE003263C8 /* lifeWordsAppDelegate.m in Sources */,
-				4FCA287C161939FE003263C8 /* lifeWordsViewController.m in Sources */,
 				4FCA28A3161BE09E003263C8 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				4FCA28A4161BE09E003263C8 /* NSData+Base64.m in Sources */,
 				4FCA28A5161BE09E003263C8 /* NSDate+RFC1123.m in Sources */,
@@ -1384,6 +1415,11 @@
 				4FCA2A0516437A02003263C8 /* VibranceFilter.m in Sources */,
 				4FCA2A0616437A02003263C8 /* WhitePointAdjustFilter.m in Sources */,
 				4FCA2A1016437A02003263C8 /* UIImage+Helpers.m in Sources */,
+				4F8C0D101643BD5500B9CE0A /* lifeWordsLoginViewController.m in Sources */,
+				4F8C0D131643BD7600B9CE0A /* lifeWordsSignUpViewController.m in Sources */,
+				4F8C0D141643BD9D00B9CE0A /* lifeWordsMainViewController.m in Sources */,
+				4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */,
+				4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1439,7 +1475,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1461,7 +1497,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1475,6 +1511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lifeWords/lifeWords-Prefix.pch";
 				INFOPLIST_FILE = "lifeWords/lifeWords-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1486,6 +1523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lifeWords/lifeWords-Prefix.pch";
 				INFOPLIST_FILE = "lifeWords/lifeWords-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
