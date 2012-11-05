@@ -102,6 +102,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 #pragma mark - Network Element
 
 - (IBAction)loginButtonClicked:(id)sender {
@@ -190,8 +202,8 @@
                         // Set user session
                         NSUserDefaults* coreDatabase = [NSUserDefaults standardUserDefaults];
                         [coreDatabase setObject:useremail forKey:@"User_Email"];
-                        [coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
-                        [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:@"User_Status"];
+                        if ([userInfo objectForKey:@"User_Nickname"]) [coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
+                        if ([userInfo objectForKey:@"User_Status"]) [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:@"User_Status"];
                         [coreDatabase setObject:currentUsersPath forKey:@"User_Path"];
                         [coreDatabase setObject:profilePhotoURL forKey:@"profilePhotoURL"];
                         [coreDatabase setObject:profilePhotoPath forKey:@"profilePhotoPath"];

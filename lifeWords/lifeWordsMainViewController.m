@@ -44,6 +44,7 @@
     // Add UI refresh control
     refreshControl = [[ODRefreshControl alloc] initInScrollView:self.scrollView];
     [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    [refreshControl setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
     
 }
 
@@ -55,6 +56,7 @@
     
     // Refresh Contents
     [self refresh];
+    [refreshControl beginRefreshing];
     
 }
 
@@ -81,6 +83,13 @@
     [super viewDidUnload];
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 #pragma mark - Image Picker for the profile photo
 
@@ -142,13 +151,12 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [self dismissModalViewControllerAnimated:YES];
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        [picker dismissModalViewControllerAnimated:YES];
+        [picker dismissModalViewControllerAnimated:NO];
     } else {
         if (picker.sourceType == UIImagePickerControllerSourceTypeCamera ) {
-            [picker dismissModalViewControllerAnimated:YES];
+            [picker dismissModalViewControllerAnimated:NO];
         }
         else {
             [self.popover dismissPopoverAnimated:NO];
@@ -250,13 +258,6 @@
     
 }
 
-- (void) scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    scrollView.scrollEnabled = NO;
-}
 
-- (void) scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    scrollView.scrollEnabled = YES;
-}
 
 @end

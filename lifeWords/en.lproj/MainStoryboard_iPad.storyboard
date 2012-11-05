@@ -495,16 +495,38 @@
                     <connections>
                         <outlet property="corePhoto" destination="mhw-Eb-pRs" id="RK8-Fs-EzO"/>
                         <outlet property="scrollView" destination="gST-Ev-lwo" id="Uhn-Bo-lgw"/>
+                        <segue destination="16p-Cz-58Y" kind="push" identifier="toTimeLine" id="5nv-Ej-FUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjG-fU-pv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3723" y="-2846"/>
+            <point key="canvasLocation" x="3783" y="-2852"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--View Controller-->
+        <scene sceneID="stb-IS-mYA">
+            <objects>
+                <viewController id="16p-Cz-58Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kI6-7Y-44T">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Lpq-f6-Tgj">
+                                <rect key="frame" x="0.0" y="215" width="768" height="497"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7gK-PR-WIY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bS5-Hl-cdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4783" y="-2852"/>
+        </scene>
+        <!--Life Words Navigation Controller Orientation-->
         <scene sceneID="lbs-wJ-5ZI">
             <objects>
-                <navigationController id="Jph-mQ-YO5" sceneMemberID="viewController">
+                <navigationController id="Jph-mQ-YO5" customClass="lifeWordsNavigationControllerOrientation" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RuK-LY-KoY">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -554,6 +576,9 @@
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="toolBar" candidateClass="UIView"/>
             </relationships>
+        </class>
+        <class className="lifeWordsNavigationControllerOrientation" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/lifeWordsNavigationControllerOrientation.h"/>
         </class>
         <class className="lifeWordsPhotoFilteringViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/lifeWordsPhotoFilteringViewController.h"/>

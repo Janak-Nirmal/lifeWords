@@ -12,6 +12,7 @@
 		4F8C0D131643BD7600B9CE0A /* lifeWordsSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */; };
 		4F8C0D141643BD9D00B9CE0A /* lifeWordsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28DD16291732003263C8 /* lifeWordsMainViewController.m */; };
 		4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28E81636484D003263C8 /* lifeWordsPhotoFilteringViewController.m */; };
+		4F94FF881646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */; };
 		4FCA285D161939FD003263C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285C161939FD003263C8 /* UIKit.framework */; };
 		4FCA285F161939FD003263C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285E161939FD003263C8 /* Foundation.framework */; };
 		4FCA2861161939FD003263C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA2860161939FD003263C8 /* CoreGraphics.framework */; };
@@ -233,6 +234,8 @@
 		4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsLoginViewController.m; sourceTree = "<group>"; };
 		4F8C0D111643BD7600B9CE0A /* lifeWordsSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsSignUpViewController.h; sourceTree = "<group>"; };
 		4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsSignUpViewController.m; sourceTree = "<group>"; };
+		4F94FF861646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsNavigationControllerOrientation.h; sourceTree = "<group>"; };
+		4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNavigationControllerOrientation.m; sourceTree = "<group>"; };
 		4FCA2858161939FD003263C8 /* lifeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCA285C161939FD003263C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FCA285E161939FD003263C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -583,6 +586,15 @@
 			path = ODRefreshControl;
 			sourceTree = "<group>";
 		};
+		4F9E5E1816475CA300A4C88B /* Navigation Controller Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				4F94FF861646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.h */,
+				4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */,
+			);
+			name = "Navigation Controller Subclass";
+			sourceTree = "<group>";
+		};
 		4FCA284D161939FD003263C8 = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +635,7 @@
 			isa = PBXGroup;
 			children = (
 				4FCA28C61625202D003263C8 /* Network */,
+				4F9E5E1816475CA300A4C88B /* Navigation Controller Subclass */,
 				4FCA286B161939FE003263C8 /* lifeWordsAppDelegate.h */,
 				4FCA286C161939FE003263C8 /* lifeWordsAppDelegate.m */,
 				4FCA2874161939FE003263C8 /* MainStoryboard_iPhone.storyboard */,
@@ -1420,6 +1433,7 @@
 				4F8C0D141643BD9D00B9CE0A /* lifeWordsMainViewController.m in Sources */,
 				4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */,
 				4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */,
+				4F94FF881646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
