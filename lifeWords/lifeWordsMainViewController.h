@@ -21,11 +21,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *makeCardButton;
 - (IBAction) showActionSheet:(id)sender;
 
+#pragma mark - Toolbars
+@property (strong, nonatomic) IBOutlet UIButton *friendsBtn;
+
 #pragma mark - Decoration
 @property (strong, nonatomic) IBOutlet UIImageView *profilePhoto;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
-@property (strong, nonatomic) IBOutlet UIView *toolBar;
-@property (strong, nonatomic) IBOutlet UIButton *cards;
 
 @property (strong, nonatomic) NSUserDefaults *coreDatabase;
 @property (strong, nonatomic) JUSSNetworkOperation *downloadOperation;

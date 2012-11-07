@@ -26,6 +26,7 @@
         // Custom initialization
     }
     return self;
+    
 }
 
 #pragma mark - UIViewController Life Cycle
@@ -38,14 +39,12 @@
     self.coreDatabase = [NSUserDefaults standardUserDefaults];
     
     // Customize toolbar
-    [self.toolBar.layer setBorderWidth:2.0f];
-    [self.toolBar.layer setBorderColor:[[UIColor blackColor] CGColor]];
-
+    [self.friendsBtn setImage:[UIImage imageNamed:@"icon-friends.png"] forState:UIControlStateNormal];
+    
     // Add UI refresh control
     refreshControl = [[ODRefreshControl alloc] initInScrollView:self.scrollView];
     [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     [refreshControl setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -77,9 +76,8 @@
     [self setProfilePhoto:nil];
     [self setCoreDatabase:nil];
     [self setNameLabel:nil];
-    [self setToolBar:nil];
-    [self setCards:nil];
     [self setMakeCardButton:nil];
+    [self setFriendsBtn:nil];
     [super viewDidUnload];
 }
 
@@ -250,7 +248,7 @@
     
     
     // Dislay the notifications
-    JSBadgeView *friendsBadge = [[JSBadgeView alloc] initWithParentView:self.cards
+    JSBadgeView *friendsBadge = [[JSBadgeView alloc] initWithParentView:self.friendsBtn
                                                               alignment:JSBadgeViewAlignmentTopRight];
     friendsBadge.badgeText = @"4";
     friendsBadge.badgePositionAdjustment = CGPointMake(-2.0f, 5.0f);

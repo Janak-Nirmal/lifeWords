@@ -44,6 +44,8 @@
     
     // and put the button in the nav bar
     self.navigationItem.leftBarButtonItem = barbutton;
+    
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {

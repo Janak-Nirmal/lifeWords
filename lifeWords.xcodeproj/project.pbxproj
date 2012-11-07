@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1ADAB516490B83009B096D /* icon-friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1ADAB316490B82009B096D /* icon-friends.png */; };
+		4F1ADAB616490B83009B096D /* icon-friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1ADAB416490B82009B096D /* icon-friends@2x.png */; };
+		4F1ADAC016491386009B096D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADABF16491386009B096D /* AVFoundation.framework */; };
+		4F1ADAC51649138F009B096D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADAC41649138F009B096D /* AudioToolbox.framework */; };
+		4F1ADACD1649181C009B096D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADACC1649181C009B096D /* CoreMedia.framework */; };
 		4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89C9CD1644480500CD2483 /* ODRefreshControl.m */; };
 		4F8C0D101643BD5500B9CE0A /* lifeWordsLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */; };
 		4F8C0D131643BD7600B9CE0A /* lifeWordsSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */; };
 		4F8C0D141643BD9D00B9CE0A /* lifeWordsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28DD16291732003263C8 /* lifeWordsMainViewController.m */; };
 		4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28E81636484D003263C8 /* lifeWordsPhotoFilteringViewController.m */; };
 		4F94FF881646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */; };
+		4FB30CC21649752200723611 /* lifeWordsTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */; };
+		4FB30CC61649775D00723611 /* WaveformImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB30CC51649775D00723611 /* WaveformImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4FCA285D161939FD003263C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285C161939FD003263C8 /* UIKit.framework */; };
 		4FCA285F161939FD003263C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285E161939FD003263C8 /* Foundation.framework */; };
 		4FCA2861161939FD003263C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA2860161939FD003263C8 /* CoreGraphics.framework */; };
@@ -220,6 +227,10 @@
 		4FCA2AAB16437B4B003263C8 /* Winter@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5D16437B4B003263C8 /* Winter@2x.jpg */; };
 		4FCA2AAC16437B4B003263C8 /* YellowNoir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5E16437B4B003263C8 /* YellowNoir.jpg */; };
 		4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */; };
+		4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC49761649FB360011C021 /* lifeWordsMusic.m */; };
+		4FCC497C1649FC660011C021 /* lifeWordsMusicSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC497B1649FC660011C021 /* lifeWordsMusicSelectionViewController.m */; };
+		4FCC498D164A01740011C021 /* Doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC498C164A01740011C021 /* Doll.mp3 */; };
+		4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD73E7D164984850036F4AC /* SPUserResizableView.m */; };
 		4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E61643904F00747805 /* CoreImage.framework */; };
 		4FDFD7EA1643905400747805 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E91643905400747805 /* QuartzCore.framework */; };
 		4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EB1643905F00747805 /* CFNetwork.framework */; };
@@ -228,6 +239,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F1ADAB316490B82009B096D /* icon-friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-friends.png"; sourceTree = "<group>"; };
+		4F1ADAB416490B82009B096D /* icon-friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-friends@2x.png"; sourceTree = "<group>"; };
+		4F1ADABF16491386009B096D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4F1ADAC41649138F009B096D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4F1ADACC1649181C009B096D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4F89C9CC1644480500CD2483 /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		4F89C9CD1644480500CD2483 /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
 		4F8C0D0E1643BD5500B9CE0A /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
@@ -236,6 +252,10 @@
 		4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsSignUpViewController.m; sourceTree = "<group>"; };
 		4F94FF861646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsNavigationControllerOrientation.h; sourceTree = "<group>"; };
 		4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNavigationControllerOrientation.m; sourceTree = "<group>"; };
+		4FB30CC01649752200723611 /* lifeWordsTimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsTimeLineViewController.h; path = lifeWords/lifeWordsTimeLineViewController.h; sourceTree = SOURCE_ROOT; };
+		4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsTimeLineViewController.m; path = lifeWords/lifeWordsTimeLineViewController.m; sourceTree = SOURCE_ROOT; };
+		4FB30CC41649775D00723611 /* WaveformImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaveformImageView.h; path = lifeWords/Classes/WaveformImageView/WaveformImageView.h; sourceTree = SOURCE_ROOT; };
+		4FB30CC51649775D00723611 /* WaveformImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaveformImageView.m; path = lifeWords/Classes/WaveformImageView/WaveformImageView.m; sourceTree = SOURCE_ROOT; };
 		4FCA2858161939FD003263C8 /* lifeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCA285C161939FD003263C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FCA285E161939FD003263C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -551,6 +571,13 @@
 		4FCA2A5D16437B4B003263C8 /* Winter@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Winter@2x.jpg"; sourceTree = "<group>"; };
 		4FCA2A5E16437B4B003263C8 /* YellowNoir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YellowNoir.jpg; sourceTree = "<group>"; };
 		4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "YellowNoir@2x.jpg"; sourceTree = "<group>"; };
+		4FCC49751649FB360011C021 /* lifeWordsMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusic.h; path = lifeWords/lifeWordsMusic.h; sourceTree = SOURCE_ROOT; };
+		4FCC49761649FB360011C021 /* lifeWordsMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusic.m; path = lifeWords/lifeWordsMusic.m; sourceTree = SOURCE_ROOT; };
+		4FCC497A1649FC660011C021 /* lifeWordsMusicSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusicSelectionViewController.h; path = lifeWords/lifeWordsMusicSelectionViewController.h; sourceTree = SOURCE_ROOT; };
+		4FCC497B1649FC660011C021 /* lifeWordsMusicSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusicSelectionViewController.m; path = lifeWords/lifeWordsMusicSelectionViewController.m; sourceTree = SOURCE_ROOT; };
+		4FCC498C164A01740011C021 /* Doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Doll.mp3; path = lifeWords/Music/Doll.mp3; sourceTree = SOURCE_ROOT; };
+		4FD73E7C164984850036F4AC /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPUserResizableView.h; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.h; sourceTree = SOURCE_ROOT; };
+		4FD73E7D164984850036F4AC /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPUserResizableView.m; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.m; sourceTree = SOURCE_ROOT; };
 		4FDFD7E61643904F00747805 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4FDFD7E91643905400747805 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4FDFD7EB1643905F00747805 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -563,6 +590,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1ADACD1649181C009B096D /* CoreMedia.framework in Frameworks */,
+				4F1ADAC51649138F009B096D /* AudioToolbox.framework in Frameworks */,
+				4F1ADAC016491386009B096D /* AVFoundation.framework in Frameworks */,
 				4FDFD7F01643908000747805 /* SystemConfiguration.framework in Frameworks */,
 				4FDFD7EE1643907B00747805 /* Security.framework in Frameworks */,
 				4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */,
@@ -577,6 +607,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F1ADAA516490161009B096D /* SPUserResizableView */ = {
+			isa = PBXGroup;
+			children = (
+				4FD73E7C164984850036F4AC /* SPUserResizableView.h */,
+				4FD73E7D164984850036F4AC /* SPUserResizableView.m */,
+			);
+			name = SPUserResizableView;
+			path = AlertView/SPUserResizableView;
+			sourceTree = "<group>";
+		};
+		4F1ADAAD16490323009B096D /* Time Line View */ = {
+			isa = PBXGroup;
+			children = (
+				4FB30CC01649752200723611 /* lifeWordsTimeLineViewController.h */,
+				4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */,
+				4FCC498C164A01740011C021 /* Doll.mp3 */,
+				4FCC497E1649FC840011C021 /* Music Selection */,
+				4FCC49791649FC330011C021 /* Model for Music */,
+			);
+			name = "Time Line View";
+			path = Classes/AlertView/SPUserResizableView;
+			sourceTree = "<group>";
+		};
+		4F1ADAB216490B82009B096D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				4F1ADAB316490B82009B096D /* icon-friends.png */,
+				4F1ADAB416490B82009B096D /* icon-friends@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		4F89C9CB1644480500CD2483 /* ODRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +681,9 @@
 		4FCA285B161939FD003263C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F1ADACC1649181C009B096D /* CoreMedia.framework */,
+				4F1ADAC41649138F009B096D /* AudioToolbox.framework */,
+				4F1ADABF16491386009B096D /* AVFoundation.framework */,
 				4FDFD7EF1643908000747805 /* SystemConfiguration.framework */,
 				4FDFD7ED1643907B00747805 /* Security.framework */,
 				4FDFD7EB1643905F00747805 /* CFNetwork.framework */,
@@ -644,6 +709,7 @@
 				4FCA28CF162520E4003263C8 /* Sign Up View */,
 				4FCA28DE1629173D003263C8 /* Main View */,
 				4FCA28E916364853003263C8 /* Photo Filtering View */,
+				4F1ADAAD16490323009B096D /* Time Line View */,
 				4FCA2885161BDE73003263C8 /* Graphics */,
 				4FCA28B016227A0F003263C8 /* Custom Objects */,
 				4FCA288C161BE09E003263C8 /* Custom Framework */,
@@ -678,6 +744,7 @@
 		4FCA2885161BDE73003263C8 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				4F1ADAB216490B82009B096D /* Icons */,
 				4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */,
 				4FCA2A1116437B4B003263C8 /* FilteredThumbnails */,
 				4FCA2886161BDE73003263C8 /* Login */,
@@ -768,10 +835,12 @@
 		4FCA28B016227A0F003263C8 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4FCC497D1649FC6E0011C021 /* WaveformImageView */,
 				4F89C9CB1644480500CD2483 /* ODRefreshControl */,
 				4FCA28FF16437953003263C8 /* curledView */,
 				4FCA290616437953003263C8 /* JSBadgeView */,
 				4FCA28F41636496E003263C8 /* UIGlossyButton */,
+				4F1ADAA516490161009B096D /* SPUserResizableView */,
 				4FCA28B116227A0F003263C8 /* AlertView */,
 			);
 			name = "Custom Objects";
@@ -1162,6 +1231,34 @@
 			path = FilteredThumbnails;
 			sourceTree = "<group>";
 		};
+		4FCC49791649FC330011C021 /* Model for Music */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC49751649FB360011C021 /* lifeWordsMusic.h */,
+				4FCC49761649FB360011C021 /* lifeWordsMusic.m */,
+			);
+			name = "Model for Music";
+			sourceTree = "<group>";
+		};
+		4FCC497D1649FC6E0011C021 /* WaveformImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4FB30CC41649775D00723611 /* WaveformImageView.h */,
+				4FB30CC51649775D00723611 /* WaveformImageView.m */,
+			);
+			name = WaveformImageView;
+			path = AlertView/SPUserResizableView;
+			sourceTree = "<group>";
+		};
+		4FCC497E1649FC840011C021 /* Music Selection */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC497A1649FC660011C021 /* lifeWordsMusicSelectionViewController.h */,
+				4FCC497B1649FC660011C021 /* lifeWordsMusicSelectionViewController.m */,
+			);
+			name = "Music Selection";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1318,6 +1415,9 @@
 				4FCA2AAB16437B4B003263C8 /* Winter@2x.jpg in Resources */,
 				4FCA2AAC16437B4B003263C8 /* YellowNoir.jpg in Resources */,
 				4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */,
+				4F1ADAB516490B83009B096D /* icon-friends.png in Resources */,
+				4F1ADAB616490B83009B096D /* icon-friends@2x.png in Resources */,
+				4FCC498D164A01740011C021 /* Doll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1434,6 +1534,11 @@
 				4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */,
 				4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */,
 				4F94FF881646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m in Sources */,
+				4FB30CC21649752200723611 /* lifeWordsTimeLineViewController.m in Sources */,
+				4FB30CC61649775D00723611 /* WaveformImageView.m in Sources */,
+				4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */,
+				4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */,
+				4FCC497C1649FC660011C021 /* lifeWordsMusicSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
