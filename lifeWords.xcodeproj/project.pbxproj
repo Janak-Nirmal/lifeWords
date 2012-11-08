@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F131C46164BD448003DF77A /* myLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F131C45164BD448003DF77A /* myLine.png */; };
+		4F131C4D164BE1AC003DF77A /* category-classical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F131C48164BE1AC003DF77A /* category-classical.jpg */; };
+		4F131C4E164BE1AC003DF77A /* category-easeful.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F131C49164BE1AC003DF77A /* category-easeful.jpg */; };
+		4F131C4F164BE1AC003DF77A /* category-joyful.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F131C4A164BE1AC003DF77A /* category-joyful.jpg */; };
+		4F131C50164BE1AC003DF77A /* category-memories.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F131C4B164BE1AC003DF77A /* category-memories.jpg */; };
+		4F131C51164BE1AC003DF77A /* category-romantic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F131C4C164BE1AC003DF77A /* category-romantic.jpg */; };
+		4F18F06C164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F06B164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m */; };
+		4F18F071164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F18F070164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m */; };
+		4F18F07D164ACDCA00F6FAB0 /* popover-arrow-bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F073164ACDCA00F6FAB0 /* popover-arrow-bottom.png */; };
+		4F18F07E164ACDCA00F6FAB0 /* popover-arrow-bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F074164ACDCA00F6FAB0 /* popover-arrow-bottom@2x.png */; };
+		4F18F07F164ACDCA00F6FAB0 /* popover-arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F075164ACDCA00F6FAB0 /* popover-arrow-left.png */; };
+		4F18F080164ACDCA00F6FAB0 /* popover-arrow-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F076164ACDCA00F6FAB0 /* popover-arrow-left@2x.png */; };
+		4F18F081164ACDCA00F6FAB0 /* popover-arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F077164ACDCA00F6FAB0 /* popover-arrow-right.png */; };
+		4F18F082164ACDCA00F6FAB0 /* popover-arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F078164ACDCA00F6FAB0 /* popover-arrow-right@2x.png */; };
+		4F18F083164ACDCA00F6FAB0 /* popover-arrow-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F079164ACDCA00F6FAB0 /* popover-arrow-top.png */; };
+		4F18F084164ACDCA00F6FAB0 /* popover-arrow-top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F07A164ACDCA00F6FAB0 /* popover-arrow-top@2x.png */; };
+		4F18F085164ACDCA00F6FAB0 /* popover-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F07B164ACDCA00F6FAB0 /* popover-background.png */; };
+		4F18F086164ACDCA00F6FAB0 /* popover-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18F07C164ACDCA00F6FAB0 /* popover-background@2x.png */; };
 		4F1ADAB516490B83009B096D /* icon-friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1ADAB316490B82009B096D /* icon-friends.png */; };
 		4F1ADAB616490B83009B096D /* icon-friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1ADAB416490B82009B096D /* icon-friends@2x.png */; };
 		4F1ADAC016491386009B096D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADABF16491386009B096D /* AVFoundation.framework */; };
@@ -228,7 +246,6 @@
 		4FCA2AAC16437B4B003263C8 /* YellowNoir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5E16437B4B003263C8 /* YellowNoir.jpg */; };
 		4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */; };
 		4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC49761649FB360011C021 /* lifeWordsMusic.m */; };
-		4FCC497C1649FC660011C021 /* lifeWordsMusicSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC497B1649FC660011C021 /* lifeWordsMusicSelectionViewController.m */; };
 		4FCC498D164A01740011C021 /* Doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC498C164A01740011C021 /* Doll.mp3 */; };
 		4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD73E7D164984850036F4AC /* SPUserResizableView.m */; };
 		4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E61643904F00747805 /* CoreImage.framework */; };
@@ -236,9 +253,30 @@
 		4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EB1643905F00747805 /* CFNetwork.framework */; };
 		4FDFD7EE1643907B00747805 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7ED1643907B00747805 /* Security.framework */; };
 		4FDFD7F01643908000747805 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EF1643908000747805 /* SystemConfiguration.framework */; };
+		4FF4805A164A999300775D3A /* lifeWordsMusicSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F131C45164BD448003DF77A /* myLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLine.png; sourceTree = "<group>"; };
+		4F131C48164BE1AC003DF77A /* category-classical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "category-classical.jpg"; sourceTree = "<group>"; };
+		4F131C49164BE1AC003DF77A /* category-easeful.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "category-easeful.jpg"; sourceTree = "<group>"; };
+		4F131C4A164BE1AC003DF77A /* category-joyful.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "category-joyful.jpg"; sourceTree = "<group>"; };
+		4F131C4B164BE1AC003DF77A /* category-memories.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "category-memories.jpg"; sourceTree = "<group>"; };
+		4F131C4C164BE1AC003DF77A /* category-romantic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "category-romantic.jpg"; sourceTree = "<group>"; };
+		4F18F06A164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusicDetailViewController.h; path = lifeWords/lifeWordsMusicDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		4F18F06B164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusicDetailViewController.m; path = lifeWords/lifeWordsMusicDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		4F18F06F164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCustomPopoverBackgroundView.h; sourceTree = "<group>"; };
+		4F18F070164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverBackgroundView.m; sourceTree = "<group>"; };
+		4F18F073164ACDCA00F6FAB0 /* popover-arrow-bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-bottom.png"; sourceTree = "<group>"; };
+		4F18F074164ACDCA00F6FAB0 /* popover-arrow-bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-bottom@2x.png"; sourceTree = "<group>"; };
+		4F18F075164ACDCA00F6FAB0 /* popover-arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-left.png"; sourceTree = "<group>"; };
+		4F18F076164ACDCA00F6FAB0 /* popover-arrow-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-left@2x.png"; sourceTree = "<group>"; };
+		4F18F077164ACDCA00F6FAB0 /* popover-arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-right.png"; sourceTree = "<group>"; };
+		4F18F078164ACDCA00F6FAB0 /* popover-arrow-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-right@2x.png"; sourceTree = "<group>"; };
+		4F18F079164ACDCA00F6FAB0 /* popover-arrow-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-top.png"; sourceTree = "<group>"; };
+		4F18F07A164ACDCA00F6FAB0 /* popover-arrow-top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-arrow-top@2x.png"; sourceTree = "<group>"; };
+		4F18F07B164ACDCA00F6FAB0 /* popover-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-background.png"; sourceTree = "<group>"; };
+		4F18F07C164ACDCA00F6FAB0 /* popover-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-background@2x.png"; sourceTree = "<group>"; };
 		4F1ADAB316490B82009B096D /* icon-friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-friends.png"; sourceTree = "<group>"; };
 		4F1ADAB416490B82009B096D /* icon-friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-friends@2x.png"; sourceTree = "<group>"; };
 		4F1ADABF16491386009B096D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -573,8 +611,6 @@
 		4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "YellowNoir@2x.jpg"; sourceTree = "<group>"; };
 		4FCC49751649FB360011C021 /* lifeWordsMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusic.h; path = lifeWords/lifeWordsMusic.h; sourceTree = SOURCE_ROOT; };
 		4FCC49761649FB360011C021 /* lifeWordsMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusic.m; path = lifeWords/lifeWordsMusic.m; sourceTree = SOURCE_ROOT; };
-		4FCC497A1649FC660011C021 /* lifeWordsMusicSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusicSelectionViewController.h; path = lifeWords/lifeWordsMusicSelectionViewController.h; sourceTree = SOURCE_ROOT; };
-		4FCC497B1649FC660011C021 /* lifeWordsMusicSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusicSelectionViewController.m; path = lifeWords/lifeWordsMusicSelectionViewController.m; sourceTree = SOURCE_ROOT; };
 		4FCC498C164A01740011C021 /* Doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Doll.mp3; path = lifeWords/Music/Doll.mp3; sourceTree = SOURCE_ROOT; };
 		4FD73E7C164984850036F4AC /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPUserResizableView.h; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.h; sourceTree = SOURCE_ROOT; };
 		4FD73E7D164984850036F4AC /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPUserResizableView.m; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.m; sourceTree = SOURCE_ROOT; };
@@ -583,6 +619,8 @@
 		4FDFD7EB1643905F00747805 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4FDFD7ED1643907B00747805 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4FDFD7EF1643908000747805 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4FF48058164A999300775D3A /* lifeWordsMusicSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusicSelectViewController.h; path = lifeWords/lifeWordsMusicSelectViewController.h; sourceTree = SOURCE_ROOT; };
+		4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusicSelectViewController.m; path = lifeWords/lifeWordsMusicSelectViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -607,6 +645,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F131C47164BE1AC003DF77A /* Music Selection */ = {
+			isa = PBXGroup;
+			children = (
+				4F131C48164BE1AC003DF77A /* category-classical.jpg */,
+				4F131C49164BE1AC003DF77A /* category-easeful.jpg */,
+				4F131C4A164BE1AC003DF77A /* category-joyful.jpg */,
+				4F131C4B164BE1AC003DF77A /* category-memories.jpg */,
+				4F131C4C164BE1AC003DF77A /* category-romantic.jpg */,
+			);
+			path = "Music Selection";
+			sourceTree = "<group>";
+		};
+		4F18F06E164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				4F18F06F164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.h */,
+				4F18F070164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m */,
+			);
+			path = KSCustomPopoverBackgroundView;
+			sourceTree = "<group>";
+		};
+		4F18F072164ACDCA00F6FAB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F18F073164ACDCA00F6FAB0 /* popover-arrow-bottom.png */,
+				4F18F074164ACDCA00F6FAB0 /* popover-arrow-bottom@2x.png */,
+				4F18F075164ACDCA00F6FAB0 /* popover-arrow-left.png */,
+				4F18F076164ACDCA00F6FAB0 /* popover-arrow-left@2x.png */,
+				4F18F077164ACDCA00F6FAB0 /* popover-arrow-right.png */,
+				4F18F078164ACDCA00F6FAB0 /* popover-arrow-right@2x.png */,
+				4F18F079164ACDCA00F6FAB0 /* popover-arrow-top.png */,
+				4F18F07A164ACDCA00F6FAB0 /* popover-arrow-top@2x.png */,
+				4F18F07B164ACDCA00F6FAB0 /* popover-background.png */,
+				4F18F07C164ACDCA00F6FAB0 /* popover-background@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4F1ADAA516490161009B096D /* SPUserResizableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -744,6 +820,8 @@
 		4FCA2885161BDE73003263C8 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				4F131C47164BE1AC003DF77A /* Music Selection */,
+				4F18F072164ACDCA00F6FAB0 /* Resources */,
 				4F1ADAB216490B82009B096D /* Icons */,
 				4FCA288A161BDEAF003263C8 /* logo_lifeWords.png */,
 				4FCA2A1116437B4B003263C8 /* FilteredThumbnails */,
@@ -835,6 +913,7 @@
 		4FCA28B016227A0F003263C8 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4F18F06E164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView */,
 				4FCC497D1649FC6E0011C021 /* WaveformImageView */,
 				4F89C9CB1644480500CD2483 /* ODRefreshControl */,
 				4FCA28FF16437953003263C8 /* curledView */,
@@ -880,6 +959,7 @@
 		4FCA28D01627C470003263C8 /* Extra Stuffs */ = {
 			isa = PBXGroup;
 			children = (
+				4F131C45164BD448003DF77A /* myLine.png */,
 				4FCA28D11627C470003263C8 /* 37x-Checkmark.png */,
 				4FCA28D21627C470003263C8 /* 37x-Checkmark@2x.png */,
 				4FCA28D31627C470003263C8 /* line.png */,
@@ -1253,8 +1333,10 @@
 		4FCC497E1649FC840011C021 /* Music Selection */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC497A1649FC660011C021 /* lifeWordsMusicSelectionViewController.h */,
-				4FCC497B1649FC660011C021 /* lifeWordsMusicSelectionViewController.m */,
+				4FF48058164A999300775D3A /* lifeWordsMusicSelectViewController.h */,
+				4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */,
+				4F18F06A164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.h */,
+				4F18F06B164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m */,
 			);
 			name = "Music Selection";
 			sourceTree = "<group>";
@@ -1418,6 +1500,22 @@
 				4F1ADAB516490B83009B096D /* icon-friends.png in Resources */,
 				4F1ADAB616490B83009B096D /* icon-friends@2x.png in Resources */,
 				4FCC498D164A01740011C021 /* Doll.mp3 in Resources */,
+				4F18F07D164ACDCA00F6FAB0 /* popover-arrow-bottom.png in Resources */,
+				4F18F07E164ACDCA00F6FAB0 /* popover-arrow-bottom@2x.png in Resources */,
+				4F18F07F164ACDCA00F6FAB0 /* popover-arrow-left.png in Resources */,
+				4F18F080164ACDCA00F6FAB0 /* popover-arrow-left@2x.png in Resources */,
+				4F18F081164ACDCA00F6FAB0 /* popover-arrow-right.png in Resources */,
+				4F18F082164ACDCA00F6FAB0 /* popover-arrow-right@2x.png in Resources */,
+				4F18F083164ACDCA00F6FAB0 /* popover-arrow-top.png in Resources */,
+				4F18F084164ACDCA00F6FAB0 /* popover-arrow-top@2x.png in Resources */,
+				4F18F085164ACDCA00F6FAB0 /* popover-background.png in Resources */,
+				4F18F086164ACDCA00F6FAB0 /* popover-background@2x.png in Resources */,
+				4F131C46164BD448003DF77A /* myLine.png in Resources */,
+				4F131C4D164BE1AC003DF77A /* category-classical.jpg in Resources */,
+				4F131C4E164BE1AC003DF77A /* category-easeful.jpg in Resources */,
+				4F131C4F164BE1AC003DF77A /* category-joyful.jpg in Resources */,
+				4F131C50164BE1AC003DF77A /* category-memories.jpg in Resources */,
+				4F131C51164BE1AC003DF77A /* category-romantic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1538,7 +1636,9 @@
 				4FB30CC61649775D00723611 /* WaveformImageView.m in Sources */,
 				4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */,
 				4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */,
-				4FCC497C1649FC660011C021 /* lifeWordsMusicSelectionViewController.m in Sources */,
+				4FF4805A164A999300775D3A /* lifeWordsMusicSelectViewController.m in Sources */,
+				4F18F06C164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m in Sources */,
+				4F18F071164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

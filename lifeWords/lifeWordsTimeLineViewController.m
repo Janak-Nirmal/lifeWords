@@ -7,8 +7,10 @@
 //
 
 #import "lifeWordsTimeLineViewController.h"
+#import "lifeWordsMusicSelectViewController.h"
 #import "WaveformImageView.h"
 #import "MBProgressHUD.h"
+#import "KSCustomPopoverBackgroundView.h"
 
 @interface lifeWordsTimeLineViewController ()
 
@@ -30,14 +32,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Doll" withExtension:@"mp3"];
-    NSLog(@"%@", url.absoluteString);
-    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
-    WaveformImageView *imageView = [[WaveformImageView alloc] initWithUrl:url];
-    self.test.image = imageView.image;
+    
+    
+    //NSURL *url = [[NSBundle mainBundle] URLForResource:@"Doll" withExtension:@"mp3"];
+    //NSLog(@"%@", url.absoluteString);
+    //AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
+    //WaveformImageView *imageView = [[WaveformImageView alloc] initWithUrl:url];
+    //self.test.image = imageView.image;
 	// Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationFromMusicSelect:) name:@"Music Selected" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationFromEffectSelect:) name:@"Effect Selected" object:nil];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    [[NSNotificationCenter defaultCenter] removeObject:self];
+}
+     
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,6 +68,42 @@
     [self setMusicBtn:nil];
     [self setMusicComponent:nil];
     [self setTest:nil];
+    [self setPopover:nil];
     [super viewDidUnload];
 }
+
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (IBAction)musicBtnClicked:(id)sender {
+    lifeWordsMusicSelectViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"musicSelectView"];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    self.popover.popoverBackgroundViewClass = [KSCustomPopoverBackgroundView class];
+    [self.popover presentPopoverFromRect:self.musicBtn.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    self.popover.delegate = self;
+}
+     
+- (void) handleNotificationFromMusicSelect: (NSNotification *)pNotification {
+    [self.popover dismissPopoverAnimated:YES];
+}
+
+- (void) handleNotificationFromEffectSelect: (NSNotification *)pNotification {
+    [self.popover dismissPopoverAnimated:YES];
+}
+
+#pragma mark - UIPopoverControllerDelegate
+- (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController
+{
+    return YES;
+}
+
 @end
