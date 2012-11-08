@@ -246,7 +246,6 @@
 		4FCA2AAC16437B4B003263C8 /* YellowNoir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5E16437B4B003263C8 /* YellowNoir.jpg */; };
 		4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */; };
 		4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC49761649FB360011C021 /* lifeWordsMusic.m */; };
-		4FCC498D164A01740011C021 /* Doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC498C164A01740011C021 /* Doll.mp3 */; };
 		4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD73E7D164984850036F4AC /* SPUserResizableView.m */; };
 		4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E61643904F00747805 /* CoreImage.framework */; };
 		4FDFD7EA1643905400747805 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E91643905400747805 /* QuartzCore.framework */; };
@@ -611,7 +610,6 @@
 		4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "YellowNoir@2x.jpg"; sourceTree = "<group>"; };
 		4FCC49751649FB360011C021 /* lifeWordsMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusic.h; path = lifeWords/lifeWordsMusic.h; sourceTree = SOURCE_ROOT; };
 		4FCC49761649FB360011C021 /* lifeWordsMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusic.m; path = lifeWords/lifeWordsMusic.m; sourceTree = SOURCE_ROOT; };
-		4FCC498C164A01740011C021 /* Doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Doll.mp3; path = lifeWords/Music/Doll.mp3; sourceTree = SOURCE_ROOT; };
 		4FD73E7C164984850036F4AC /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPUserResizableView.h; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.h; sourceTree = SOURCE_ROOT; };
 		4FD73E7D164984850036F4AC /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPUserResizableView.m; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.m; sourceTree = SOURCE_ROOT; };
 		4FDFD7E61643904F00747805 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -698,7 +696,6 @@
 			children = (
 				4FB30CC01649752200723611 /* lifeWordsTimeLineViewController.h */,
 				4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */,
-				4FCC498C164A01740011C021 /* Doll.mp3 */,
 				4FCC497E1649FC840011C021 /* Music Selection */,
 				4FCC49791649FC330011C021 /* Model for Music */,
 			);
@@ -1499,7 +1496,6 @@
 				4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */,
 				4F1ADAB516490B83009B096D /* icon-friends.png in Resources */,
 				4F1ADAB616490B83009B096D /* icon-friends@2x.png in Resources */,
-				4FCC498D164A01740011C021 /* Doll.mp3 in Resources */,
 				4F18F07D164ACDCA00F6FAB0 /* popover-arrow-bottom.png in Resources */,
 				4F18F07E164ACDCA00F6FAB0 /* popover-arrow-bottom@2x.png in Resources */,
 				4F18F07F164ACDCA00F6FAB0 /* popover-arrow-left.png in Resources */,
