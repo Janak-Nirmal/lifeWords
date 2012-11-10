@@ -47,6 +47,10 @@
 	// Do any additional setup after loading the view.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self.tableView reloadData];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -54,6 +58,7 @@
 }
 
 - (void) viewDidUnload {
+    [self setTableView:nil];
     [super viewDidUnload];
     [self setCategory:nil];
 }

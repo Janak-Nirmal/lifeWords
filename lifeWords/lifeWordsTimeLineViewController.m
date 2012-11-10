@@ -8,6 +8,7 @@
 
 #import "lifeWordsTimeLineViewController.h"
 #import "lifeWordsMusicSelectViewController.h"
+#import "lifeWordsSoundEffectsViewController.h"
 #import "WaveformImageView.h"
 #import "MBProgressHUD.h"
 #import "KSCustomPopoverBackgroundView.h"
@@ -33,6 +34,12 @@
 {
     [super viewDidLoad];
     
+    // Set current date for date textbox
+    NSDate *date = [NSDate date];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
+    [dateFormat setDateFormat:@"dd MMMM YYYY"];
+    NSString *dateString = [dateFormat stringFromDate:date];
+    [self.cardDate setText:dateString];
     
     //NSURL *url = [[NSBundle mainBundle] URLForResource:@"Doll" withExtension:@"mp3"];
     //NSLog(@"%@", url.absoluteString);
@@ -67,8 +74,11 @@
 - (void)viewDidUnload {
     [self setMusicBtn:nil];
     [self setMusicComponent:nil];
-    [self setTest:nil];
     [self setPopover:nil];
+    [self setEffectsBtn:nil];
+    [self setCardTitle:nil];
+    [self setCardDate:nil];
+    [self setCardLength:nil];
     [super viewDidUnload];
 }
 
@@ -84,11 +94,20 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
+#pragma mark - UIView Components
 - (IBAction)musicBtnClicked:(id)sender {
     lifeWordsMusicSelectViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"musicSelectView"];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
     self.popover.popoverBackgroundViewClass = [KSCustomPopoverBackgroundView class];
     [self.popover presentPopoverFromRect:self.musicBtn.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    self.popover.delegate = self;
+}
+
+- (IBAction)effectsBtnClicked:(id)sender {
+    lifeWordsSoundEffectsViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"soundEffectsView"];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    self.popover.popoverBackgroundViewClass = [KSCustomPopoverBackgroundView class];
+    [self.popover presentPopoverFromRect:self.effectsBtn.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     self.popover.delegate = self;
 }
      

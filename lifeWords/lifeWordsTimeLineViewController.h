@@ -12,13 +12,19 @@
 @interface lifeWordsTimeLineViewController : UIViewController <UIPopoverControllerDelegate>
 
 #pragma mark - Data Elements
+@property (strong, nonatomic) IBOutlet UITextField *cardTitle;
+@property (strong, nonatomic) IBOutlet UITextField *cardDate;
+@property (strong, nonatomic) IBOutlet UITextField *cardLength;
+
 @property (strong, nonatomic) IBOutlet UIButton *musicBtn;
+@property (strong, nonatomic) IBOutlet UIButton *effectsBtn;
 @property (nonatomic, strong) UIPopoverController *popover;
-@property (strong, nonatomic) IBOutlet UIImageView *test;
+
 
 
 #pragma mark - The Time Line
 @property (strong, nonatomic) IBOutlet SPUserResizableView *musicComponent;
 
 - (IBAction)musicBtnClicked:(id)sender;
+- (IBAction)effectsBtnClicked:(id)sender;
 @end

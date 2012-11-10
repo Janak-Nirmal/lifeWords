@@ -36,6 +36,67 @@
 		4F8C0D141643BD9D00B9CE0A /* lifeWordsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28DD16291732003263C8 /* lifeWordsMainViewController.m */; };
 		4F8C0D191643BF3300B9CE0A /* lifeWordsPhotoFilteringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA28E81636484D003263C8 /* lifeWordsPhotoFilteringViewController.m */; };
 		4F94FF881646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */; };
+		4FA3B045164CB11200B1302B /* lifeWordsSoundEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3B044164CB11200B1302B /* lifeWordsSoundEffectsViewController.m */; };
+		4FA3B08A164D348300B1302B /* Piano Sonata No.10-I.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B049164D348300B1302B /* Piano Sonata No.10-I.mp3 */; };
+		4FA3B08B164D348300B1302B /* Piano Sonata No.10-II.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B04A164D348300B1302B /* Piano Sonata No.10-II.mp3 */; };
+		4FA3B08C164D348300B1302B /* Piano Sonata No.10-III.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B04B164D348300B1302B /* Piano Sonata No.10-III.mp3 */; };
+		4FA3B08D164D348300B1302B /* Piano Sonata No.20-I.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B04C164D348300B1302B /* Piano Sonata No.20-I.mp3 */; };
+		4FA3B08E164D348300B1302B /* Piano Sonata No.20-II.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B04D164D348300B1302B /* Piano Sonata No.20-II.mp3 */; };
+		4FA3B08F164D348300B1302B /* Piano Sonata No.29-II.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B04E164D348300B1302B /* Piano Sonata No.29-II.mp3 */; };
+		4FA3B090164D348300B1302B /* Piano Sonata No.3-IV.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B04F164D348300B1302B /* Piano Sonata No.3-IV.mp3 */; };
+		4FA3B091164D348300B1302B /* Piano Sonata No.4-III.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B050164D348300B1302B /* Piano Sonata No.4-III.mp3 */; };
+		4FA3B092164D348300B1302B /* Piano Sonata No.7-III.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B051164D348300B1302B /* Piano Sonata No.7-III.mp3 */; };
+		4FA3B093164D348300B1302B /* Piano Sonata No.7-IV.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B052164D348300B1302B /* Piano Sonata No.7-IV.mp3 */; };
+		4FA3B094164D348300B1302B /* Piano Sonata No.8-II.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B053164D348300B1302B /* Piano Sonata No.8-II.mp3 */; };
+		4FA3B095164D348300B1302B /* Piano Sonata No.8-III.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B054164D348300B1302B /* Piano Sonata No.8-III.mp3 */; };
+		4FA3B096164D348300B1302B /* Final Fantasy - Wish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */; };
+		4FA3B097164D348300B1302B /* Ib - Departure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B057164D348300B1302B /* Ib - Departure.mp3 */; };
+		4FA3B098164D348300B1302B /* Ib - doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B058164D348300B1302B /* Ib - doll.mp3 */; };
+		4FA3B099164D348300B1302B /* Johann Pachelbel Canon in D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */; };
+		4FA3B09A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */; };
+		4FA3B09B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */; };
+		4FA3B09C164D348300B1302B /* Rhythm Thief - Raphael.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05C164D348300B1302B /* Rhythm Thief - Raphael.mp3 */; };
+		4FA3B09D164D348300B1302B /* Wolfgang Amadeus Mozart - Symphony.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05D164D348300B1302B /* Wolfgang Amadeus Mozart - Symphony.mp3 */; };
+		4FA3B09E164D348300B1302B /* Zelda's Lullaby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05E164D348300B1302B /* Zelda's Lullaby.mp3 */; };
+		4FA3B09F164D348300B1302B /* Zelda's Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05F164D348300B1302B /* Zelda's Theme.mp3 */; };
+		4FA3B0A0164D348300B1302B /* Benny Goodman & His Orchestra - Sing Sing Sing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B061164D348300B1302B /* Benny Goodman & His Orchestra - Sing Sing Sing.mp3 */; };
+		4FA3B0A1164D348300B1302B /* Depapepe - Fun Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B062164D348300B1302B /* Depapepe - Fun Time.mp3 */; };
+		4FA3B0A2164D348300B1302B /* Depapepe - Snow Dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B063164D348300B1302B /* Depapepe - Snow Dance.mp3 */; };
+		4FA3B0A3164D348300B1302B /* Depapepe - Start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B064164D348300B1302B /* Depapepe - Start.mp3 */; };
+		4FA3B0A4164D348300B1302B /* Depapepe - Summer Parade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B065164D348300B1302B /* Depapepe - Summer Parade.mp3 */; };
+		4FA3B0A5164D348300B1302B /* Ib - Hide And Seek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B066164D348300B1302B /* Ib - Hide And Seek.mp3 */; };
+		4FA3B0A6164D348300B1302B /* red-heart-icon copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B067164D348300B1302B /* red-heart-icon copy.jpg */; };
+		4FA3B0A7164D348300B1302B /* Rhythm Thief - Maria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B068164D348300B1302B /* Rhythm Thief - Maria.mp3 */; };
+		4FA3B0A8164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B069164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 */; };
+		4FA3B0A9164D348300B1302B /* Depapepe - One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B06B164D348300B1302B /* Depapepe - One.mp3 */; };
+		4FA3B0AA164D348300B1302B /* Final Fantasy VI - Terra Tina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B06C164D348300B1302B /* Final Fantasy VI - Terra Tina.mp3 */; };
+		4FA3B0AB164D348300B1302B /* Ib - Blind Alley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B06D164D348300B1302B /* Ib - Blind Alley.mp3 */; };
+		4FA3B0AC164D348300B1302B /* Ib - Prelude.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B06E164D348300B1302B /* Ib - Prelude.mp3 */; };
+		4FA3B0AD164D348300B1302B /* Ib - Puppet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B06F164D348300B1302B /* Ib - Puppet.mp3 */; };
+		4FA3B0AE164D348300B1302B /* Legend of Zelda - Kakariko Village.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B070164D348300B1302B /* Legend of Zelda - Kakariko Village.mp3 */; };
+		4FA3B0AF164D348300B1302B /* Yiruma - Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B071164D348300B1302B /* Yiruma - Hope.mp3 */; };
+		4FA3B0B0164D348300B1302B /* Yiruma - If I Could See You Again.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B072164D348300B1302B /* Yiruma - If I Could See You Again.mp3 */; };
+		4FA3B0B1164D348300B1302B /* Yiruma - Maybe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B073164D348300B1302B /* Yiruma - Maybe.mp3 */; };
+		4FA3B0B2164D348300B1302B /* Final Fantasy - Tifa's Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B075164D348300B1302B /* Final Fantasy - Tifa's Theme.mp3 */; };
+		4FA3B0B3164D348300B1302B /* The Piano Melody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B076164D348300B1302B /* The Piano Melody.mp3 */; };
+		4FA3B0B4164D348300B1302B /* Yiruma - A River Flows In You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B077164D348300B1302B /* Yiruma - A River Flows In You.mp3 */; };
+		4FA3B0B5164D348300B1302B /* Yiruma - Beloved.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B078164D348300B1302B /* Yiruma - Beloved.mp3 */; };
+		4FA3B0B6164D348300B1302B /* Yiruma - Chaconne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B079164D348300B1302B /* Yiruma - Chaconne.mp3 */; };
+		4FA3B0B7164D348300B1302B /* Yiruma - Destiny Of Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B07A164D348300B1302B /* Yiruma - Destiny Of Love.mp3 */; };
+		4FA3B0B8164D348300B1302B /* Yiruma - Kiss The Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B07B164D348300B1302B /* Yiruma - Kiss The Rain.mp3 */; };
+		4FA3B0B9164D348300B1302B /* Yiruma - Love Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B07C164D348300B1302B /* Yiruma - Love Me.mp3 */; };
+		4FA3B0BA164D348300B1302B /* Yiruma - Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B07D164D348300B1302B /* Yiruma - Moonlight.mp3 */; };
+		4FA3B0BB164D348300B1302B /* Yiruma - Tears On Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B07E164D348300B1302B /* Yiruma - Tears On Love.mp3 */; };
+		4FA3B0BC164D348300B1302B /* Yiruma - Time Forgets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B07F164D348300B1302B /* Yiruma - Time Forgets.mp3 */; };
+		4FA3B0BD164D348300B1302B /* Birds Sounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B081164D348300B1302B /* Birds Sounds.mp3 */; };
+		4FA3B0BE164D348300B1302B /* Crowds Noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B082164D348300B1302B /* Crowds Noise.mp3 */; };
+		4FA3B0BF164D348300B1302B /* Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B083164D348300B1302B /* Forest.mp3 */; };
+		4FA3B0C0164D348300B1302B /* Heavy Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B084164D348300B1302B /* Heavy Rain.mp3 */; };
+		4FA3B0C1164D348300B1302B /* Lighting Strike and Thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B085164D348300B1302B /* Lighting Strike and Thunder.mp3 */; };
+		4FA3B0C2164D348300B1302B /* Rain in a window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B086164D348300B1302B /* Rain in a window.mp3 */; };
+		4FA3B0C3164D348300B1302B /* Rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B087164D348300B1302B /* Rain.wav */; };
+		4FA3B0C4164D348300B1302B /* Tropical Rainforest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B088164D348300B1302B /* Tropical Rainforest.mp3 */; };
+		4FA3B0C5164D348300B1302B /* Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B089164D348300B1302B /* Waterfall.mp3 */; };
 		4FB30CC21649752200723611 /* lifeWordsTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */; };
 		4FB30CC61649775D00723611 /* WaveformImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB30CC51649775D00723611 /* WaveformImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4FCA285D161939FD003263C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA285C161939FD003263C8 /* UIKit.framework */; };
@@ -247,6 +308,7 @@
 		4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */; };
 		4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC49761649FB360011C021 /* lifeWordsMusic.m */; };
 		4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD73E7D164984850036F4AC /* SPUserResizableView.m */; };
+		4FDA988C164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA988B164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.m */; };
 		4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E61643904F00747805 /* CoreImage.framework */; };
 		4FDFD7EA1643905400747805 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E91643905400747805 /* QuartzCore.framework */; };
 		4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EB1643905F00747805 /* CFNetwork.framework */; };
@@ -289,6 +351,68 @@
 		4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsSignUpViewController.m; sourceTree = "<group>"; };
 		4F94FF861646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsNavigationControllerOrientation.h; sourceTree = "<group>"; };
 		4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lifeWordsNavigationControllerOrientation.m; sourceTree = "<group>"; };
+		4FA3B043164CB11200B1302B /* lifeWordsSoundEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsSoundEffectsViewController.h; path = lifeWords/lifeWordsSoundEffectsViewController.h; sourceTree = SOURCE_ROOT; };
+		4FA3B044164CB11200B1302B /* lifeWordsSoundEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsSoundEffectsViewController.m; path = lifeWords/lifeWordsSoundEffectsViewController.m; sourceTree = SOURCE_ROOT; };
+		4FA3B049164D348300B1302B /* Piano Sonata No.10-I.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.10-I.mp3"; sourceTree = "<group>"; };
+		4FA3B04A164D348300B1302B /* Piano Sonata No.10-II.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.10-II.mp3"; sourceTree = "<group>"; };
+		4FA3B04B164D348300B1302B /* Piano Sonata No.10-III.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.10-III.mp3"; sourceTree = "<group>"; };
+		4FA3B04C164D348300B1302B /* Piano Sonata No.20-I.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.20-I.mp3"; sourceTree = "<group>"; };
+		4FA3B04D164D348300B1302B /* Piano Sonata No.20-II.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.20-II.mp3"; sourceTree = "<group>"; };
+		4FA3B04E164D348300B1302B /* Piano Sonata No.29-II.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.29-II.mp3"; sourceTree = "<group>"; };
+		4FA3B04F164D348300B1302B /* Piano Sonata No.3-IV.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.3-IV.mp3"; sourceTree = "<group>"; };
+		4FA3B050164D348300B1302B /* Piano Sonata No.4-III.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.4-III.mp3"; sourceTree = "<group>"; };
+		4FA3B051164D348300B1302B /* Piano Sonata No.7-III.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.7-III.mp3"; sourceTree = "<group>"; };
+		4FA3B052164D348300B1302B /* Piano Sonata No.7-IV.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.7-IV.mp3"; sourceTree = "<group>"; };
+		4FA3B053164D348300B1302B /* Piano Sonata No.8-II.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.8-II.mp3"; sourceTree = "<group>"; };
+		4FA3B054164D348300B1302B /* Piano Sonata No.8-III.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.8-III.mp3"; sourceTree = "<group>"; };
+		4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Fantasy - Wish.mp3"; sourceTree = "<group>"; };
+		4FA3B057164D348300B1302B /* Ib - Departure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Departure.mp3"; sourceTree = "<group>"; };
+		4FA3B058164D348300B1302B /* Ib - doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - doll.mp3"; sourceTree = "<group>"; };
+		4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Johann Pachelbel Canon in D.mp3"; sourceTree = "<group>"; };
+		4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - An Ayria.mp3"; sourceTree = "<group>"; };
+		4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Moon Princess.mp3"; sourceTree = "<group>"; };
+		4FA3B05C164D348300B1302B /* Rhythm Thief - Raphael.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Raphael.mp3"; sourceTree = "<group>"; };
+		4FA3B05D164D348300B1302B /* Wolfgang Amadeus Mozart - Symphony.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wolfgang Amadeus Mozart - Symphony.mp3"; sourceTree = "<group>"; };
+		4FA3B05E164D348300B1302B /* Zelda's Lullaby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda's Lullaby.mp3"; sourceTree = "<group>"; };
+		4FA3B05F164D348300B1302B /* Zelda's Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zelda's Theme.mp3"; sourceTree = "<group>"; };
+		4FA3B061164D348300B1302B /* Benny Goodman & His Orchestra - Sing Sing Sing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Benny Goodman & His Orchestra - Sing Sing Sing.mp3"; sourceTree = "<group>"; };
+		4FA3B062164D348300B1302B /* Depapepe - Fun Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - Fun Time.mp3"; sourceTree = "<group>"; };
+		4FA3B063164D348300B1302B /* Depapepe - Snow Dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - Snow Dance.mp3"; sourceTree = "<group>"; };
+		4FA3B064164D348300B1302B /* Depapepe - Start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - Start.mp3"; sourceTree = "<group>"; };
+		4FA3B065164D348300B1302B /* Depapepe - Summer Parade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - Summer Parade.mp3"; sourceTree = "<group>"; };
+		4FA3B066164D348300B1302B /* Ib - Hide And Seek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Hide And Seek.mp3"; sourceTree = "<group>"; };
+		4FA3B067164D348300B1302B /* red-heart-icon copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-heart-icon copy.jpg"; sourceTree = "<group>"; };
+		4FA3B068164D348300B1302B /* Rhythm Thief - Maria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Maria.mp3"; sourceTree = "<group>"; };
+		4FA3B069164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Shall We Dance.mp3"; sourceTree = "<group>"; };
+		4FA3B06B164D348300B1302B /* Depapepe - One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - One.mp3"; sourceTree = "<group>"; };
+		4FA3B06C164D348300B1302B /* Final Fantasy VI - Terra Tina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Fantasy VI - Terra Tina.mp3"; sourceTree = "<group>"; };
+		4FA3B06D164D348300B1302B /* Ib - Blind Alley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Blind Alley.mp3"; sourceTree = "<group>"; };
+		4FA3B06E164D348300B1302B /* Ib - Prelude.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Prelude.mp3"; sourceTree = "<group>"; };
+		4FA3B06F164D348300B1302B /* Ib - Puppet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Puppet.mp3"; sourceTree = "<group>"; };
+		4FA3B070164D348300B1302B /* Legend of Zelda - Kakariko Village.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Legend of Zelda - Kakariko Village.mp3"; sourceTree = "<group>"; };
+		4FA3B071164D348300B1302B /* Yiruma - Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Hope.mp3"; sourceTree = "<group>"; };
+		4FA3B072164D348300B1302B /* Yiruma - If I Could See You Again.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - If I Could See You Again.mp3"; sourceTree = "<group>"; };
+		4FA3B073164D348300B1302B /* Yiruma - Maybe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Maybe.mp3"; sourceTree = "<group>"; };
+		4FA3B075164D348300B1302B /* Final Fantasy - Tifa's Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Fantasy - Tifa's Theme.mp3"; sourceTree = "<group>"; };
+		4FA3B076164D348300B1302B /* The Piano Melody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Piano Melody.mp3"; sourceTree = "<group>"; };
+		4FA3B077164D348300B1302B /* Yiruma - A River Flows In You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - A River Flows In You.mp3"; sourceTree = "<group>"; };
+		4FA3B078164D348300B1302B /* Yiruma - Beloved.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Beloved.mp3"; sourceTree = "<group>"; };
+		4FA3B079164D348300B1302B /* Yiruma - Chaconne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Chaconne.mp3"; sourceTree = "<group>"; };
+		4FA3B07A164D348300B1302B /* Yiruma - Destiny Of Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Destiny Of Love.mp3"; sourceTree = "<group>"; };
+		4FA3B07B164D348300B1302B /* Yiruma - Kiss The Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Kiss The Rain.mp3"; sourceTree = "<group>"; };
+		4FA3B07C164D348300B1302B /* Yiruma - Love Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Love Me.mp3"; sourceTree = "<group>"; };
+		4FA3B07D164D348300B1302B /* Yiruma - Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Moonlight.mp3"; sourceTree = "<group>"; };
+		4FA3B07E164D348300B1302B /* Yiruma - Tears On Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Tears On Love.mp3"; sourceTree = "<group>"; };
+		4FA3B07F164D348300B1302B /* Yiruma - Time Forgets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - Time Forgets.mp3"; sourceTree = "<group>"; };
+		4FA3B081164D348300B1302B /* Birds Sounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Birds Sounds.mp3"; sourceTree = "<group>"; };
+		4FA3B082164D348300B1302B /* Crowds Noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Crowds Noise.mp3"; sourceTree = "<group>"; };
+		4FA3B083164D348300B1302B /* Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Forest.mp3; sourceTree = "<group>"; };
+		4FA3B084164D348300B1302B /* Heavy Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Heavy Rain.mp3"; sourceTree = "<group>"; };
+		4FA3B085164D348300B1302B /* Lighting Strike and Thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lighting Strike and Thunder.mp3"; sourceTree = "<group>"; };
+		4FA3B086164D348300B1302B /* Rain in a window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rain in a window.mp3"; sourceTree = "<group>"; };
+		4FA3B087164D348300B1302B /* Rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rain.wav; sourceTree = "<group>"; };
+		4FA3B088164D348300B1302B /* Tropical Rainforest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tropical Rainforest.mp3"; sourceTree = "<group>"; };
+		4FA3B089164D348300B1302B /* Waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waterfall.mp3; sourceTree = "<group>"; };
 		4FB30CC01649752200723611 /* lifeWordsTimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsTimeLineViewController.h; path = lifeWords/lifeWordsTimeLineViewController.h; sourceTree = SOURCE_ROOT; };
 		4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsTimeLineViewController.m; path = lifeWords/lifeWordsTimeLineViewController.m; sourceTree = SOURCE_ROOT; };
 		4FB30CC41649775D00723611 /* WaveformImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaveformImageView.h; path = lifeWords/Classes/WaveformImageView/WaveformImageView.h; sourceTree = SOURCE_ROOT; };
@@ -612,6 +736,8 @@
 		4FCC49761649FB360011C021 /* lifeWordsMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusic.m; path = lifeWords/lifeWordsMusic.m; sourceTree = SOURCE_ROOT; };
 		4FD73E7C164984850036F4AC /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPUserResizableView.h; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.h; sourceTree = SOURCE_ROOT; };
 		4FD73E7D164984850036F4AC /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPUserResizableView.m; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.m; sourceTree = SOURCE_ROOT; };
+		4FDA988A164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsVoiceRecordViewController.h; path = lifeWords/lifeWordsVoiceRecordViewController.h; sourceTree = SOURCE_ROOT; };
+		4FDA988B164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsVoiceRecordViewController.m; path = lifeWords/lifeWordsVoiceRecordViewController.m; sourceTree = SOURCE_ROOT; };
 		4FDFD7E61643904F00747805 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4FDFD7E91643905400747805 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4FDFD7EB1643905F00747805 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -696,8 +822,10 @@
 			children = (
 				4FB30CC01649752200723611 /* lifeWordsTimeLineViewController.h */,
 				4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */,
+				4FA3B046164CB11700B1302B /* Sound Effects */,
 				4FCC497E1649FC840011C021 /* Music Selection */,
 				4FCC49791649FC330011C021 /* Model for Music */,
+				4FDA988E164E80D9000DF9AB /* Voice Record */,
 			);
 			name = "Time Line View";
 			path = Classes/AlertView/SPUserResizableView;
@@ -728,6 +856,130 @@
 				4F94FF871646C06400CD1C76 /* lifeWordsNavigationControllerOrientation.m */,
 			);
 			name = "Navigation Controller Subclass";
+			sourceTree = "<group>";
+		};
+		4FA3B046164CB11700B1302B /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B043164CB11200B1302B /* lifeWordsSoundEffectsViewController.h */,
+				4FA3B044164CB11200B1302B /* lifeWordsSoundEffectsViewController.m */,
+			);
+			name = "Sound Effects";
+			sourceTree = "<group>";
+		};
+		4FA3B047164D348300B1302B /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B048164D348300B1302B /* Classical */,
+				4FA3B055164D348300B1302B /* Easeful */,
+				4FA3B060164D348300B1302B /* Joyful */,
+				4FA3B06A164D348300B1302B /* Memories */,
+				4FA3B074164D348300B1302B /* Romantic */,
+				4FA3B080164D348300B1302B /* Sound Effects */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		4FA3B048164D348300B1302B /* Classical */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B049164D348300B1302B /* Piano Sonata No.10-I.mp3 */,
+				4FA3B04A164D348300B1302B /* Piano Sonata No.10-II.mp3 */,
+				4FA3B04B164D348300B1302B /* Piano Sonata No.10-III.mp3 */,
+				4FA3B04C164D348300B1302B /* Piano Sonata No.20-I.mp3 */,
+				4FA3B04D164D348300B1302B /* Piano Sonata No.20-II.mp3 */,
+				4FA3B04E164D348300B1302B /* Piano Sonata No.29-II.mp3 */,
+				4FA3B04F164D348300B1302B /* Piano Sonata No.3-IV.mp3 */,
+				4FA3B050164D348300B1302B /* Piano Sonata No.4-III.mp3 */,
+				4FA3B051164D348300B1302B /* Piano Sonata No.7-III.mp3 */,
+				4FA3B052164D348300B1302B /* Piano Sonata No.7-IV.mp3 */,
+				4FA3B053164D348300B1302B /* Piano Sonata No.8-II.mp3 */,
+				4FA3B054164D348300B1302B /* Piano Sonata No.8-III.mp3 */,
+			);
+			path = Classical;
+			sourceTree = "<group>";
+		};
+		4FA3B055164D348300B1302B /* Easeful */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */,
+				4FA3B057164D348300B1302B /* Ib - Departure.mp3 */,
+				4FA3B058164D348300B1302B /* Ib - doll.mp3 */,
+				4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */,
+				4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */,
+				4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */,
+				4FA3B05C164D348300B1302B /* Rhythm Thief - Raphael.mp3 */,
+				4FA3B05D164D348300B1302B /* Wolfgang Amadeus Mozart - Symphony.mp3 */,
+				4FA3B05E164D348300B1302B /* Zelda's Lullaby.mp3 */,
+				4FA3B05F164D348300B1302B /* Zelda's Theme.mp3 */,
+			);
+			path = Easeful;
+			sourceTree = "<group>";
+		};
+		4FA3B060164D348300B1302B /* Joyful */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B061164D348300B1302B /* Benny Goodman & His Orchestra - Sing Sing Sing.mp3 */,
+				4FA3B062164D348300B1302B /* Depapepe - Fun Time.mp3 */,
+				4FA3B063164D348300B1302B /* Depapepe - Snow Dance.mp3 */,
+				4FA3B064164D348300B1302B /* Depapepe - Start.mp3 */,
+				4FA3B065164D348300B1302B /* Depapepe - Summer Parade.mp3 */,
+				4FA3B066164D348300B1302B /* Ib - Hide And Seek.mp3 */,
+				4FA3B067164D348300B1302B /* red-heart-icon copy.jpg */,
+				4FA3B068164D348300B1302B /* Rhythm Thief - Maria.mp3 */,
+				4FA3B069164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 */,
+			);
+			path = Joyful;
+			sourceTree = "<group>";
+		};
+		4FA3B06A164D348300B1302B /* Memories */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B06B164D348300B1302B /* Depapepe - One.mp3 */,
+				4FA3B06C164D348300B1302B /* Final Fantasy VI - Terra Tina.mp3 */,
+				4FA3B06D164D348300B1302B /* Ib - Blind Alley.mp3 */,
+				4FA3B06E164D348300B1302B /* Ib - Prelude.mp3 */,
+				4FA3B06F164D348300B1302B /* Ib - Puppet.mp3 */,
+				4FA3B070164D348300B1302B /* Legend of Zelda - Kakariko Village.mp3 */,
+				4FA3B071164D348300B1302B /* Yiruma - Hope.mp3 */,
+				4FA3B072164D348300B1302B /* Yiruma - If I Could See You Again.mp3 */,
+				4FA3B073164D348300B1302B /* Yiruma - Maybe.mp3 */,
+			);
+			path = Memories;
+			sourceTree = "<group>";
+		};
+		4FA3B074164D348300B1302B /* Romantic */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B075164D348300B1302B /* Final Fantasy - Tifa's Theme.mp3 */,
+				4FA3B076164D348300B1302B /* The Piano Melody.mp3 */,
+				4FA3B077164D348300B1302B /* Yiruma - A River Flows In You.mp3 */,
+				4FA3B078164D348300B1302B /* Yiruma - Beloved.mp3 */,
+				4FA3B079164D348300B1302B /* Yiruma - Chaconne.mp3 */,
+				4FA3B07A164D348300B1302B /* Yiruma - Destiny Of Love.mp3 */,
+				4FA3B07B164D348300B1302B /* Yiruma - Kiss The Rain.mp3 */,
+				4FA3B07C164D348300B1302B /* Yiruma - Love Me.mp3 */,
+				4FA3B07D164D348300B1302B /* Yiruma - Moonlight.mp3 */,
+				4FA3B07E164D348300B1302B /* Yiruma - Tears On Love.mp3 */,
+				4FA3B07F164D348300B1302B /* Yiruma - Time Forgets.mp3 */,
+			);
+			path = Romantic;
+			sourceTree = "<group>";
+		};
+		4FA3B080164D348300B1302B /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3B081164D348300B1302B /* Birds Sounds.mp3 */,
+				4FA3B082164D348300B1302B /* Crowds Noise.mp3 */,
+				4FA3B083164D348300B1302B /* Forest.mp3 */,
+				4FA3B084164D348300B1302B /* Heavy Rain.mp3 */,
+				4FA3B085164D348300B1302B /* Lighting Strike and Thunder.mp3 */,
+				4FA3B086164D348300B1302B /* Rain in a window.mp3 */,
+				4FA3B087164D348300B1302B /* Rain.wav */,
+				4FA3B088164D348300B1302B /* Tropical Rainforest.mp3 */,
+				4FA3B089164D348300B1302B /* Waterfall.mp3 */,
+			);
+			path = "Sound Effects";
 			sourceTree = "<group>";
 		};
 		4FCA284D161939FD003263C8 = {
@@ -783,6 +1035,7 @@
 				4FCA28DE1629173D003263C8 /* Main View */,
 				4FCA28E916364853003263C8 /* Photo Filtering View */,
 				4F1ADAAD16490323009B096D /* Time Line View */,
+				4FA3B047164D348300B1302B /* Music */,
 				4FCA2885161BDE73003263C8 /* Graphics */,
 				4FCA28B016227A0F003263C8 /* Custom Objects */,
 				4FCA288C161BE09E003263C8 /* Custom Framework */,
@@ -1338,6 +1591,15 @@
 			name = "Music Selection";
 			sourceTree = "<group>";
 		};
+		4FDA988E164E80D9000DF9AB /* Voice Record */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA988A164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.h */,
+				4FDA988B164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.m */,
+			);
+			name = "Voice Record";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1512,6 +1774,66 @@
 				4F131C4F164BE1AC003DF77A /* category-joyful.jpg in Resources */,
 				4F131C50164BE1AC003DF77A /* category-memories.jpg in Resources */,
 				4F131C51164BE1AC003DF77A /* category-romantic.jpg in Resources */,
+				4FA3B08A164D348300B1302B /* Piano Sonata No.10-I.mp3 in Resources */,
+				4FA3B08B164D348300B1302B /* Piano Sonata No.10-II.mp3 in Resources */,
+				4FA3B08C164D348300B1302B /* Piano Sonata No.10-III.mp3 in Resources */,
+				4FA3B08D164D348300B1302B /* Piano Sonata No.20-I.mp3 in Resources */,
+				4FA3B08E164D348300B1302B /* Piano Sonata No.20-II.mp3 in Resources */,
+				4FA3B08F164D348300B1302B /* Piano Sonata No.29-II.mp3 in Resources */,
+				4FA3B090164D348300B1302B /* Piano Sonata No.3-IV.mp3 in Resources */,
+				4FA3B091164D348300B1302B /* Piano Sonata No.4-III.mp3 in Resources */,
+				4FA3B092164D348300B1302B /* Piano Sonata No.7-III.mp3 in Resources */,
+				4FA3B093164D348300B1302B /* Piano Sonata No.7-IV.mp3 in Resources */,
+				4FA3B094164D348300B1302B /* Piano Sonata No.8-II.mp3 in Resources */,
+				4FA3B095164D348300B1302B /* Piano Sonata No.8-III.mp3 in Resources */,
+				4FA3B096164D348300B1302B /* Final Fantasy - Wish.mp3 in Resources */,
+				4FA3B097164D348300B1302B /* Ib - Departure.mp3 in Resources */,
+				4FA3B098164D348300B1302B /* Ib - doll.mp3 in Resources */,
+				4FA3B099164D348300B1302B /* Johann Pachelbel Canon in D.mp3 in Resources */,
+				4FA3B09A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 in Resources */,
+				4FA3B09B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 in Resources */,
+				4FA3B09C164D348300B1302B /* Rhythm Thief - Raphael.mp3 in Resources */,
+				4FA3B09D164D348300B1302B /* Wolfgang Amadeus Mozart - Symphony.mp3 in Resources */,
+				4FA3B09E164D348300B1302B /* Zelda's Lullaby.mp3 in Resources */,
+				4FA3B09F164D348300B1302B /* Zelda's Theme.mp3 in Resources */,
+				4FA3B0A0164D348300B1302B /* Benny Goodman & His Orchestra - Sing Sing Sing.mp3 in Resources */,
+				4FA3B0A1164D348300B1302B /* Depapepe - Fun Time.mp3 in Resources */,
+				4FA3B0A2164D348300B1302B /* Depapepe - Snow Dance.mp3 in Resources */,
+				4FA3B0A3164D348300B1302B /* Depapepe - Start.mp3 in Resources */,
+				4FA3B0A4164D348300B1302B /* Depapepe - Summer Parade.mp3 in Resources */,
+				4FA3B0A5164D348300B1302B /* Ib - Hide And Seek.mp3 in Resources */,
+				4FA3B0A6164D348300B1302B /* red-heart-icon copy.jpg in Resources */,
+				4FA3B0A7164D348300B1302B /* Rhythm Thief - Maria.mp3 in Resources */,
+				4FA3B0A8164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 in Resources */,
+				4FA3B0A9164D348300B1302B /* Depapepe - One.mp3 in Resources */,
+				4FA3B0AA164D348300B1302B /* Final Fantasy VI - Terra Tina.mp3 in Resources */,
+				4FA3B0AB164D348300B1302B /* Ib - Blind Alley.mp3 in Resources */,
+				4FA3B0AC164D348300B1302B /* Ib - Prelude.mp3 in Resources */,
+				4FA3B0AD164D348300B1302B /* Ib - Puppet.mp3 in Resources */,
+				4FA3B0AE164D348300B1302B /* Legend of Zelda - Kakariko Village.mp3 in Resources */,
+				4FA3B0AF164D348300B1302B /* Yiruma - Hope.mp3 in Resources */,
+				4FA3B0B0164D348300B1302B /* Yiruma - If I Could See You Again.mp3 in Resources */,
+				4FA3B0B1164D348300B1302B /* Yiruma - Maybe.mp3 in Resources */,
+				4FA3B0B2164D348300B1302B /* Final Fantasy - Tifa's Theme.mp3 in Resources */,
+				4FA3B0B3164D348300B1302B /* The Piano Melody.mp3 in Resources */,
+				4FA3B0B4164D348300B1302B /* Yiruma - A River Flows In You.mp3 in Resources */,
+				4FA3B0B5164D348300B1302B /* Yiruma - Beloved.mp3 in Resources */,
+				4FA3B0B6164D348300B1302B /* Yiruma - Chaconne.mp3 in Resources */,
+				4FA3B0B7164D348300B1302B /* Yiruma - Destiny Of Love.mp3 in Resources */,
+				4FA3B0B8164D348300B1302B /* Yiruma - Kiss The Rain.mp3 in Resources */,
+				4FA3B0B9164D348300B1302B /* Yiruma - Love Me.mp3 in Resources */,
+				4FA3B0BA164D348300B1302B /* Yiruma - Moonlight.mp3 in Resources */,
+				4FA3B0BB164D348300B1302B /* Yiruma - Tears On Love.mp3 in Resources */,
+				4FA3B0BC164D348300B1302B /* Yiruma - Time Forgets.mp3 in Resources */,
+				4FA3B0BD164D348300B1302B /* Birds Sounds.mp3 in Resources */,
+				4FA3B0BE164D348300B1302B /* Crowds Noise.mp3 in Resources */,
+				4FA3B0BF164D348300B1302B /* Forest.mp3 in Resources */,
+				4FA3B0C0164D348300B1302B /* Heavy Rain.mp3 in Resources */,
+				4FA3B0C1164D348300B1302B /* Lighting Strike and Thunder.mp3 in Resources */,
+				4FA3B0C2164D348300B1302B /* Rain in a window.mp3 in Resources */,
+				4FA3B0C3164D348300B1302B /* Rain.wav in Resources */,
+				4FA3B0C4164D348300B1302B /* Tropical Rainforest.mp3 in Resources */,
+				4FA3B0C5164D348300B1302B /* Waterfall.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1635,6 +1957,8 @@
 				4FF4805A164A999300775D3A /* lifeWordsMusicSelectViewController.m in Sources */,
 				4F18F06C164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m in Sources */,
 				4F18F071164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m in Sources */,
+				4FA3B045164CB11200B1302B /* lifeWordsSoundEffectsViewController.m in Sources */,
+				4FDA988C164E80D9000DF9AB /* lifeWordsVoiceRecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

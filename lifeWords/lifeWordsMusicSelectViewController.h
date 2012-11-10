@@ -14,5 +14,6 @@
 
 @property (nonatomic, strong) NSString *category;
 @property (nonatomic, strong) id delegate;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
