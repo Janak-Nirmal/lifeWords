@@ -47,6 +47,7 @@
         [[NSFileManager defaultManager] createDirectoryAtPath:usersPath withIntermediateDirectories:NO attributes:nil error:&error];
     
     // Adjust Login Button
+    [self.loginButton setEnabled:YES];
     UIGlossyButton *loginButton;
     loginButton = (UIGlossyButton *)[self.view viewWithTag:1];
     [loginButton useWhiteLabel: YES];
@@ -90,7 +91,7 @@
     
     // Check user session
     NSUserDefaults* coreDatabase = [NSUserDefaults standardUserDefaults];
-    NSString *userEmail = [coreDatabase objectForKey:@"User_Email"];
+    NSString *userEmail = [coreDatabase objectForKey:@"Current_User_Email"];
     if (userEmail) {
         [self performSegueWithIdentifier:@"toMainView" sender:self];
     }
@@ -189,9 +190,11 @@
                     
                     [self.loginButton setEnabled:YES];
                     
-                    // Fetch the lastest user info
+                    // Fetch the user info
                     self.fetchUserInfo = [ApplicationDelegate.networkOperations fetchUserInfo:useremail];
                     [self.fetchUserInfo onCompletion:^(JUSSNetworkOperation *completedOperation) {
+                        [self.loginButton setEnabled:NO];
+                        [self dismissKeyboard:nil];
                         userInfo = [completedOperation responseJSON];
                         
                         // Create backup for profile photo
@@ -201,13 +204,20 @@
                         
                         // Set user session
                         NSUserDefaults* coreDatabase = [NSUserDefaults standardUserDefaults];
-                        [coreDatabase setObject:useremail forKey:@"User_Email"];
-                        if ([userInfo objectForKey:@"User_Nickname"]) [coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:@"User_Nickname"];
-                        if ([userInfo objectForKey:@"User_Status"]) [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:@"User_Status"];
-                        [coreDatabase setObject:currentUsersPath forKey:@"User_Path"];
-                        [coreDatabase setObject:profilePhotoURL forKey:@"profilePhotoURL"];
-                        [coreDatabase setObject:profilePhotoPath forKey:@"profilePhotoPath"];
-                        [coreDatabase setObject:profileBackupPhotoPath forKey:@"profileBackupPhotoPath"];
+                        [coreDatabase setObject:useremail forKey:@"Current_User_Email"];
+                        if (![[userInfo objectForKey:@"User_Nickname"] isKindOfClass:[NSNull class]]) {
+                            [coreDatabase setObject:[userInfo objectForKey:@"User_Nickname"] forKey:[NSString stringWithFormat:@"%@_Nickname", useremail]];
+                        }
+                        
+                        if (![[userInfo objectForKey:@"User_Status"] isKindOfClass:[NSNull class]]) {
+                            [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:[NSString stringWithFormat:@"%@_Status", useremail]];
+                        }
+                        
+                        [coreDatabase setObject:currentUsersPath forKey:[NSString stringWithFormat:@"%@_Path", useremail]];
+                        [coreDatabase setObject:profilePhotoURL forKey:[NSString stringWithFormat:@"%@_profilePhotoURL", useremail]];
+                        [coreDatabase setObject:profilePhotoPath forKey:[NSString stringWithFormat:@"%@_profilePhotoPath", useremail]];
+                        [coreDatabase setObject:profileBackupPhotoPath forKey:[NSString stringWithFormat:@"%@_profileBackupPhotoPath", useremail]];
+                        [coreDatabase setObject:@"" forKey:[NSString stringWithFormat:@"%@_Color", useremail]];
                         [coreDatabase synchronize];
                         
                         [self performSegueWithIdentifier:@"toMainView" sender:self];

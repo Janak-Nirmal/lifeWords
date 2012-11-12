@@ -13,8 +13,12 @@
 #import "OLGhostAlertView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ODRefreshControl.h"
+#import "SWSnapshotStackView.h"
 
-@interface lifeWordsMainViewController : UIViewController <UIImagePickerControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UIScrollViewDelegate>
+@interface lifeWordsMainViewController : UIViewController <UIImagePickerControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UIScrollViewDelegate> {
+    NSString *userEmail;
+    NSString *color;
+}
 
 #pragma mark - Photo
 @property (nonatomic, retain) UIPopoverController *popover;
@@ -22,11 +26,13 @@
 - (IBAction) showActionSheet:(id)sender;
 
 #pragma mark - Toolbars
+@property (strong, nonatomic) IBOutlet UIToolbar *myToolBar;
 @property (strong, nonatomic) IBOutlet UIButton *friendsBtn;
 
 #pragma mark - Decoration
 @property (strong, nonatomic) IBOutlet UIImageView *profilePhoto;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet SWSnapshotStackView *container;
 
 @property (strong, nonatomic) NSUserDefaults *coreDatabase;
 @property (strong, nonatomic) JUSSNetworkOperation *downloadOperation;

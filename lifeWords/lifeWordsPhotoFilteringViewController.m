@@ -29,10 +29,20 @@
 
 #pragma mark - UIViewController Life Cycle
 
+- (void) loadView {
+    [super loadView];
+    //self.navigationItem.hidesBackButton = YES;
+}
 - (void)viewDidLoad
 {
+    // Fetch data from NSUserDefaults
+    self.coreDatabase = [NSUserDefaults standardUserDefaults];
+    userEmail = [self.coreDatabase objectForKey:@"Current_User_Email"];
+    color = [self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Color", userEmail]];
+    
     self.photo = [self.photo normalizedImage];
-    self.corePhoto.image = self.photo;
+    [self.corePhoto setImage:self.photo];
+    [self.corePhoto setDisplayAsStack:YES];
     originalPhoto = self.corePhoto.image;
     [self effectPanel];
     [super viewDidLoad];
@@ -40,10 +50,15 @@
     
     //Create a new barbutton with an action
     UIBarButtonItem *barbutton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
-                                                                  style:UIBarButtonItemStyleBordered target:self action:@selector(backBarPressed)];
+                                                                  style:UIBarButtonItemStylePlain target:self action:@selector(backBarPressed)];
+    UIImage *backBtnImg = [UIImage imageNamed:[NSString stringWithFormat:@"%@ipad-back.png", color]];
+    [barbutton setBackgroundImage:backBtnImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     // and put the button in the nav bar
-    self.navigationItem.leftBarButtonItem = barbutton;
+    [self.navigationItem setLeftBarButtonItem:barbutton];
+    
+    
+    
     
     
 }
@@ -54,7 +69,23 @@
     // Show navigation bar
     [self.navigationController navigationBar].hidden = NO;
     
-    // Set back button title
+    // Set toolbar background
+    UIImage *navBarImg = [UIImage imageNamed:[NSString stringWithFormat:@"%@ipad-menubar-right.png", color]];
+    [self.navigationController.navigationBar setBackgroundImage:navBarImg forBarMetrics:UIBarMetricsDefault];
+    
+    UILabel *tv = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 74, 50)];
+    [tv setText:@"Photo Effects"];
+    [tv setFont:[UIFont fontWithName:@"Zapfino" size:17.0]];
+    [tv setTextAlignment:NSTextAlignmentCenter];
+    [tv setBackgroundColor:[UIColor clearColor]];
+    [tv setTextColor:[UIColor whiteColor]];
+    
+    [self.navigationItem setTitleView:tv];
+    
+    // Set background image
+    UIColor* bgColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ipad-BG-pattern.png"]];
+    [self.container setBackgroundColor:bgColor];
+    [self.container setDisplayAsStack:YES];
     
     
 }
@@ -81,6 +112,8 @@
 - (void)viewDidUnload {
     [self setScrollView:nil];
     [self setPhoto:nil];
+    [self setCoreDatabase:nil];
+    [self setContainer:nil];
     [self setCorePhoto:nil];
     [super viewDidUnload];
 }
@@ -103,6 +136,7 @@
         
         thumRect = CGRectMake(lastX, 0, 72, 51);
         thImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 74, 53)];
+        thImage.layer.cornerRadius = 10.0f;
         tv = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 74, 20)];
         
         UIControl *thumbImageButton = [[UIControl alloc] initWithFrame:thumRect];
@@ -112,13 +146,13 @@
         
         thImage.image = _image;
         
-        thImage.layer.cornerRadius = 10.0f;
+        
         
         [tv setText:name];
         [tv setFont:[UIFont fontWithName:@"Helvetica" size:9.0]];
         [tv setTextAlignment:NSTextAlignmentCenter];
         [tv setBackgroundColor:[UIColor clearColor]];
-        [tv setTextColor:[UIColor blackColor]];
+        [tv setTextColor:[UIColor whiteColor]];
         
         
         
@@ -153,6 +187,7 @@
     [self.scrollView setPagingEnabled:YES];
     
     NSArray *effects = [NSArray arrayWithObjects:
+                        @"Auto-Enhance",
                         @"Aged",
                         @"Lindale",
                         @"Sonoma",
@@ -188,7 +223,6 @@
                         @"Dawn",
                         @"Vivid",
                         @"Senibel",
-                        @"Auto-Enhance",
                         @"Lantana",
                         @"Bilboa",
                         nil];
@@ -208,117 +242,117 @@
 - (void)doApplyFX:(UIControl *)selectedControl {
     
     UIImage *_img;
-    UIImage *imageToFilter = [self.corePhoto image];
+    UIImage *imageToFilter = originalPhoto;
     
     int _id = selectedControl.tag;
     switch (_id) {
         case 1:
-            _img = [AgedFX applyEffect:imageToFilter];
+            _img = [EnhanceFX applyEffect:imageToFilter];
             break;
         case 2:
-            _img = [LindaleFX applyEffect:imageToFilter];
+            _img = [AgedFX applyEffect:imageToFilter];
             break;
         case 3:
-            _img = [SonomaFX applyEffect:imageToFilter];
+            _img = [LindaleFX applyEffect:imageToFilter];
             break;
         case 4:
-            _img = [SocorroFX applyEffect:imageToFilter];
+            _img = [SonomaFX applyEffect:imageToFilter];
             break;
         case 5:
-            _img = [DaytonaFX applyEffect:imageToFilter];
+            _img = [SocorroFX applyEffect:imageToFilter];
             break;
         case 6:
-            _img = [AltamonteFX applyEffect:imageToFilter];
+            _img = [DaytonaFX applyEffect:imageToFilter];
             break;
         case 7:
-            _img = [BlackAndWhiteGrainedFX applyEffect:imageToFilter];
+            _img = [AltamonteFX applyEffect:imageToFilter];
             break;
         case 8:
-            _img = [OldDirtyFX applyEffect:imageToFilter];
+            _img = [BlackAndWhiteGrainedFX applyEffect:imageToFilter];
             break;
         case 9:
-            _img = [PaperTossFX applyEffect:imageToFilter];
+            _img = [OldDirtyFX applyEffect:imageToFilter];
             break;
         case 10:
-            _img = [MarineFX applyEffect:imageToFilter];
+            _img = [PaperTossFX applyEffect:imageToFilter];
             break;
         case 11:
-            _img = [RedNoirFX applyEffect:imageToFilter];
+            _img = [MarineFX applyEffect:imageToFilter];
             break;
         case 12:
-            _img = [SapphireNoirFX applyEffect:imageToFilter];
+            _img = [RedNoirFX applyEffect:imageToFilter];
             break;
         case 13:
-            _img = [SepiaNoirFX applyEffect:imageToFilter];
+            _img = [SapphireNoirFX applyEffect:imageToFilter];
             break;
         case 14:
-            _img = [YellowNoirFX applyEffect:imageToFilter];
+            _img = [SepiaNoirFX applyEffect:imageToFilter];
             break;
         case 15:
-            _img = [WinterFX applyEffect:imageToFilter];
+            _img = [YellowNoirFX applyEffect:imageToFilter];
             break;
         case 16:
-            _img = [MarsFX applyEffect:imageToFilter];
+            _img = [WinterFX applyEffect:imageToFilter];
             break;
         case 17:
-            _img = [BlackAndWhiteLuminoFX applyEffect:imageToFilter];
+            _img = [MarsFX applyEffect:imageToFilter];
             break;
         case 18:
-            _img = [NapaFX applyEffect:imageToFilter];
+            _img = [BlackAndWhiteLuminoFX applyEffect:imageToFilter];
             break;
         case 19:
-            _img = [DarkGrungeFX applyEffect:imageToFilter];
+            _img = [NapaFX applyEffect:imageToFilter];
             break;
         case 20:
-            _img = [GrungeRaysSapiaFX applyEffect:imageToFilter];
+            _img = [DarkGrungeFX applyEffect:imageToFilter];
             break;
         case 21:
-            _img = [GrungeRaysRedFX applyEffect:imageToFilter];
+            _img = [GrungeRaysSapiaFX applyEffect:imageToFilter];
             break;
         case 22:
-            _img = [GrungeRaysGreenFX applyEffect:imageToFilter];
+            _img = [GrungeRaysRedFX applyEffect:imageToFilter];
             break;
         case 23:
-            _img = [GrungeRaysBlueFX applyEffect:imageToFilter];
+            _img = [GrungeRaysGreenFX applyEffect:imageToFilter];
             break;
         case 24:
-            _img = [AvatarFX applyEffect:imageToFilter];
+            _img = [GrungeRaysBlueFX applyEffect:imageToFilter];
             break;
         case 25:
-            _img = [ComicSharpFX applyEffect:imageToFilter];
+            _img = [AvatarFX applyEffect:imageToFilter];
             break;
         case 26:
-            _img = [ComicDarkFX applyEffect:imageToFilter];
+            _img = [ComicSharpFX applyEffect:imageToFilter];
             break;
         case 27:
-            _img = [HalftoneSharpFX applyEffect:imageToFilter];
+            _img = [ComicDarkFX applyEffect:imageToFilter];
             break;
         case 28:
-            _img = [HalftoneComicFX applyEffect:imageToFilter];
+            _img = [HalftoneSharpFX applyEffect:imageToFilter];
             break;
         case 29:
-            _img = [HalftoneDarkFX applyEffect:imageToFilter];
+            _img = [HalftoneComicFX applyEffect:imageToFilter];
             break;
         case 30:
-            _img = [AlaskaFX applyEffect:imageToFilter];
+            _img = [HalftoneDarkFX applyEffect:imageToFilter];
             break;
         case 31:
-            _img = [DerbyFX applyEffect:imageToFilter];
+            _img = [AlaskaFX applyEffect:imageToFilter];
             break;
         case 32:
-            _img = [DuskFX applyEffect:imageToFilter];
+            _img = [DerbyFX applyEffect:imageToFilter];
             break;
         case 33:
-            _img = [DawnFX applyEffect:imageToFilter];
+            _img = [DuskFX applyEffect:imageToFilter];
             break;
         case 34:
-            _img = [VividFX applyEffect:imageToFilter];
+            _img = [DawnFX applyEffect:imageToFilter];
             break;
         case 35:
-            _img = [SenibelFX applyEffect:imageToFilter];
+            _img = [VividFX applyEffect:imageToFilter];
             break;
         case 36:
-            _img = [EnhanceFX applyEffect:imageToFilter];
+            _img = [SenibelFX applyEffect:imageToFilter];
             break;
         case 37:
             _img = [LantanaFX applyEffect:imageToFilter];
@@ -330,7 +364,7 @@
             break;
     }
     
-    self.corePhoto.image = _img;
+    [self.corePhoto setImage:_img];
 }
 
 - (void)hudWasHidden:(MBProgressHUD *)hud {

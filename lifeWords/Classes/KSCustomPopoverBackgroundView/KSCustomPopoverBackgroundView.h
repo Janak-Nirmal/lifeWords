@@ -13,7 +13,7 @@
     CGFloat                     _arrowOffset;
     UIPopoverArrowDirection     _arrowDirection;
     UIImageView                *_arrowImageView;
-    UIImageView                *_popoverBackgroundImageView;   
+    UIImageView                *_popoverBackgroundImageView;
 }
 
 @property (nonatomic, readwrite)            CGFloat                  arrowOffset;

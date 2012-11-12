@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 simpleDudes. All rights reserved.
 //
 
+#define XMAX	20.0f
+
 #import "lifeWordsTimeLineViewController.h"
 #import "lifeWordsMusicSelectViewController.h"
 #import "lifeWordsSoundEffectsViewController.h"
@@ -41,6 +43,13 @@
     NSString *dateString = [dateFormat stringFromDate:date];
     [self.cardDate setText:dateString];
     
+    // Beautify Record View
+    [self.recordView.layer setCornerRadius:10.0f];
+    [self.recordView setAlpha:0.8f];
+    [self.recordView.layer setShadowRadius:5.0f];
+    [self.recordMeter1 setProgressTintColor:[UIColor greenColor]];
+    [self.recordMeter2 setProgressTintColor:[UIColor redColor]];
+
     //NSURL *url = [[NSBundle mainBundle] URLForResource:@"Doll" withExtension:@"mp3"];
     //NSLog(@"%@", url.absoluteString);
     //AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
@@ -73,12 +82,15 @@
 
 - (void)viewDidUnload {
     [self setMusicBtn:nil];
-    [self setMusicComponent:nil];
     [self setPopover:nil];
     [self setEffectsBtn:nil];
     [self setCardTitle:nil];
     [self setCardDate:nil];
     [self setCardLength:nil];
+    [self setRecordBtn:nil];
+    [self setRecordView:nil];
+    [self setRecordMeter1:nil];
+    [self setRecordMeter2:nil];
     [super viewDidUnload];
 }
 
@@ -110,6 +122,9 @@
     [self.popover presentPopoverFromRect:self.effectsBtn.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     self.popover.delegate = self;
 }
+
+- (IBAction)recordBtnClicked:(id)sender {
+}
      
 - (void) handleNotificationFromMusicSelect: (NSNotification *)pNotification {
     [self.popover dismissPopoverAnimated:YES];
@@ -124,5 +139,43 @@
 {
     return YES;
 }
+
+#pragma mark - Record View
+
+
+
+- (void) updateMeters
+{
+	// Show the current power levels
+	[recorder updateMeters];
+	float avg = [recorder averagePowerForChannel:0];
+	float peak = [recorder peakPowerForChannel:0];
+    float progress1 = (XMAX + avg) / XMAX;
+    float progress2 = (XMAX + peak) / XMAX;
+    
+    if (progress1 <= 0.6 ) {
+        [self.recordMeter1 setProgressTintColor:[UIColor greenColor]];
+    }
+    else if (progress1 <= 0.8) {
+        [self.recordMeter1 setProgressTintColor:[UIColor orangeColor]];
+    }
+    else {
+        [self.recordMeter1 setProgressTintColor:[UIColor redColor]];
+    }
+    
+    if (progress2 <= 0.6 ) {
+        [self.recordMeter2 setProgressTintColor:[UIColor greenColor]];
+    }
+    else if (progress2 <= 0.8) {
+        [self.recordMeter2 setProgressTintColor:[UIColor orangeColor]];
+    }
+    else {
+        [self.recordMeter2 setProgressTintColor:[UIColor redColor]];
+    }
+	self.recordMeter1.progress = (XMAX + avg) / XMAX;
+	self.recordMeter2.progress = (XMAX + peak) / XMAX;
+    
+}
+
 
 @end

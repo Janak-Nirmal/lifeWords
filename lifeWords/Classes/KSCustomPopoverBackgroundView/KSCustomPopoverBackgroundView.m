@@ -86,7 +86,7 @@
         
         NSUserDefaults *coreDatabase = [NSUserDefaults standardUserDefaults];
         
-        NSString *topArrow = [NSString stringWithFormat:@"%@popover-arrow-top.png", [coreDatabase objectForKey:@"User_Email"]];
+        NSString *topArrow = [NSString stringWithFormat:@"%@popover-arrow-top.png", [coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Color", [coreDatabase objectForKey:@"Current_User_Email"]]]];
         
         NSLog(@"%@", topArrow);
         

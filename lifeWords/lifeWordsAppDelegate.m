@@ -13,7 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    self.hostName = @"192.168.0.115";
+    self.hostName = @"192.168.0.106";
     self.networkOperations = [[lifeWordsNetworkOperations alloc] initWithHostName:self.hostName];
     self.downloadOperation = [[lifeWordsNetworkDownload alloc] initWithHostName:self.hostName];
     return YES;
