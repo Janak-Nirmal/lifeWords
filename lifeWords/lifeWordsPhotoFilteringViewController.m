@@ -35,17 +35,25 @@
 }
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+   
     // Fetch data from NSUserDefaults
     self.coreDatabase = [NSUserDefaults standardUserDefaults];
     userEmail = [self.coreDatabase objectForKey:@"Current_User_Email"];
     color = [self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Color", userEmail]];
     
+    // Set the wallpaper
+    [self.wallpaper setImage:[UIImage imageNamed:@"leaf_tree.jpg"]];
+    
+    // Set the core photo
     self.photo = [self.photo normalizedImage];
     [self.corePhoto setImage:self.photo];
-    [self.corePhoto setDisplayAsStack:YES];
+    [self.corePhoto setDisplayAsStack:NO];
     originalPhoto = self.corePhoto.image;
     [self effectPanel];
-    [super viewDidLoad];
+    
+    
+    
 	// Do any additional setup after loading the view.
     
     //Create a new barbutton with an action
@@ -84,7 +92,9 @@
     
     // Set background image
     UIColor* bgColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ipad-BG-pattern.png"]];
-    [self.container setBackgroundColor:bgColor];
+    [self.view setBackgroundColor:bgColor];
+    [self.container setImage:[UIImage imageNamed:@"container_photo.jpg"]];
+    [self.container setAlpha:0.7];
     [self.container setDisplayAsStack:YES];
     
     
@@ -115,6 +125,7 @@
     [self setCoreDatabase:nil];
     [self setContainer:nil];
     [self setCorePhoto:nil];
+    [self setWallpaper:nil];
     [super viewDidUnload];
 }
 
@@ -152,7 +163,7 @@
         [tv setFont:[UIFont fontWithName:@"Helvetica" size:9.0]];
         [tv setTextAlignment:NSTextAlignmentCenter];
         [tv setBackgroundColor:[UIColor clearColor]];
-        [tv setTextColor:[UIColor whiteColor]];
+        [tv setTextColor:[UIColor blackColor]];
         
         
         
@@ -167,7 +178,7 @@
             [self.scrollView setContentSize:CGSizeMake(lastX, 60)];
         } else {
             lastX = lastX + 100;
-            [self.scrollView setContentSize:CGSizeMake(lastX, 120)];
+            [self.scrollView setContentSize:CGSizeMake(lastX, 80)];
         }
         
         index += 1;
@@ -184,6 +195,7 @@
     }
     
     
+    [self.scrollView setAlwaysBounceVertical:NO];
     [self.scrollView setPagingEnabled:YES];
     
     NSArray *effects = [NSArray arrayWithObjects:

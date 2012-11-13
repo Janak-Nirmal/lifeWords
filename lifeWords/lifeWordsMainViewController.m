@@ -7,7 +7,6 @@
 //
 
 #import "lifeWordsMainViewController.h"
-#import "UIImageView+Curled.h"
 #import "lifeWordsPhotoFilteringViewController.h"
 #import "KSCustomPopoverBackgroundView.h"
 
@@ -56,15 +55,19 @@
     // Hide Navigation Bar
     [self.navigationController.navigationBar setHidden:YES];
 
+    // Set background image
+    [self.wallpaper setImage:[UIImage imageNamed:@"leaf_tree.jpg"]];
+    
     // Set stack container
+    [self.container setDisplayAsStack:YES];
+    [self.container setImage:[UIImage imageNamed:@"container.jpg"]];
+    [self.container setAlpha:0.7];
     
     // Set toolbar background
     UIImage *navBarImg = [UIImage imageNamed:[NSString stringWithFormat:@"%@ipad-menubar-right.png", color]];
     [self.myToolBar setBackgroundImage:navBarImg forToolbarPosition:UIToolbarPositionTop barMetrics:UIBarMetricsDefault];
     
-    // Set background image
-    UIColor* bgColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ipad-BG-pattern.png"]];
-    [self.view setBackgroundColor:bgColor];
+    
     
     // Refresh Contents
     [self refresh];
@@ -94,6 +97,7 @@
     [self setFriendsBtn:nil];
     [self setMyToolBar:nil];
     [self setContainer:nil];
+    [self setWallpaper:nil];
     [super viewDidUnload];
 }
 
@@ -204,7 +208,7 @@
     NSString *profilePhotoPath = [self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_profilePhotoPath", userEmail]];
     NSString *profileBackupPhotoPath = [self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_profileBackupPhotoPath", userEmail]];
     
-    [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profileBackupPhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
+    [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profileBackupPhotoPath]];
     
     // Set User Nickname or Email
     if ([self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Nickname", userEmail]]) {
@@ -242,13 +246,13 @@
         
         if ([fileManager fileExistsAtPath:profilePhotoPath]) {
         // Set profile photo
-        [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profilePhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
+        [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profilePhotoPath]];
             NSError *error;
             [fileManager removeItemAtPath:profileBackupPhotoPath error:&error];
             [fileManager copyItemAtPath:profilePhotoPath toPath:profileBackupPhotoPath error:&error];
         }
         else {
-            [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profileBackupPhotoPath] borderWidth:5.0f shadowDepth:10.0f controlPointXOffset:30.0f controlPointYOffset:70.0f];
+            [self.profilePhoto setImage:[UIImage imageWithContentsOfFile:profileBackupPhotoPath]];
         }
         [refreshControl endRefreshing];
     } onError:^(NSError *error) {

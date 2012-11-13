@@ -30,7 +30,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *friendsBtn;
 
 #pragma mark - Decoration
-@property (strong, nonatomic) IBOutlet UIImageView *profilePhoto;
+@property (strong, nonatomic) IBOutlet UIImageView *wallpaper;
+@property (strong, nonatomic) IBOutlet SWSnapshotStackView *profilePhoto;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet SWSnapshotStackView *container;
 

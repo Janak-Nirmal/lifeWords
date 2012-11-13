@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="VRI-i5-bIo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Jph-mQ-YO5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="login_Wallpaper.jpg" id="Ngj-kX-nUN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="leaf_tree_blur.jpg" id="Ngj-kX-nUN">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HK-tg-5mL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-2846"/>
+            <point key="canvasLocation" x="1760" y="-2834"/>
         </scene>
         <!--Life Words Sign Up View Controller-->
         <scene sceneID="VdS-hz-1jQ">
@@ -123,7 +123,7 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="login_Wallpaper.jpg" id="xkD-8H-JY9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="leaf_tree_blur.jpg" id="xkD-8H-JY9">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -402,46 +402,49 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="IFJ-6r-h0d" customClass="SWSnapshotStackView">
-                                <rect key="frame" x="20" y="20" width="728" height="920"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="BwK-VJ-6hj">
+                                <rect key="frame" x="0.0" y="44" width="768" height="916"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" id="Xgm-HN-Cec">
+                                <rect key="frame" x="0.0" y="44" width="768" height="916"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" id="Xgm-HN-Cec">
-                                        <rect key="frame" x="0.0" y="0.0" width="728" height="920"/>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" id="qpB-A9-sA0" customClass="SWSnapshotStackView">
+                                        <rect key="frame" x="43" y="0.0" width="681" height="916"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NYH-fG-fSq">
-                                                <rect key="frame" x="268" y="36" width="189" height="201"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="XLI-ss-qb2">
-                                                <rect key="frame" x="97" y="251" width="532" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand ITC TT" pointSize="26"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IpF-Id-4Ki">
-                                                <rect key="frame" x="262" y="480" width="243" height="71"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
-                                                <state key="normal" title="Make a lifeCard">
-                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showActionSheet:" destination="NuC-TK-w6q" eventType="touchUpInside" id="dcu-tM-Euh"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <gestureRecognizers/>
-                                    </scrollView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IpF-Id-4Ki">
+                                        <rect key="frame" x="262" y="522" width="243" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                                        <state key="normal" title="Make a lifeCard">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showActionSheet:" destination="NuC-TK-w6q" eventType="touchUpInside" id="dcu-tM-Euh"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" id="L8G-SI-Xnb" customClass="SWSnapshotStackView">
+                                        <rect key="frame" x="284" y="80" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="XLI-ss-qb2">
+                                        <rect key="frame" x="117" y="303" width="532" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand ITC TT" pointSize="26"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                                <gestureRecognizers/>
+                            </scrollView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="27O-3C-Gw2">
                                 <rect key="frame" x="-1" y="0.0" width="779" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -469,19 +472,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="lifeWords" id="44r-dt-1We"/>
                     <connections>
-                        <outlet property="container" destination="IFJ-6r-h0d" id="5EM-ai-WdX"/>
+                        <outlet property="container" destination="qpB-A9-sA0" id="dSW-oh-FoQ"/>
                         <outlet property="friendsBtn" destination="Jfm-XI-tIq" id="oJe-Q8-OhB"/>
                         <outlet property="makeCardButton" destination="IpF-Id-4Ki" id="X14-5l-zS6"/>
                         <outlet property="myToolBar" destination="27O-3C-Gw2" id="VTg-Pz-8jn"/>
                         <outlet property="nameLabel" destination="XLI-ss-qb2" id="BsV-HA-4UM"/>
-                        <outlet property="profilePhoto" destination="NYH-fG-fSq" id="J6s-t0-eSR"/>
+                        <outlet property="profilePhoto" destination="L8G-SI-Xnb" id="74U-gN-Ago"/>
                         <outlet property="scrollView" destination="Xgm-HN-Cec" id="C9b-LL-t1v"/>
+                        <outlet property="wallpaper" destination="BwK-VJ-6hj" id="Iea-Fa-khE"/>
                         <segue destination="KUu-KQ-dCW" kind="push" identifier="toPhotoFiltering" id="No4-8d-OVw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7w-2w-nv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2884" y="-2804"/>
+            <point key="canvasLocation" x="2798" y="-2826"/>
         </scene>
         <!--Life Words Photo Filtering View Controller-->
         <scene sceneID="IBA-5H-f0s">
@@ -491,20 +495,26 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="JfJ-mS-EfP" customClass="SWSnapshotStackView">
-                                <rect key="frame" x="20" y="20" width="728" height="802"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="pBf-qk-jh4">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="JfJ-mS-EfP" customClass="SWSnapshotStackView">
+                                <rect key="frame" x="44" y="0.0" width="681" height="817"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="tSY-fM-jxc" customClass="SWSnapshotStackView">
-                                        <rect key="frame" x="49" y="57" width="630" height="630"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gST-Ev-lwo">
-                                <rect key="frame" x="0.0" y="845" width="768" height="115"/>
+                            <view contentMode="scaleToFill" id="tSY-fM-jxc" customClass="SWSnapshotStackView">
+                                <rect key="frame" x="93" y="94" width="583" height="630"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="binder.png" id="d35-lD-hze">
+                                <rect key="frame" x="0.0" y="832" width="768" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="gST-Ev-lwo">
+                                <rect key="frame" x="20" y="880" width="728" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
@@ -516,6 +526,7 @@
                         <outlet property="container" destination="JfJ-mS-EfP" id="Pii-DW-dOT"/>
                         <outlet property="corePhoto" destination="tSY-fM-jxc" id="VCo-aF-KI3"/>
                         <outlet property="scrollView" destination="gST-Ev-lwo" id="Uhn-Bo-lgw"/>
+                        <outlet property="wallpaper" destination="pBf-qk-jh4" id="8Hf-lB-jGY"/>
                         <segue destination="VRI-i5-bIo" kind="push" identifier="toTimeLine" id="Vue-HH-bWv"/>
                     </connections>
                 </viewController>
@@ -604,7 +615,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HKC-MW-HWt">
-                                <rect key="frame" x="573" y="361" width="73" height="44"/>
+                                <rect key="frame" x="577" y="361" width="73" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Effects">
@@ -634,7 +645,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="0N8-Yw-Vgd">
-                                <rect key="frame" x="151" y="276" width="467" height="174"/>
+                                <rect key="frame" x="768" y="276" width="467" height="174"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" id="0y3-2n-4C8" customClass="YLProgressBar">
@@ -650,7 +661,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yP0-tY-PN4">
-                                        <rect key="frame" x="197" y="117" width="73" height="44"/>
+                                        <rect key="frame" x="146" y="110" width="73" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                         <state key="normal" title="Record" backgroundImage="ipad-button-red.png">
@@ -660,12 +671,60 @@
                                         <state key="highlighted" backgroundImage="ipad-button-red-pressed.png">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="recordRecBtnClicked:" destination="VRI-i5-bIo" eventType="touchUpInside" id="0Fs-X6-xuc"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" id="Jq5-8b-Ilr" customClass="YLProgressBar">
                                         <rect key="frame" x="42" y="74" width="383" height="9"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1ob-Iy-0n0">
+                                        <rect key="frame" x="42" y="110" width="73" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cancel" backgroundImage="ipad-button-grey.png">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="ipad-button-grey-pressed.png">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordCancelBtnClicked:" destination="VRI-i5-bIo" eventType="touchUpInside" id="lsS-7N-pfx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vdX-x9-hv0">
+                                        <rect key="frame" x="352" y="110" width="73" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Accept" backgroundImage="ipad-button-green.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="ipad-button-green-pressed.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordAcceptBtnClicked:" destination="VRI-i5-bIo" eventType="touchUpInside" id="QjE-B0-x0y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wSo-ei-cRI">
+                                        <rect key="frame" x="249" y="110" width="73" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Play" backgroundImage="ipad-button-blue.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="ipad-button-blue-pressed.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordPlayBtnClicked:" destination="VRI-i5-bIo" eventType="touchUpInside" id="PB5-Pe-bG9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -679,9 +738,13 @@
                         <outlet property="cardTitle" destination="072-Py-FUF" id="GtA-tk-DFq"/>
                         <outlet property="effectsBtn" destination="HKC-MW-HWt" id="hlp-If-ykF"/>
                         <outlet property="musicBtn" destination="iKG-qE-o2h" id="MZo-mr-Apx"/>
+                        <outlet property="recordAcceptBtn" destination="vdX-x9-hv0" id="tv8-Ku-XEG"/>
                         <outlet property="recordBtn" destination="p6X-aS-hHx" id="Hk9-aS-26L"/>
+                        <outlet property="recordCancelBtn" destination="1ob-Iy-0n0" id="SSo-HX-wej"/>
                         <outlet property="recordMeter1" destination="0y3-2n-4C8" id="9i0-yF-9PI"/>
                         <outlet property="recordMeter2" destination="Jq5-8b-Ilr" id="CSh-aa-PO4"/>
+                        <outlet property="recordPlayBtn" destination="wSo-ei-cRI" id="Qpa-cB-xQw"/>
+                        <outlet property="recordRecBtn" destination="yP0-tY-PN4" id="EMf-SC-82u"/>
                         <outlet property="recordView" destination="0N8-Yw-Vgd" id="zdf-0T-ybb"/>
                     </connections>
                 </viewController>
@@ -935,12 +998,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="binder.png" width="2400" height="453"/>
         <image name="icon-friends.png" width="35" height="35"/>
+        <image name="ipad-button-blue-pressed.png" width="156" height="49"/>
+        <image name="ipad-button-blue.png" width="157" height="49"/>
+        <image name="ipad-button-green-pressed.png" width="156" height="49"/>
+        <image name="ipad-button-green.png" width="159" height="51"/>
+        <image name="ipad-button-grey-pressed.png" width="156" height="49"/>
+        <image name="ipad-button-grey.png" width="159" height="51"/>
         <image name="ipad-button-red-pressed.png" width="156" height="49"/>
         <image name="ipad-button-red.png" width="159" height="51"/>
+        <image name="leaf_tree_blur.jpg" width="1024" height="1024"/>
         <image name="line.png" width="200" height="2"/>
-        <image name="login_Wallpaper.jpg" width="2048" height="2048"/>
-        <image name="logo_lifeWords.png" width="2500" height="833"/>
+        <image name="logo_lifeWords.png" width="1584" height="679"/>
         <image name="myLine.png" width="400" height="100"/>
         <image name="no_avatar.jpeg" width="160" height="160"/>
         <image name="separator.png" width="200" height="1"/>
@@ -971,13 +1041,14 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/lifeWordsMainViewController.h"/>
             <relationships>
                 <relationship kind="action" name="showActionSheet:"/>
-                <relationship kind="outlet" name="container" candidateClass="UIView"/>
+                <relationship kind="outlet" name="container" candidateClass="SWSnapshotStackView"/>
                 <relationship kind="outlet" name="friendsBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="makeCardButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="myToolBar" candidateClass="UIToolbar"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profilePhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="profilePhoto" candidateClass="SWSnapshotStackView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="wallpaper" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="lifeWordsMusicDetailViewController" superclassName="UIViewController">
@@ -999,6 +1070,7 @@
                 <relationship kind="outlet" name="corePhoto" candidateClass="SWSnapshotStackView"/>
                 <relationship kind="outlet" name="photo" candidateClass="UIImage"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="wallpaper" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="lifeWordsSignUpViewController" superclassName="UIViewController">
@@ -1030,15 +1102,23 @@
             <relationships>
                 <relationship kind="action" name="effectsBtnClicked:"/>
                 <relationship kind="action" name="musicBtnClicked:"/>
+                <relationship kind="action" name="recordAcceptBtnClicked:"/>
                 <relationship kind="action" name="recordBtnClicked:"/>
+                <relationship kind="action" name="recordCancelBtnClicked:"/>
+                <relationship kind="action" name="recordPlayBtnClicked:"/>
+                <relationship kind="action" name="recordRecBtnClicked:"/>
                 <relationship kind="outlet" name="cardDate" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="cardLength" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="cardTitle" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="effectsBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="musicBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recordAcceptBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="recordBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recordCancelBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="recordMeter1" candidateClass="YLProgressBar"/>
                 <relationship kind="outlet" name="recordMeter2" candidateClass="YLProgressBar"/>
+                <relationship kind="outlet" name="recordPlayBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recordRecBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="recordView" candidateClass="UIView"/>
             </relationships>
         </class>

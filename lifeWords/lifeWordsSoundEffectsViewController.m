@@ -31,15 +31,15 @@
     
     soundEffects = [[NSMutableArray alloc] init];
     
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Birds Sounds", @"01:28", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Crowds Noise", @"01:29", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Forest", @"01:00", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Heavy Rain", @"00:33", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Lighting Strike and Thunder", @"01:30", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Rain in a window", @"04:51", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Rain", @"00:01", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Tropical Rainforest", @"01:30", nil]];
-    [soundEffects addObject:[NSArray arrayWithObjects:@"Waterfall", @"00:09", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Birds Sounds", @"02:53", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Crowds Noise", @"02:58", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Forest", @"02:59", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Heavy Rain", @"02:55", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Lighting Strike and Thunder", @"02:58", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Rain in a window", @"02:59", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Rain", @"02:59", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Tropical Rainforest", @"02:59", nil]];
+    [soundEffects addObject:[NSArray arrayWithObjects:@"Waterfall", @"02:59", nil]];
     
 	// Do any additional setup after loading the view.
 }

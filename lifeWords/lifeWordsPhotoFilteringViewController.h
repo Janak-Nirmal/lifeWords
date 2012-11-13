@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet SWSnapshotStackView *container;
 @property (strong, nonatomic) IBOutlet UIImage *photo;
 @property (strong, nonatomic) IBOutlet SWSnapshotStackView *corePhoto;
+@property (strong, nonatomic) IBOutlet UIImageView *wallpaper;
 
 @property (strong, nonatomic) NSUserDefaults *coreDatabase;
 @end

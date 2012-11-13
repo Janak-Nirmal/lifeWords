@@ -213,7 +213,8 @@
                             [coreDatabase setObject:[userInfo objectForKey:@"User_Status"] forKey:[NSString stringWithFormat:@"%@_Status", useremail]];
                         }
                         
-                        [coreDatabase setObject:currentUsersPath forKey:[NSString stringWithFormat:@"%@_Path", useremail]];
+                        [coreDatabase setObject:currentUsersPath forKey:[NSString stringWithFormat:@"%@_User_Path", useremail]];
+                        [coreDatabase setObject:currentCardPath forKey:[NSString stringWithFormat:@"%@_Card_Path", useremail]];
                         [coreDatabase setObject:profilePhotoURL forKey:[NSString stringWithFormat:@"%@_profilePhotoURL", useremail]];
                         [coreDatabase setObject:profilePhotoPath forKey:[NSString stringWithFormat:@"%@_profilePhotoPath", useremail]];
                         [coreDatabase setObject:profileBackupPhotoPath forKey:[NSString stringWithFormat:@"%@_profileBackupPhotoPath", useremail]];
