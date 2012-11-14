@@ -20,10 +20,14 @@
     NSTimer *recorderPlayerTimer;
     NSURL *recordURL;
     
-    // TimeLine Components
-    NSString *musicComponent;
-    NSString *soundEffectComponent;
-    NSString *voiceComponent;
+    // Card TimeLine Components
+    NSURL *musicComponent;
+    NSURL *soundEffectComponent;
+    NSURL *voiceComponent;
+    
+    AVAudioPlayer *musicPlayer;
+    AVAudioPlayer *effectPlayer;
+    AVAudioPlayer *voicePlayer;
     
     
 }

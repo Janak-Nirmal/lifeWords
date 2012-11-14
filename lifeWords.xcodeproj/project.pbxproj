@@ -30,6 +30,9 @@
 		4F1ADAC016491386009B096D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADABF16491386009B096D /* AVFoundation.framework */; };
 		4F1ADAC51649138F009B096D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADAC41649138F009B096D /* AudioToolbox.framework */; };
 		4F1ADACD1649181C009B096D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADACC1649181C009B096D /* CoreMedia.framework */; };
+		4F35546C1653EF6B0065FD42 /* YLBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3554691653EF6B0065FD42 /* YLBackgroundView.m */; };
+		4F35546D1653EF6B0065FD42 /* YLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F35546B1653EF6B0065FD42 /* YLProgressBar.m */; };
+		4F3554711653EFA80065FD42 /* AVAudioPlayer+PGFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3554701653EFA80065FD42 /* AVAudioPlayer+PGFade.m */; };
 		4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89C9CD1644480500CD2483 /* ODRefreshControl.m */; };
 		4F8C0D101643BD5500B9CE0A /* lifeWordsLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */; };
 		4F8C0D131643BD7600B9CE0A /* lifeWordsSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */; };
@@ -308,8 +311,6 @@
 		4FCA2AAD16437B4B003263C8 /* YellowNoir@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA2A5F16437B4B003263C8 /* YellowNoir@2x.jpg */; };
 		4FCC49771649FB360011C021 /* lifeWordsMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC49761649FB360011C021 /* lifeWordsMusic.m */; };
 		4FD73E7E164984850036F4AC /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD73E7D164984850036F4AC /* SPUserResizableView.m */; };
-		4FDA9898164E80D9000DF9AB /* YLBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA9895164E80D9000DF9AB /* YLBackgroundView.m */; };
-		4FDA9899164E80D9000DF9AB /* YLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA9897164E80D9000DF9AB /* YLProgressBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4FDFD7E71643904F00747805 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E61643904F00747805 /* CoreImage.framework */; };
 		4FDFD7EA1643905400747805 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7E91643905400747805 /* QuartzCore.framework */; };
 		4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EB1643905F00747805 /* CFNetwork.framework */; };
@@ -372,6 +373,13 @@
 		4F1ADABF16491386009B096D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4F1ADAC41649138F009B096D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4F1ADACC1649181C009B096D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4F3554671653EF6B0065FD42 /* ARCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCMacro.h; path = YLProgressBar/ARCMacro.h; sourceTree = "<group>"; };
+		4F3554681653EF6B0065FD42 /* YLBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLBackgroundView.h; path = YLProgressBar/YLBackgroundView.h; sourceTree = "<group>"; };
+		4F3554691653EF6B0065FD42 /* YLBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLBackgroundView.m; path = YLProgressBar/YLBackgroundView.m; sourceTree = "<group>"; };
+		4F35546A1653EF6B0065FD42 /* YLProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLProgressBar.h; path = YLProgressBar/YLProgressBar.h; sourceTree = "<group>"; };
+		4F35546B1653EF6B0065FD42 /* YLProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLProgressBar.m; path = YLProgressBar/YLProgressBar.m; sourceTree = "<group>"; };
+		4F35546F1653EFA80065FD42 /* AVAudioPlayer+PGFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+PGFade.h"; sourceTree = "<group>"; };
+		4F3554701653EFA80065FD42 /* AVAudioPlayer+PGFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+PGFade.m"; sourceTree = "<group>"; };
 		4F89C9CC1644480500CD2483 /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		4F89C9CD1644480500CD2483 /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
 		4F8C0D0E1643BD5500B9CE0A /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
@@ -765,11 +773,6 @@
 		4FCC49761649FB360011C021 /* lifeWordsMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusic.m; path = lifeWords/lifeWordsMusic.m; sourceTree = SOURCE_ROOT; };
 		4FD73E7C164984850036F4AC /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPUserResizableView.h; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.h; sourceTree = SOURCE_ROOT; };
 		4FD73E7D164984850036F4AC /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPUserResizableView.m; path = lifeWords/Classes/SPUserResizableView/SPUserResizableView.m; sourceTree = SOURCE_ROOT; };
-		4FDA9893164E80D9000DF9AB /* ARCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacro.h; sourceTree = "<group>"; };
-		4FDA9894164E80D9000DF9AB /* YLBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBackgroundView.h; sourceTree = "<group>"; };
-		4FDA9895164E80D9000DF9AB /* YLBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBackgroundView.m; sourceTree = "<group>"; };
-		4FDA9896164E80D9000DF9AB /* YLProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProgressBar.h; sourceTree = "<group>"; };
-		4FDA9897164E80D9000DF9AB /* YLProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProgressBar.m; sourceTree = "<group>"; };
 		4FDFD7E61643904F00747805 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4FDFD7E91643905400747805 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4FDFD7EB1643905F00747805 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -904,6 +907,15 @@
 				4F1ADAB416490B82009B096D /* icon-friends@2x.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		4F35546E1653EFA80065FD42 /* AVAudioPlayer+PGFade */ = {
+			isa = PBXGroup;
+			children = (
+				4F35546F1653EFA80065FD42 /* AVAudioPlayer+PGFade.h */,
+				4F3554701653EFA80065FD42 /* AVAudioPlayer+PGFade.m */,
+			);
+			path = "AVAudioPlayer+PGFade";
 			sourceTree = "<group>";
 		};
 		4F89C9CB1644480500CD2483 /* ODRefreshControl */ = {
@@ -1231,6 +1243,7 @@
 		4FCA28B016227A0F003263C8 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4F35546E1653EFA80065FD42 /* AVAudioPlayer+PGFade */,
 				4FF72019164EDAEA004FBA81 /* StackView */,
 				4FDA989A164E80D9000DF9AB /* YLProgressBar */,
 				4F18F06E164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView */,
@@ -1667,11 +1680,11 @@
 		4FDA989A164E80D9000DF9AB /* YLProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				4FDA9893164E80D9000DF9AB /* ARCMacro.h */,
-				4FDA9894164E80D9000DF9AB /* YLBackgroundView.h */,
-				4FDA9895164E80D9000DF9AB /* YLBackgroundView.m */,
-				4FDA9896164E80D9000DF9AB /* YLProgressBar.h */,
-				4FDA9897164E80D9000DF9AB /* YLProgressBar.m */,
+				4F3554671653EF6B0065FD42 /* ARCMacro.h */,
+				4F3554681653EF6B0065FD42 /* YLBackgroundView.h */,
+				4F3554691653EF6B0065FD42 /* YLBackgroundView.m */,
+				4F35546A1653EF6B0065FD42 /* YLProgressBar.h */,
+				4F35546B1653EF6B0065FD42 /* YLProgressBar.m */,
 			);
 			name = YLProgressBar;
 			sourceTree = "<group>";
@@ -2102,9 +2115,10 @@
 				4F18F06C164AC5D400F6FAB0 /* lifeWordsMusicDetailViewController.m in Sources */,
 				4F18F071164ACD4200F6FAB0 /* KSCustomPopoverBackgroundView.m in Sources */,
 				4FA3B045164CB11200B1302B /* lifeWordsSoundEffectsViewController.m in Sources */,
-				4FDA9898164E80D9000DF9AB /* YLBackgroundView.m in Sources */,
-				4FDA9899164E80D9000DF9AB /* YLProgressBar.m in Sources */,
 				4FF7201C164EDAEA004FBA81 /* SWSnapshotStackView.m in Sources */,
+				4F35546C1653EF6B0065FD42 /* YLBackgroundView.m in Sources */,
+				4F35546D1653EF6B0065FD42 /* YLProgressBar.m in Sources */,
+				4F3554711653EFA80065FD42 /* AVAudioPlayer+PGFade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
