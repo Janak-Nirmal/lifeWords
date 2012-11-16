@@ -31,8 +31,9 @@
 		4F1ADAC51649138F009B096D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADAC41649138F009B096D /* AudioToolbox.framework */; };
 		4F1ADACD1649181C009B096D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1ADACC1649181C009B096D /* CoreMedia.framework */; };
 		4F35546C1653EF6B0065FD42 /* YLBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3554691653EF6B0065FD42 /* YLBackgroundView.m */; };
-		4F35546D1653EF6B0065FD42 /* YLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F35546B1653EF6B0065FD42 /* YLProgressBar.m */; };
+		4F35546D1653EF6B0065FD42 /* YLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F35546B1653EF6B0065FD42 /* YLProgressBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4F3554711653EFA80065FD42 /* AVAudioPlayer+PGFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3554701653EFA80065FD42 /* AVAudioPlayer+PGFade.m */; };
+		4F355473165502A30065FD42 /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F355472165502A30065FD42 /* Rain.mp3 */; };
 		4F89C9CE1644480500CD2483 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F89C9CD1644480500CD2483 /* ODRefreshControl.m */; };
 		4F8C0D101643BD5500B9CE0A /* lifeWordsLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D0F1643BD5500B9CE0A /* lifeWordsLoginViewController.m */; };
 		4F8C0D131643BD7600B9CE0A /* lifeWordsSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C0D121643BD7600B9CE0A /* lifeWordsSignUpViewController.m */; };
@@ -54,7 +55,6 @@
 		4FA3B095164D348300B1302B /* Piano Sonata No.8-III.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B054164D348300B1302B /* Piano Sonata No.8-III.mp3 */; };
 		4FA3B096164D348300B1302B /* Final Fantasy - Wish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */; };
 		4FA3B097164D348300B1302B /* Ib - Departure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B057164D348300B1302B /* Ib - Departure.mp3 */; };
-		4FA3B098164D348300B1302B /* Ib - doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B058164D348300B1302B /* Ib - doll.mp3 */; };
 		4FA3B099164D348300B1302B /* Johann Pachelbel Canon in D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */; };
 		4FA3B09A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */; };
 		4FA3B09B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */; };
@@ -68,7 +68,6 @@
 		4FA3B0A3164D348300B1302B /* Depapepe - Start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B064164D348300B1302B /* Depapepe - Start.mp3 */; };
 		4FA3B0A4164D348300B1302B /* Depapepe - Summer Parade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B065164D348300B1302B /* Depapepe - Summer Parade.mp3 */; };
 		4FA3B0A5164D348300B1302B /* Ib - Hide And Seek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B066164D348300B1302B /* Ib - Hide And Seek.mp3 */; };
-		4FA3B0A6164D348300B1302B /* red-heart-icon copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B067164D348300B1302B /* red-heart-icon copy.jpg */; };
 		4FA3B0A7164D348300B1302B /* Rhythm Thief - Maria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B068164D348300B1302B /* Rhythm Thief - Maria.mp3 */; };
 		4FA3B0A8164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B069164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 */; };
 		4FA3B0A9164D348300B1302B /* Depapepe - One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B06B164D348300B1302B /* Depapepe - One.mp3 */; };
@@ -97,7 +96,6 @@
 		4FA3B0C0164D348300B1302B /* Heavy Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B084164D348300B1302B /* Heavy Rain.mp3 */; };
 		4FA3B0C1164D348300B1302B /* Lighting Strike and Thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B085164D348300B1302B /* Lighting Strike and Thunder.mp3 */; };
 		4FA3B0C2164D348300B1302B /* Rain in a window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B086164D348300B1302B /* Rain in a window.mp3 */; };
-		4FA3B0C3164D348300B1302B /* Rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B087164D348300B1302B /* Rain.wav */; };
 		4FA3B0C4164D348300B1302B /* Tropical Rainforest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B088164D348300B1302B /* Tropical Rainforest.mp3 */; };
 		4FA3B0C5164D348300B1302B /* Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3B089164D348300B1302B /* Waterfall.mp3 */; };
 		4FB30CC21649752200723611 /* lifeWordsTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB30CC11649752200723611 /* lifeWordsTimeLineViewController.m */; };
@@ -316,6 +314,9 @@
 		4FDFD7EC1643905F00747805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EB1643905F00747805 /* CFNetwork.framework */; };
 		4FDFD7EE1643907B00747805 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7ED1643907B00747805 /* Security.framework */; };
 		4FDFD7F01643908000747805 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EF1643908000747805 /* SystemConfiguration.framework */; };
+		4FE102C8165540730019D29E /* ipad-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE102C6165540730019D29E /* ipad-next.png */; };
+		4FE102C9165540730019D29E /* ipad-next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE102C7165540730019D29E /* ipad-next@2x.png */; };
+		4FE102D716565C810019D29E /* Ib - Doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FE102D616565C810019D29E /* Ib - Doll.mp3 */; };
 		4FF4805A164A999300775D3A /* lifeWordsMusicSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */; };
 		4FF71FEF164E99A7004FBA81 /* ipad-menubar-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF71FEE164E99A7004FBA81 /* ipad-menubar-right.png */; };
 		4FF71FF1164E99AC004FBA81 /* ipad-menubar-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF71FF0164E99AC004FBA81 /* ipad-menubar-right@2x.png */; };
@@ -380,6 +381,7 @@
 		4F35546B1653EF6B0065FD42 /* YLProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLProgressBar.m; path = YLProgressBar/YLProgressBar.m; sourceTree = "<group>"; };
 		4F35546F1653EFA80065FD42 /* AVAudioPlayer+PGFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+PGFade.h"; sourceTree = "<group>"; };
 		4F3554701653EFA80065FD42 /* AVAudioPlayer+PGFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+PGFade.m"; sourceTree = "<group>"; };
+		4F355472165502A30065FD42 /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
 		4F89C9CC1644480500CD2483 /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		4F89C9CD1644480500CD2483 /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
 		4F8C0D0E1643BD5500B9CE0A /* lifeWordsLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lifeWordsLoginViewController.h; sourceTree = "<group>"; };
@@ -404,7 +406,6 @@
 		4FA3B054164D348300B1302B /* Piano Sonata No.8-III.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Sonata No.8-III.mp3"; sourceTree = "<group>"; };
 		4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Final Fantasy - Wish.mp3"; sourceTree = "<group>"; };
 		4FA3B057164D348300B1302B /* Ib - Departure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Departure.mp3"; sourceTree = "<group>"; };
-		4FA3B058164D348300B1302B /* Ib - doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - doll.mp3"; sourceTree = "<group>"; };
 		4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Johann Pachelbel Canon in D.mp3"; sourceTree = "<group>"; };
 		4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - An Ayria.mp3"; sourceTree = "<group>"; };
 		4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Moon Princess.mp3"; sourceTree = "<group>"; };
@@ -418,7 +419,6 @@
 		4FA3B064164D348300B1302B /* Depapepe - Start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - Start.mp3"; sourceTree = "<group>"; };
 		4FA3B065164D348300B1302B /* Depapepe - Summer Parade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - Summer Parade.mp3"; sourceTree = "<group>"; };
 		4FA3B066164D348300B1302B /* Ib - Hide And Seek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Hide And Seek.mp3"; sourceTree = "<group>"; };
-		4FA3B067164D348300B1302B /* red-heart-icon copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-heart-icon copy.jpg"; sourceTree = "<group>"; };
 		4FA3B068164D348300B1302B /* Rhythm Thief - Maria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Maria.mp3"; sourceTree = "<group>"; };
 		4FA3B069164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rhythm Thief - Shall We Dance.mp3"; sourceTree = "<group>"; };
 		4FA3B06B164D348300B1302B /* Depapepe - One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Depapepe - One.mp3"; sourceTree = "<group>"; };
@@ -447,7 +447,6 @@
 		4FA3B084164D348300B1302B /* Heavy Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Heavy Rain.mp3"; sourceTree = "<group>"; };
 		4FA3B085164D348300B1302B /* Lighting Strike and Thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lighting Strike and Thunder.mp3"; sourceTree = "<group>"; };
 		4FA3B086164D348300B1302B /* Rain in a window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rain in a window.mp3"; sourceTree = "<group>"; };
-		4FA3B087164D348300B1302B /* Rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rain.wav; sourceTree = "<group>"; };
 		4FA3B088164D348300B1302B /* Tropical Rainforest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tropical Rainforest.mp3"; sourceTree = "<group>"; };
 		4FA3B089164D348300B1302B /* Waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waterfall.mp3; sourceTree = "<group>"; };
 		4FB30CC01649752200723611 /* lifeWordsTimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsTimeLineViewController.h; path = lifeWords/lifeWordsTimeLineViewController.h; sourceTree = SOURCE_ROOT; };
@@ -778,6 +777,9 @@
 		4FDFD7EB1643905F00747805 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4FDFD7ED1643907B00747805 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4FDFD7EF1643908000747805 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4FE102C6165540730019D29E /* ipad-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-next.png"; sourceTree = "<group>"; };
+		4FE102C7165540730019D29E /* ipad-next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-next@2x.png"; sourceTree = "<group>"; };
+		4FE102D616565C810019D29E /* Ib - Doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Doll.mp3"; sourceTree = "<group>"; };
 		4FF48058164A999300775D3A /* lifeWordsMusicSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusicSelectViewController.h; path = lifeWords/lifeWordsMusicSelectViewController.h; sourceTree = SOURCE_ROOT; };
 		4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusicSelectViewController.m; path = lifeWords/lifeWordsMusicSelectViewController.m; sourceTree = SOURCE_ROOT; };
 		4FF71FEE164E99A7004FBA81 /* ipad-menubar-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-menubar-right.png"; sourceTree = "<group>"; };
@@ -982,7 +984,7 @@
 			children = (
 				4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */,
 				4FA3B057164D348300B1302B /* Ib - Departure.mp3 */,
-				4FA3B058164D348300B1302B /* Ib - doll.mp3 */,
+				4FE102D616565C810019D29E /* Ib - Doll.mp3 */,
 				4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */,
 				4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */,
 				4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */,
@@ -1003,7 +1005,6 @@
 				4FA3B064164D348300B1302B /* Depapepe - Start.mp3 */,
 				4FA3B065164D348300B1302B /* Depapepe - Summer Parade.mp3 */,
 				4FA3B066164D348300B1302B /* Ib - Hide And Seek.mp3 */,
-				4FA3B067164D348300B1302B /* red-heart-icon copy.jpg */,
 				4FA3B068164D348300B1302B /* Rhythm Thief - Maria.mp3 */,
 				4FA3B069164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 */,
 			);
@@ -1053,7 +1054,7 @@
 				4FA3B084164D348300B1302B /* Heavy Rain.mp3 */,
 				4FA3B085164D348300B1302B /* Lighting Strike and Thunder.mp3 */,
 				4FA3B086164D348300B1302B /* Rain in a window.mp3 */,
-				4FA3B087164D348300B1302B /* Rain.wav */,
+				4F355472165502A30065FD42 /* Rain.mp3 */,
 				4FA3B088164D348300B1302B /* Tropical Rainforest.mp3 */,
 				4FA3B089164D348300B1302B /* Waterfall.mp3 */,
 			);
@@ -1292,6 +1293,8 @@
 		4FCA28D01627C470003263C8 /* Extra Stuffs */ = {
 			isa = PBXGroup;
 			children = (
+				4FE102C6165540730019D29E /* ipad-next.png */,
+				4FE102C7165540730019D29E /* ipad-next@2x.png */,
 				4FF7208F16521068004FBA81 /* binder.png */,
 				4FF720721650EB11004FBA81 /* container.jpg */,
 				4FF7207716510F77004FBA81 /* container_photo.jpg */,
@@ -1918,7 +1921,6 @@
 				4FA3B095164D348300B1302B /* Piano Sonata No.8-III.mp3 in Resources */,
 				4FA3B096164D348300B1302B /* Final Fantasy - Wish.mp3 in Resources */,
 				4FA3B097164D348300B1302B /* Ib - Departure.mp3 in Resources */,
-				4FA3B098164D348300B1302B /* Ib - doll.mp3 in Resources */,
 				4FA3B099164D348300B1302B /* Johann Pachelbel Canon in D.mp3 in Resources */,
 				4FA3B09A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 in Resources */,
 				4FA3B09B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 in Resources */,
@@ -1932,7 +1934,6 @@
 				4FA3B0A3164D348300B1302B /* Depapepe - Start.mp3 in Resources */,
 				4FA3B0A4164D348300B1302B /* Depapepe - Summer Parade.mp3 in Resources */,
 				4FA3B0A5164D348300B1302B /* Ib - Hide And Seek.mp3 in Resources */,
-				4FA3B0A6164D348300B1302B /* red-heart-icon copy.jpg in Resources */,
 				4FA3B0A7164D348300B1302B /* Rhythm Thief - Maria.mp3 in Resources */,
 				4FA3B0A8164D348300B1302B /* Rhythm Thief - Shall We Dance.mp3 in Resources */,
 				4FA3B0A9164D348300B1302B /* Depapepe - One.mp3 in Resources */,
@@ -1961,7 +1962,6 @@
 				4FA3B0C0164D348300B1302B /* Heavy Rain.mp3 in Resources */,
 				4FA3B0C1164D348300B1302B /* Lighting Strike and Thunder.mp3 in Resources */,
 				4FA3B0C2164D348300B1302B /* Rain in a window.mp3 in Resources */,
-				4FA3B0C3164D348300B1302B /* Rain.wav in Resources */,
 				4FA3B0C4164D348300B1302B /* Tropical Rainforest.mp3 in Resources */,
 				4FA3B0C5164D348300B1302B /* Waterfall.mp3 in Resources */,
 				4FF71FEF164E99A7004FBA81 /* ipad-menubar-right.png in Resources */,
@@ -1991,6 +1991,10 @@
 				4FF7208D165133C1004FBA81 /* ipad-button-blue.png in Resources */,
 				4FF7208E165133C1004FBA81 /* ipad-button-blue@2x.png in Resources */,
 				4FF7209016521068004FBA81 /* binder.png in Resources */,
+				4F355473165502A30065FD42 /* Rain.mp3 in Resources */,
+				4FE102C8165540730019D29E /* ipad-next.png in Resources */,
+				4FE102C9165540730019D29E /* ipad-next@2x.png in Resources */,
+				4FE102D716565C810019D29E /* Ib - Doll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

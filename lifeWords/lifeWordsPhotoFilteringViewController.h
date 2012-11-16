@@ -13,16 +13,22 @@
 #import "SWSnapshotStackView.h"
 
 @interface lifeWordsPhotoFilteringViewController : UIViewController <MBProgressHUDDelegate> {
+    
+    // User Information
     NSString *userEmail;
     NSString *color;
+    
+    // Card Information
+    NSString *currentCardPath;
 }
+
+#pragma mark - Photo Elements
+@property (strong, nonatomic) IBOutlet UIImage *photo;
+@property (strong, nonatomic) IBOutlet SWSnapshotStackView *corePhoto;
 
 #pragma mark - Decoration
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet SWSnapshotStackView *container;
-@property (strong, nonatomic) IBOutlet UIImage *photo;
-@property (strong, nonatomic) IBOutlet SWSnapshotStackView *corePhoto;
 @property (strong, nonatomic) IBOutlet UIImageView *wallpaper;
-
 @property (strong, nonatomic) NSUserDefaults *coreDatabase;
 @end

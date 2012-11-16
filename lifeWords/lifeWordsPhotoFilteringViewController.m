@@ -7,11 +7,13 @@
 //
 
 #import "lifeWordsPhotoFilteringViewController.h"
+#import "lifeWordsTimeLineViewController.h"
 #import "UIImage+Helpers.h"
 
 @interface lifeWordsPhotoFilteringViewController () {
     MBProgressHUD *HUD;
     UIImage *originalPhoto;
+    UIImage *filteredPhoto;
 }
 
 @end
@@ -45,16 +47,18 @@
     // Set the wallpaper
     [self.wallpaper setImage:[UIImage imageNamed:@"leaf_tree.jpg"]];
     
+    // Set background image
+    [self.container setImage:[UIImage imageNamed:@"container_photo.jpg"]];
+    [self.container setAlpha:0.7];
+    [self.container setDisplayAsStack:YES];
+    
     // Set the core photo
     self.photo = [self.photo normalizedImage];
+    originalPhoto = self.corePhoto.image;
+    filteredPhoto = self.corePhoto.image;
     [self.corePhoto setImage:self.photo];
     [self.corePhoto setDisplayAsStack:NO];
-    originalPhoto = self.corePhoto.image;
     [self effectPanel];
-    
-    
-    
-	// Do any additional setup after loading the view.
     
     //Create a new barbutton with an action
     UIBarButtonItem *barbutton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
@@ -65,10 +69,26 @@
     // and put the button in the nav bar
     [self.navigationItem setLeftBarButtonItem:barbutton];
     
+    //Create a new barbutton with an action
+    UIBarButtonItem *nextBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Next"
+                                                                  style:UIBarButtonItemStylePlain target:self action:@selector(nextBarPressed)];
+    UIImage *nextBtnImg = [UIImage imageNamed:@"ipad-next.png"];
+    [nextBarButton setBackgroundImage:nextBtnImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
+    // and put the button in the nav bar
+    [self.navigationItem setRightBarButtonItem:nextBarButton];
+
     
+    // Create storage for this particular card
+    NSString *cardPath = [self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Card_Path", userEmail]];
+    int numberOfCards = [[self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Cards", userEmail]] count];
+    numberOfCards += 1;
     
+    currentCardPath = [cardPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%d", numberOfCards]];
     
+    NSError *error;
+    if (![[NSFileManager defaultManager] fileExistsAtPath:currentCardPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:currentCardPath withIntermediateDirectories:NO attributes:nil error:&error];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -77,7 +97,7 @@
     // Show navigation bar
     [self.navigationController navigationBar].hidden = NO;
     
-    // Set toolbar background
+    // Set navigation bar background
     UIImage *navBarImg = [UIImage imageNamed:[NSString stringWithFormat:@"%@ipad-menubar-right.png", color]];
     [self.navigationController.navigationBar setBackgroundImage:navBarImg forBarMetrics:UIBarMetricsDefault];
     
@@ -89,13 +109,6 @@
     [tv setTextColor:[UIColor whiteColor]];
     
     [self.navigationItem setTitleView:tv];
-    
-    // Set background image
-    UIColor* bgColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ipad-BG-pattern.png"]];
-    [self.view setBackgroundColor:bgColor];
-    [self.container setImage:[UIImage imageNamed:@"container_photo.jpg"]];
-    [self.container setAlpha:0.7];
-    [self.container setDisplayAsStack:YES];
     
     
 }
@@ -377,6 +390,7 @@
     }
     
     [self.corePhoto setImage:_img];
+    filteredPhoto = _img;
 }
 
 - (void)hudWasHidden:(MBProgressHUD *)hud {
@@ -387,13 +401,26 @@
 
 - (void) backBarPressed
 {
-    [UIView animateWithDuration:0.75
+    [UIView animateWithDuration:1.5
                      animations:^{
                          [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-                         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+                         [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.navigationController.view cache:NO];
                      }];
     [self.navigationController popViewControllerAnimated:NO];
     
+}
+
+- (void) nextBarPressed
+{
+    [self performSegueWithIdentifier:@"toTimeLine" sender:nil];
+    
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"toTimeLine"]) {
+        lifeWordsTimeLineViewController *vc = [segue destinationViewController];
+        [vc setCurrentCardPath:currentCardPath];
+    }
 }
 
 

@@ -24,6 +24,8 @@
 @property (nonatomic, retain) UIPopoverController *popover;
 @property (strong, nonatomic) IBOutlet UIButton *makeCardButton;
 - (IBAction) showActionSheet:(id)sender;
+- (IBAction)test:(id)sender;
+
 
 #pragma mark - Toolbars
 @property (strong, nonatomic) IBOutlet UIToolbar *myToolBar;

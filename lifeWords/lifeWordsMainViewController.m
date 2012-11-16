@@ -71,8 +71,6 @@
     
     // Refresh Contents
     [self refresh];
-    [refreshControl beginRefreshing];
-    
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
@@ -155,6 +153,18 @@
         [self pickImage:FALSE];
     }
 }
+
+- (IBAction)test:(id)sender {
+    // Push View Controller
+    lifeWordsPhotoFilteringViewController *nextView = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"photoFilteringView"];
+    [UIView animateWithDuration:1.5
+                     animations:^{
+                         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+                         [self.navigationController pushViewController:nextView animated:NO];
+                         [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.navigationController.view cache:NO];
+                     }];
+}
+
 
 - (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {

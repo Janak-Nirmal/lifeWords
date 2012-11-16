@@ -82,7 +82,7 @@ static SPUserResizableViewAnchorPoint SPUserResizableViewMiddleRightAnchorPoint 
 
 @implementation SPUserResizableView
 
-@synthesize contentView, minWidth, minHeight, preventsPositionOutsideSuperview, delegate;
+@synthesize contentView, minWidth, minHeight, maxWidth,preventsPositionOutsideSuperview, delegate;
 
 - (void)setupDefaultAttributes {
     borderView = [[SPGripViewBorderView alloc] initWithFrame:CGRectInset(self.bounds, kSPUserResizableViewGlobalInset, kSPUserResizableViewGlobalInset)];
@@ -96,6 +96,7 @@ static SPUserResizableViewAnchorPoint SPUserResizableViewMiddleRightAnchorPoint 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
         [self setupDefaultAttributes];
+        self.maxWidth = frame.size.width;
     }
     return self;
 }
@@ -234,6 +235,15 @@ typedef struct CGPointSPUserResizableViewAnchorPointPair {
         newWidth = self.frame.size.width;
         newX = self.frame.origin.x;
     }
+    
+    NSLog(@"Fucking asdasdasd  %f", newWidth);
+    
+    if (newWidth > self.maxWidth) {
+        
+        newWidth = self.frame.size.width;
+        newX = self.frame.origin.x;
+    }
+    
     if (newHeight < self.minHeight) {
         newHeight = self.frame.size.height;
         newY = self.frame.origin.y;

@@ -24,6 +24,7 @@ typedef struct SPUserResizableViewAnchorPoint {
     CGPoint touchStart;
     CGFloat minWidth;
     CGFloat minHeight;
+    CGFloat maxWidth;
     
     // Used to determine which components of the bounds we'll be modifying, based upon where the user's touch started.
     SPUserResizableViewAnchorPoint anchorPoint;
@@ -39,6 +40,7 @@ typedef struct SPUserResizableViewAnchorPoint {
 // Default is 48.0 for each.
 @property (nonatomic) CGFloat minWidth;
 @property (nonatomic) CGFloat minHeight;
+@property (nonatomic) CGFloat maxWidth;
 
 // Defaults to YES. Disables the user from dragging the view outside the parent view's bounds.
 @property (nonatomic) BOOL preventsPositionOutsideSuperview;

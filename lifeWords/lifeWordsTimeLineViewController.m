@@ -14,8 +14,11 @@
 #import "WaveformImageView.h"
 #import "MBProgressHUD.h"
 #import "KSCustomPopoverBackgroundView.h"
-
-@interface lifeWordsTimeLineViewController ()
+#import "AVAudioPlayer+PGFade.h"
+#import "UIImage+Helpers.h"
+@interface lifeWordsTimeLineViewController () {
+    MBProgressHUD *HUD;
+}
 
 @end
 
@@ -36,6 +39,33 @@
 {
     [super viewDidLoad];
     
+    // Set the wallpaper
+    [self.wallpaper setImage:[UIImage imageNamed:@"leaf_tree.jpg"]];
+    
+    
+    // Set background image
+    [self.container setImage:[UIImage imageNamed:@"container_photo.jpg"]];
+    [self.container setAlpha:0.7];
+    [self.container setDisplayAsStack:YES];
+    
+    // Prevent the view to dim
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    
+    // Fetch data from NSUserDefaults
+    self.coreDatabase = [NSUserDefaults standardUserDefaults];
+    userEmail = [self.coreDatabase objectForKey:@"Current_User_Email"];
+    color = [self.coreDatabase objectForKey:[NSString stringWithFormat:@"%@_Color", userEmail]];
+    
+    //Create a new barbutton with an action
+    UIBarButtonItem *barbutton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                                                  style:UIBarButtonItemStylePlain target:self action:@selector(backBarPressed)];
+    UIImage *backBtnImg = [UIImage imageNamed:[NSString stringWithFormat:@"%@ipad-back.png", color]];
+    [barbutton setBackgroundImage:backBtnImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    // and put the button in the nav bar
+    [self.navigationItem setLeftBarButtonItem:barbutton];
+    
+        
     // Set record settings
     recordURL = [self recordURL];
     
@@ -67,6 +97,11 @@
     [self.recordMeter1 setProgressTintColor:[UIColor greenColor]];
     [self.recordMeter2 setProgressTintColor:[UIColor redColor]];
 
+    // Add Gesture Recognizer
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideEditingHandles)];
+    [gestureRecognizer setDelegate:self];
+    [self.view addGestureRecognizer:gestureRecognizer];
+    
     //NSURL *url = [[NSBundle mainBundle] URLForResource:@"Doll" withExtension:@"mp3"];
     //NSLog(@"%@", url.absoluteString);
     //AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
@@ -82,12 +117,24 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationFromMusicSelect:) name:@"Music Selected" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationFromEffectSelect:) name:@"Effect Selected" object:nil];
     
+    // Show navigation bar
+    [self.navigationController navigationBar].hidden = NO;
+    
+    // Set navigation bar background
+    UIImage *navBarImg = [UIImage imageNamed:[NSString stringWithFormat:@"%@ipad-menubar-right.png", color]];
+    [self.navigationController.navigationBar setBackgroundImage:navBarImg forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
-    [[NSNotificationCenter defaultCenter] removeObject:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self setMusicPlayer:nil];
+    [self setEffectPlayer:nil];
+    [self setVoicePlayer:nil];
+    [UIApplication sharedApplication].idleTimerDisabled = NO;
+
 }
      
 - (void)didReceiveMemoryWarning
@@ -98,6 +145,7 @@
 
 
 - (void)viewDidUnload {
+    [self setCoreDatabase:nil];
     [self setMusicBtn:nil];
     [self setPopover:nil];
     [self setEffectsBtn:nil];
@@ -112,8 +160,13 @@
     [self setRecordPlayBtn:nil];
     [self setRecordAcceptBtn:nil];
     [self setRecordRecBtn:nil];
+    [self setCurrentCardPath:nil];
+    [self setContainer:nil];
+    [self setWallpaper:nil];
+    [self setMusicView:nil];
     [super viewDidUnload];
 }
+
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
@@ -127,7 +180,17 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
+- (void) backBarPressed
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - Time Line Components
+- (IBAction)test:(id)sender {
+    [self.musicPlayer playWithFadeDuration:10];
+    [self.effectPlayer playWithFadeDuration:5];
+}
+
 - (IBAction)musicBtnClicked:(id)sender {
     lifeWordsMusicSelectViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"musicSelectView"];
     self.popover = [[UIPopoverController alloc] initWithContentViewController:vc];
@@ -147,10 +210,50 @@
 #pragma mark - Time Line Actions
 - (void) handleNotificationFromMusicSelect: (NSNotification *)pNotification {
     [self.popover dismissPopoverAnimated:YES];
+    
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:HUD];
+    HUD.labelText = @"Processing...";
+    HUD.dimBackground = YES;
+    HUD.minSize = CGSizeMake(140.f, 140.f);
+    [HUD showAnimated:YES whileExecutingBlock:^{
+        NSString *musicString = [pNotification object];
+        musicComponent = [[NSBundle mainBundle] URLForResource:musicString withExtension:@"mp3"];
+        NSError *error;
+        self.musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicComponent error:&error];
+        [self.musicPlayer setVolume:1];
+        [self.musicPlayer prepareToPlay];
+        
+        // Generate Audio Wave
+        musicAudioWave = [[SPUserResizableView alloc] initWithFrame:CGRectMake(0, 0, self.musicView.frame
+                                                                                                    .size.width / 2, self.musicView.frame
+                                                                                                    .size.height)];
+        
+        WaveformImageView *wave = [[WaveformImageView alloc] initWithUrl:musicComponent];
+        UIImageView *waveView = [[UIImageView alloc] initWithImage:wave.image];
+        [musicAudioWave setContentView:waveView];
+        musicAudioWave.delegate = self;
+        [musicAudioWave showEditingHandles];
+        currentlyEditingView = musicAudioWave;
+        lastEditedView = musicAudioWave;
+
+    } completionBlock:^{
+        [HUD removeFromSuperview];
+        [self.musicView addSubview:musicAudioWave];
+
+    }];
 }
+
 
 - (void) handleNotificationFromEffectSelect: (NSNotification *)pNotification {
     [self.popover dismissPopoverAnimated:YES];
+    NSString *soundEffectString = [pNotification object];
+    soundEffectComponent = [[NSBundle mainBundle] URLForResource:soundEffectString withExtension:@"mp3"];
+    NSError *error;
+    self.effectPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundEffectComponent error:&error];
+    [self.effectPlayer setVolume:0.5];
+    [self.effectPlayer prepareToPlay];
 }
 
 #pragma mark - UIPopoverControllerDelegate
@@ -171,7 +274,7 @@
 
 - (NSURL *) recordURL
 {
-    NSString *outputPath = [[NSString alloc] initWithFormat:@"%@%@", NSTemporaryDirectory(), @"recording.wav"];
+    NSString *outputPath = [self.currentCardPath stringByAppendingPathComponent:@"voice.wav"];
     NSURL *outputURL = [[NSURL alloc] initFileURLWithPath:outputPath];
     NSFileManager *manager = [[NSFileManager alloc] init];
     if ([manager fileExistsAtPath:outputPath])
@@ -192,7 +295,7 @@
 
 - (IBAction)recordPlayBtnClicked:(id)sender {
     NSFileManager *manager = [[NSFileManager alloc] init];
-    NSString *outputPath = [[NSString alloc] initWithFormat:@"%@%@", NSTemporaryDirectory(), @"recording.wav"];
+    NSString *outputPath = [self.currentCardPath stringByAppendingPathComponent:@"voice.wav"];
     if (![recorderPlayer isPlaying])
     {
         if ([manager fileExistsAtPath:outputPath])
@@ -208,6 +311,7 @@
     {
         [recorderPlayer stop];
         [recorderPlayerTimer invalidate];
+        recorderPlayerTimer = nil;
         [self.recordPlayBtn setTitle:@"Play" forState:UIControlStateNormal];
         self.recordMeter1.progress = 0;
         self.recordMeter2.progress = 0;
@@ -220,6 +324,7 @@
     if ([self.recordPlayBtn.titleLabel.text isEqualToString:@"Stop"]) {
         [self.recordPlayBtn setTitle:@"Play" forState:UIControlStateNormal];
         [recorderPlayerTimer invalidate];
+        recorderPlayerTimer = nil;
         self.recordMeter1.progress = 0;
         self.recordMeter2.progress = 0;
     }
@@ -235,6 +340,7 @@
     {
         [recorder stop];
         [recorderTimer invalidate];
+        recorderTimer = nil;
         [self.recordRecBtn setTitle:@"Record" forState:UIControlStateNormal];
         [self.recordPlayBtn setEnabled:YES];
         [self.recordAcceptBtn setEnabled:YES];
@@ -324,6 +430,32 @@
 	self.recordMeter1.progress = (XMAX + avg) / XMAX;
 	self.recordMeter2.progress = (XMAX + peak) / XMAX;
     
+}
+
+#pragma mark - SPUserResizeableView Delegate
+
+- (void)userResizableViewDidBeginEditing:(SPUserResizableView *)userResizableView {
+    [currentlyEditingView hideEditingHandles];
+    currentlyEditingView = userResizableView;
+}
+
+- (void)userResizableViewDidEndEditing:(SPUserResizableView *)userResizableView {
+    lastEditedView = userResizableView;
+}
+
+#pragma mark - UIGestureRecognizer Delegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([currentlyEditingView hitTest:[touch locationInView:currentlyEditingView] withEvent:nil]) {
+        return NO;
+    }
+    return YES;
+}
+
+- (void)hideEditingHandles {
+    // We only want the gesture recognizer to end the editing session on the last
+    // edited view. We wouldn't want to dismiss an editing session in progress.
+    [lastEditedView hideEditingHandles];
 }
 
 @end

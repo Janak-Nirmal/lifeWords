@@ -46,11 +46,11 @@
         [musicArray addObject:[NSArray arrayWithObjects:@"Final Fantasy - Wish", @"02:54", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Ib - Departure", @"01:27", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Ib - Doll", @"02:14", nil]];
-        [musicArray addObject:[NSArray arrayWithObjects:@"Johann Pachelbel - Canon in D", @"02:46", nil]];
+        [musicArray addObject:[NSArray arrayWithObjects:@"Johann Pachelbel Canon in D", @"02:46", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Rhythm Thief - An Ayria", @"02:35", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Rhythm Thief - Moon Princess", @"02:10", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Rhythm Thief - Raphael", @"00:57", nil]];
-        [musicArray addObject:[NSArray arrayWithObjects:@"Wolfgang Amadeus Mozard - Symphony", @"02:54", nil]];
+        [musicArray addObject:[NSArray arrayWithObjects:@"Wolfgang Amadeus Mozart - Symphony", @"02:54", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Zelda's Lullaby", @"02:05", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Zelda's Theme", @"02:45", nil]];
     }
@@ -81,7 +81,7 @@
         [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - A River Flows In You", @"02:56", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Beloved", @"02:39", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Chaconne", @"02:31", nil]];
-        [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Destiny Of love", @"02:50", nil]];
+        [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Destiny Of Love", @"02:50", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Kiss The Rain", @"02:39", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Love Me", @"02:59", nil]];
         [musicArray addObject:[NSArray arrayWithObjects:@"Yiruma - Moonlight", @"02:52", nil]];
