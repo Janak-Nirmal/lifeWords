@@ -316,7 +316,6 @@
 		4FDFD7F01643908000747805 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFD7EF1643908000747805 /* SystemConfiguration.framework */; };
 		4FE102C8165540730019D29E /* ipad-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE102C6165540730019D29E /* ipad-next.png */; };
 		4FE102C9165540730019D29E /* ipad-next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE102C7165540730019D29E /* ipad-next@2x.png */; };
-		4FE102D716565C810019D29E /* Ib - Doll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FE102D616565C810019D29E /* Ib - Doll.mp3 */; };
 		4FF4805A164A999300775D3A /* lifeWordsMusicSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */; };
 		4FF71FEF164E99A7004FBA81 /* ipad-menubar-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF71FEE164E99A7004FBA81 /* ipad-menubar-right.png */; };
 		4FF71FF1164E99AC004FBA81 /* ipad-menubar-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF71FF0164E99AC004FBA81 /* ipad-menubar-right@2x.png */; };
@@ -779,7 +778,6 @@
 		4FDFD7EF1643908000747805 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4FE102C6165540730019D29E /* ipad-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-next.png"; sourceTree = "<group>"; };
 		4FE102C7165540730019D29E /* ipad-next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-next@2x.png"; sourceTree = "<group>"; };
-		4FE102D616565C810019D29E /* Ib - Doll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ib - Doll.mp3"; sourceTree = "<group>"; };
 		4FF48058164A999300775D3A /* lifeWordsMusicSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lifeWordsMusicSelectViewController.h; path = lifeWords/lifeWordsMusicSelectViewController.h; sourceTree = SOURCE_ROOT; };
 		4FF48059164A999300775D3A /* lifeWordsMusicSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lifeWordsMusicSelectViewController.m; path = lifeWords/lifeWordsMusicSelectViewController.m; sourceTree = SOURCE_ROOT; };
 		4FF71FEE164E99A7004FBA81 /* ipad-menubar-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-menubar-right.png"; sourceTree = "<group>"; };
@@ -984,7 +982,6 @@
 			children = (
 				4FA3B056164D348300B1302B /* Final Fantasy - Wish.mp3 */,
 				4FA3B057164D348300B1302B /* Ib - Departure.mp3 */,
-				4FE102D616565C810019D29E /* Ib - Doll.mp3 */,
 				4FA3B059164D348300B1302B /* Johann Pachelbel Canon in D.mp3 */,
 				4FA3B05A164D348300B1302B /* Rhythm Thief - An Ayria.mp3 */,
 				4FA3B05B164D348300B1302B /* Rhythm Thief - Moon Princess.mp3 */,
@@ -1994,7 +1991,6 @@
 				4F355473165502A30065FD42 /* Rain.mp3 in Resources */,
 				4FE102C8165540730019D29E /* ipad-next.png in Resources */,
 				4FE102C9165540730019D29E /* ipad-next@2x.png in Resources */,
-				4FE102D716565C810019D29E /* Ib - Doll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
